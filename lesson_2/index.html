@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lesson 2</title>
+</head>
+
+<body>
+    <header style="background-color: #4e79d477;">
+        <h2 style="text-align: center;">"<a target="_blank"
+                href="https://www.youtube.com/watch?v=mfkiyoY8WRk&ab_channel=%D0%9C%D1%8E%D1%81%D0%BB%D1%96UA">Добрий
+                день, Everybody!</a>"</h2>
+        <img width="100p" src="https://gagadget.com/media/cache/8e/17/8e170b48e09cdeda9c6485dbf88c29a6.jpg"
+            alt="вітання Бориса">
+        <h1 style="text-align: center;">Домашка!!!</h1>
+        <h3>Спойлер :</h3>
+        <h4>Cтилі вліплені одразу у html не спішіть хейтити - це ж домашка без ТЗ )))!</h4>
+
+        <p style="text-align: right;">а і так, ця блакитна штука - то є тег <mark>Хедер</mark>. Знаю , що поки що це все
+            виглядає - <span style="font-style: italic ;">...так собі.</span> </p>
+        <br>
+    </header>
+    <main style="background-color: #ebeb34cc;">
+        <h2 style="text-align: center;">Майн</h2>
+        <div class="some-block-without-bem-methdology-nesting">
+            <h3>Ця частина це <mark><a target="_blank" href="https://youtu.be/WXv31OmnKqQ?t=73">Майн...</a></mark> -
+                тобто
+                унікальна частина веб-сторінки, яка є лише на цій сторінці і
+                тільки
+                цій</h3>
+
+            <ul>
+                <li><a href="crib.html">Тут такої нема!</a></li>
+                <li><a href="scheme.html">І ... тут теж!</a></li>
+                <li>та вона ж унікальна для кожної сторінки</li>
+                <li>Тимпаче , що тег майн є одним із "будівельних" тегів</li>
+                <li><a href="tatoopage.html">Зататуюй це собі під повіками!!!</a></li>
+            </ul>
+
+        </div>
+        <br>
+        <h3>На Уроці №2 ми познайомилися із структурою html документа та певною класифікацією тегів.</h3>
+        <h2>Умовна класифікація за рецептом гуру у верстці, фрілансер по життю:</h2>
+
+        <ol>
+            <li>
+                <h4>Будівельні теги</h4>
+                <a target="_blank" href="https://www.w3schools.com/html/html5_semantic_elements.asp"><img width="320px"
+                        src="img/employee.jpg" alt="будівельні тегиги"></a>
+                <ul>
+                    <li>тег header</li>
+                    <li>тег div </li>
+                    <li>тег main </li>
+                    <li>тег footer</li>
+                    <li>...</li>
+                </ul>
+            </li>
+
+            <li>
+                <h4>Теги для контенту</h4>
+                <a target="_blank" href="https://www.w3schools.com/html/html5_semantic_elements.asp"><img width="320px"
+                        src="https://image.api.playstation.com/vulcan/img/rnd/202111/1814/n7UmKNPcZKKZNb8J1PxPWgsa.jpg"
+                        alt="теги для контенту"></a>
+                <ul>
+                    <li>тег p</li>
+                    <li>тег a</li>
+                    <li>тег img</li>
+                    <li>тег br</li>
+                    <li>тег span</li>
+                    <li>тег mark</li>
+                    <li>тег mark</li>
+                    <li>тег ul
+                        <ul>
+                            <li>з тегом li</li>
+                        </ul>
+                    </li>
+                    <li>тег ol
+                        <ol>
+                            <li>з тегом li</li>
+                        </ol>
+                    </li>
+                    <li>тег h1
+                        <ul>
+                            <li>тег h2
+                                <ul>
+                                    <li>тег h3
+                                        <ul>
+                                            <li>тег h4
+                                                <ul>
+                                                    <li>тег h5
+                                                        <ul>
+                                                            <li>тег h6</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>...</li>
+                </ul>
+            </li>
+        </ol>
+
+        <br>
+
+        <h2>Типи тегів за способом відображення:</h2>
+        <ol>
+            <li>
+                <h4>Блочні</h4>
+                <ul>
+                    <li><a target="_blank" href="https://www.w3schools.com/html/html_blocks.asp"> <img width="320px"
+                                src="img/block.gif" alt="асоціативна ілюстрація для блочного тегу"></a></li>
+                    <li>
+                        Розміщюються по всій ширині батьківського блоку - <i>асоціація "Жадібні"</i>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h4> Рядкові</h4>
+                <ul>
+                    <li><a target="_blank" href="https://www.w3schools.com/html/html_blocks.asp"><img width="320px"
+                                src="img/inline.gif" alt="асоціативна ілюстрація для рядкового тегу"></a>
+                    </li>
+                    <li>
+                        Розміщюються вряд таким чином . що займають стільки місця скільки є контенту, а якщо ширини
+                        не вистачає спрацьовує <i>wrap</i> - перенесення на наступний рядок <i>асоціація
+                            "Скромні"</i>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+
+    </main>
+    <footer>
+
+        <h5>Це підвал сайту і тут мілким шрифтом написане все "саме цікаве"</h5>
+        <p>Цю сторінку створено в рамках курсу Осінь 2022 </p>
+        <p>Автор ідеї Нагаєвський Роман Сергійович #9218</p>
+        <h6>Всі права - домашка- я не списував, сам пан скльопав!</h6>
+        <h6>Якщо я когось образив даним контентом (болять очі таке бачити), прошу щиро пробачити, всі посилання
+            працюють. Матеріали взято у
+            вільному доступі
+
+        </h6>
+        <h5>Все буде Україна!</h5>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>

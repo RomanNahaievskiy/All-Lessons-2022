@@ -1,0 +1,83 @@
+body {
+}
+.container {
+}
+/* Стилі Хедер */
+.header-body {
+}
+.header-logo {
+}
+.header-logo img {
+    width: 100%;
+}
+.heder-content-nav {
+}
+.header-link {
+    color: chocolate;
+}
+
+/* Стилі заголовків  та лінків*/
+h1 {
+    color: blue;
+}
+
+h4 {
+    color: darkslategray;
+}
+a {
+    color: red;
+}
+.link {
+    color: darkgreen;
+}
+.new-interier-style li a {
+    color: crimson;
+}
+.classic-interier-style li a {
+    color: yellowgreen;
+}
+
+/* Стилі Майн */
+.main-body {
+}
+.new-interier-style {
+    color: darkred;
+}
+.about-style-title {
+}
+.about-new {
+}
+.new-item {
+}
+.about-item {
+}
+.pictures img {
+    width: 100%;
+}
+.pictures {
+}
+.classic-interier-style {
+    color: darkgreen;
+}
+.about-classic {
+}
+.classic-item {
+}
+.ethnic-interier-style {
+    color: darkslateblue;
+}
+.about-ethnic {
+}
+.ethnic-item {
+}
+
+/* Стилі підвалу сайту */
+.footer-body p a {
+    color: darkslategray;
+}
+.footer-body p {
+    color: darkolivegreen;
+}
+p.copiright {
+    color: darkred;
+}
