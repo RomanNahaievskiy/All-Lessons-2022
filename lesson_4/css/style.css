@@ -1,0 +1,105 @@
+@import "resetstyle.css";
+@import "fonts.css";
+
+/* SPECIAL */
+/* ============================================ */
+.wrraper {
+}
+.container {
+}
+body * {
+    font-family: "Lato";
+    font-size: 20px;
+}
+img {
+    width: 50px;
+}
+.go-top {
+    font-family: "Larsseit";
+    font-weight: bold;
+}
+/* =============================================== */
+/* HEDER */
+.header {
+}
+.header__body {
+}
+.header__logo {
+}
+.header__img {
+}
+.header__nav {
+}
+.content-nav {
+}
+.content-nav__item {
+}
+.header__link {
+}
+
+/* MAIN */
+.main {
+}
+.main__body {
+}
+.main__content {
+}
+/* ======================= */
+.latin {
+    font-family: "Larsseit";
+    color: forestgreen;
+}
+
+.main__link {
+    font-family: "Roboto" sans-serif;
+    font-weight: 900;
+    color: coral;
+}
+/* ======================== */
+
+section.about {
+    color: #ff3344;
+}
+
+.groups__item--title {
+    color: red;
+}
+.group__item > h3 {
+    font-size: 40px;
+}
+.group__item {
+    color: green;
+}
+.groups__item--one ul li ul > li {
+    color: blue;
+}
+.groups__item--one {
+    color: brown;
+    font-weight: 400;
+}
+.groups__item--two {
+    color: blueviolet;
+    font-weight: 400;
+}
+.groups__item--three {
+    color: yellowgreen;
+    font-weight: 500;
+}
+.group__item--four {
+    color: red;
+    font-weight: 900;
+}
+.add-info {
+}
+.add-info__nutritional-value {
+}
+.add-info__mashroom-construction {
+}
+.add-info__mashroom-growth {
+}
+
+/* FOOTER */
+.foter {
+}
+.footer__body {
+}

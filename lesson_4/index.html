@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Підключаю шрифт Roboto (по замовчуванню він же Roboto regular 400 / кириличний) -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> -->
+
+    <title>Lesson 4</title>
+</head>
+
+<body>
+    <!-- Обгортка -->
+    <div class="wrraper">
+        <!-- Header -->
+        <header class="header">
+            <!-- Обмежуючий контейнер колись буде -->
+            <div class="container">
+                <!--  -->
+                <div class="header__body">
+                    <!-- Logo -->
+                    <div class="header__logo">
+                        <img class="header__img"
+                            src="https://media.istockphoto.com/photos/mushroom-picker-man-holding-in-his-hand-big-boletus-mushroom-closeup-picture-id1183717079"
+                            alt="Фото грибник">
+                    </div>
+                    <!--page navigation -->
+                    <nav class="header__nav content-nav">
+                        <div class="content-nav__item">
+                            <h2 id="nav">Зміст</h2>
+                        </div>
+                        <ul>
+                            <li class="content-nav__item"><a href="#em" class="header__link"><img
+                                        src="img/icons/images.png" width="50" alt="Yes"> Їстівні гриби</a></li>
+                            <li class="content-nav__item"><a href="#ifem" class="header__link"><img
+                                        src="img/icons/360_F_496429171_10xDueUxVc4oEVGX5jVWZVR6j6vTT61Z.jpg" width="50"
+                                        alt="Yes"> Умовно-їстівні гриби</a>
+                            <li class="content-nav__item"><a href="#dem" class="header__link"><img
+                                        src="img/icons/360_F_241153907_v8pW0ZUXQ2NT96P2EnverQtaD11IDb2y.jpg" width="50"
+                                        alt="Yes"> Небезпечні гриби</a></li>
+                            <li class="content-nav__item"><a href="#tdem" class="header__link"><img
+                                        src="img/icons/skull-danger-vector-sign-white-background-skull-danger-vector-sign-124889531.jpg"
+                                        width="50" alt="thoroble deth">Cмертельно небезпечні гриби</a></li>
+                            <li class="content-nav__item"><a href="#ntrv" class=" header__link"><img
+                                        src="img/icons/3591511_question-mark-clipart-question-mark-icon-brown-png.png"
+                                        width="50" alt="q mark">Харчова цінність грибів</a></li>
+                            <li class="content-nav__item"><a href="#mahcst" class="header__link"><img
+                                        src="img/icons/3591511_question-mark-clipart-question-mark-icon-brown-png.png"
+                                        width="50" alt="q mark">Будова гриба</a></li>
+                            <li class="content-nav__item"><a href="#mg" class="header__link"><img
+                                        src="img/icons/3591511_question-mark-clipart-question-mark-icon-brown-png.png"
+                                        width="50" alt="q mark">Як росте гриб?</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- Main -->
+        <main class="main">
+            <!-- Обмежуючий контейнер колись буде -->
+            <div class="container">
+                <!--  -->
+                <div class="main__body">
+                    <!-- Коротка загальна інформація про гриби-->
+                    <section class="main__content about">
+                        <h1>Гриби</h1>
+                        <h2>Що ж це таке – гриби?</h2>
+                        <p>
+                            Навіть сьогодні, при тому розвитку, який отримала біологічна наука, вчені все
+                            ще не прийшли до спільної думки про те, куди відносяться гриби – до рослин або тварин.
+                            «Мабуть,
+                            гриби представляють собою самостійне царство природи, що виникло незалежно від рослин і
+                            тварин».
+                            Ці
+                            слова написані ще в 1985 р провідними вченими-мікології М. Горленко, Л. Гарибова і іншими в
+                            книзі
+                            «Все про гриби».
+                        </p>
+                        <p>
+                            Грибів на землі – безліч. Зараз їх налічується близько 100 тисяч видів, але багато
+                            вчених вважають, що їх значно більше; може бути 250-300 тисяч. Маються на увазі не тільки і
+                            не
+                            стільки гриби, які ми збираємо: їх всього близько 200 видів, а вживаються в їжу не більше
+                            40, а
+                            місцями і зовсім – 15-20. Грибне різноманіття створюють мікроскопічні гриби. Адже гриби – це
+                            і
+                            шовковиста павутинна цвіль на хлібі, і великі нарости на стовбурі дерева, і лишай на тілі
+                            тварини, і
+                            товста студенистая маса бурого кольору, плаваюча в банці (чайний гриб).
+                        </p>
+                        <h2>Шапинкові гриби</h2>
+                        <p>
+                            Про гриби, які ми зараз називаємо шапинковими і про які, власне, і піде мова люди знали
+                            давним-давно. У IV столітті до н. е. давньогрецький вчений Теофраст, учень і друг
+                            Аристотеля, в
+                            своїх працях згадував
+                            про такі гриби, як печериці, трюфелі, сморчки. Через п’ять століть, в I столітті нашої ери,
+                            римський
+                            вчений-натураліст Пліній Старший зарахував до грибів також і трутовики, які з’являються, на
+                            стовбурах живих дерев і пнях. Він же першим спробував розділити їх на їстівні та отруйні.
+                        </p>
+                        <p>
+                            Шапинкові
+                            гриби складаються з плодового тіла і грибниці. Грибниця зазвичай знаходиться в землі або
+                            гнилій
+                            деревині і складається з довгих тонких переплетених між собою ниток – гіфів.
+                        </p>
+
+                        <h2>Різні цікаві види шапинкових грибів</h2>
+                        Бувають і казкового вигляду гриби, гриби-квіти. На півдні Сибіру, ​​в Казахстані і
+                        в Приморському краї зустрічається дактіофора здвоєна, що носить романтичну назву «дама під
+                        вуаллю».
+                        Дактіофора і веселка звичайна застосовуються в народній медицині під назвою «земляне масло» як
+                        засіб
+                        проти ревматизму.
+                        Особливо вражає світ грибів-кольорів в тропічних лісах, де вони бувають самого
+                        неймовірного забарвлення і найхимерніших форм, проте ми зупинимо свою увагу на самих звичайних
+                        грибах, які зустрічаються в наших лісах і за якими ми полюємо.
+
+                    </section>
+                    <div class="go-top">
+                        <a href="#nav"> <img
+                                src="img/icons/white-arrow-up-icon-isolated-green-upload-upgrade-sign-north-pointing-png-vector-170157010.jpg"
+                                width="50" alt="up arrow"> Повернутися до змісту <img
+                                src="img/icons/white-arrow-up-icon-isolated-green-upload-upgrade-sign-north-pointing-png-vector-170157010.jpg"
+                                width="50" alt="up arrow"></a>
+                    </div>
+                    <!-- Детальна класифікація за градацією по 4 групах -->
+                    <section class="main__content groups">
+                        <div class="groups__item--title">
+                            <h2>Їстівні і небезпечні гриби</h2>
+                            <p>Всі гриби, по можливості їх використання людиною в їжу, підрозділяються на чотири групи.
+                            </p>
+                        </div>
+                        <!-- todo   завантажити зображення 4 груп грибів та каталогізувати у папці img -->
+                        <div class="group__item groups__item--one">
+                            <h3 id="em">Перша група</h3>
+                            <ul>
+                                <li>Їстівні гриби, які можуть бути використані в їжу без попереднього відварювання і
+                                    вимочування:
+                                    <ul>
+                                        <li>Білий гриб <span class="latin">Boletus edulis</span><img
+                                                src="img/group-one/Boletus-edulis.jpg" alt="Білий гриб"></li>
+                                        <li>Підберезник <span class="latin">Leccinum scabrum</span> <img
+                                                src="img/group-one/Leccinum-scabrum.jpg" alt="Підберезник"></li>
+                                        <li>Підосичник <span class="latin">Leccinum aurantiacum</span> <img
+                                                src="img/group-one/Leccinum-aurantiacum.jpg" alt="Підосичники"></li>
+                                        <li>Маслюк <span class="latin">Suillus luteus <img
+                                                    src="img/group-one/Suillus-luteus.jpg" alt="Маслюк"></li>
+                                        <li>Моховик <span class="latin">Xerocomus</span> <img
+                                                src="img/group-one/Xerocomus.jpg" alt="Моховик"></li>
+                                        <li>Печериця <sapn class="latin">Agaricus campestris</sapn> <img
+                                                src="img/group-one/Agaricus.jpg" alt="Печериця">
+                                        </li>
+                                        <li>Опеньок <span class="latin">Armillaria mellea</span> <img
+                                                src="img/group-one/Armillaria-mellea.jpg" alt="Опеньок"></li>
+                                        <li>Рижик <span class="latin">Lactarius deliciosus</span> <img
+                                                src="img/group-one/Lactarius-deliciosus.jpg" alt="Рижик"></li>
+                                        <li>Лисичка <span class="latin">Cantharellus cibarius</span> <img
+                                                src="img/group-one/Cantharellus-cibarius.jpg" alt="Лисичка"></li>
+                                        <li>Глива <span class="latin">Pleurotus ostreatus</span> <img
+                                                src="img/group-one/Pleurotus-ostreatus.jpg" alt="Глива"></li>
+                                        <li>І деякі інші.<img src="" alt="Деякі інші їстівні гриби"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <img src="" alt="">
+                        </div>
+                        <div class="group__item groups__item--two">
+                            <h3 id="ifem">Друга група</h3>
+                            <ul>
+                                <li>Умовно-їстівні (або умовно-небезпечні) гриби. Перед приготуванням в їжу гриби цієї
+                                    групи
+                                    потрібно попередньо обробити: проварити, відвар злити, після чого гриби промити.
+                                    <ul>
+                                        <li>Дубовик <span class="latin">Suillellus luridus</span> <img
+                                                src="img/group-two/Boletus-luridus.jpg" alt="Дубовик"> </li>
+                                        <li>Cморчок <span class="latin">Morchella</span> <img
+                                                src="img/group-two/Motchella-esculenta.jpg" alt="Cморчок"> </li>
+                                        <li>Та інші </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="group__item groups__item--three">
+                            <h3 id="dem">Третя група</h3>
+                            <ul>
+                                <li>Небезпечні гриби При використанні їх в їжу іноді трапляються смертельні випадки, але
+                                    зазвичай все обходиться розладом шлунка, підвищенням температури тіла і т.д. До них
+                                    відносяться:
+                                    <ul>
+                                        <li>Червоний мухомор <span class="latin">Amanita muscaria</span> <img
+                                                src="img/group-three/Amanita-muscaria.jpg" alt="Червоний мухомор"> </li>
+                                        <li>Пантерний мухомор <span class="latin">Amanita pantherina</span> <img
+                                                src="img/group-three/Amanita-pantherina.jpg" alt="Паітерний мухомор">
+                                        </li>
+                                        <li>Несправжні опеньки <span class="latin">Hypholoma capnoides</span> <img
+                                                src="img/group-three/Hypholoma-capnoides.jpg" alt="Несправжні опеньки">
+                                        </li>
+                                        <li>Жовчний гриб (Гірчак) <span class="latin">Tylopilus felleus</span> <img
+                                                src="img/group-three/Tylopilus-felleus.jpg" alt="Жовчний гриб">
+                                        </li>
+                                        <li>Порхавка <span class="latin"> Lycoperdon, Calvatia, Bovista</span> <img
+                                                src="img/group-three/Calvatia.jpg" alt="Порхавка"> </li>
+                                        <li>Рядовка тигрова <span class="latin">Tricholoma pardinum</span> <img
+                                                src="img/group-three/Tricholoma-pardinum.jpg" alt="Рядовка тигрова">
+                                        </li>
+                                        <li>Печериці темночешуйчасті <span class="latin">Agaricus placomyces</span> <img
+                                                src="img/group-three/Agaricus-placomyces.jpg"
+                                                alt="Печериці темночешуйчасті"> </li>
+                                        <li>Сатанинський гриб <span class="latin">Satans Röhrling, Boletus
+                                                satanas</span> <img
+                                                src="img/group-three/Satans-Röhrling_Boletus_satanas.jpg"
+                                                alt="Сатанинський гриб"> </li>
+                                        <li>Сморчок <span class="latin">Morchella</span> <img
+                                                src="img/group-two/Motchella-esculenta.jpg" alt="Сморчок"> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="group__item group__item--four">
+                            <h3 id="tdem">Четверта група</h3>
+                            <ul>
+                                <li>Отруйні, або смертельно небезпечні гриби. Сюди входять:
+                                    <ul>
+                                        <li>Бліда поганка <span class="latin">Amanita phalloides</span> <img
+                                                src="img/group-four/Amanita-phalloides.jpg" alt="Бліда поганка"></li>
+                                        <li>Мухомор цитриновий <span class="latin">Amanita citrina</span><img
+                                                src="img/group-four/amanita-citrina.jpg" alt="Мухомор цитриновий"></li>
+                                        <li>Мухомор смердючий <span class="latin">Amanita virosa</span><img
+                                                src="img/group-four/Amanita-virosa.jpg" alt="Мухомор смердючий"></li>
+                                        <li>Сторчок <span class="latin">Gyromitra</span><img
+                                                src="img/group-four/Gyromitra-gigas.jpg" alt="Сторчок"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <div class="go-top">
+                        <a href="#nav"> <img
+                                src="img/icons/white-arrow-up-icon-isolated-green-upload-upgrade-sign-north-pointing-png-vector-170157010.jpg"
+                                width="50" alt="up arrow"> Повернутися до змісту <img
+                                src="img/icons/white-arrow-up-icon-isolated-green-upload-upgrade-sign-north-pointing-png-vector-170157010.jpg"
+                                width="50" alt="up arrow"></a>
+                    </div>
+                    <!-- Додаткова інформація про гриби -->
+                    <section class="main__content add-info">
+                        <div id="ntrv" class="add-info__nutritional-value">
+                            <h2>Харчова цінність грибів</h2>
+
+                            <p>Харчова цінність грибів не рівнозначна. Б. П. Васильків пропонує розділити їх на чотири
+                                категорії. До першої, найбільш цінною, він відніс білі гриби, рижики і грузді. До другої
+                                відносяться підберезник, дубовик, маслюки, підосичники, волнушка, білявка, печериці,
+                                груздь
+                                сухий, груздь осиковий. До третьої – моховик зелений, валуй, чорний груздь, сироїжка,
+                                опеньок, лисичка, сморчок. До четвертої – моховик строкатий, луговий опеньок, глива,
+                                парасолька, помилкова лисичка, мокруха, поплавок жовто-коричневий, рядовка, трутовик,
+                                їжовик, рогатик, дощовик, головач, мухомор рожевий. У той же час багато хто з грибів,
+                                віднесених до четвертої групи, мають відмінні смакові якості, наприклад, глива, опеньок
+                                літній та деякі інші.</p>
+
+                        </div>
+                        <div id="mahcst" class="add-info__mashroom-construction">
+                            <h2>Будова гриба</h2>
+
+                            <p>Капелюшок гриба зверху покритий шкірочкою, яка оберігає плодове тіло від несприятливих
+                                метеорологічних умов, висихання. Нижня частина капелюшка влаштована по-різному. У
+                                губчастих
+                                (трубчастих) грибів вона складається з безлічі зрощених між собою трубочок, у
+                                пластинчастих
+                                – з пластинок. Спори у трубчастих грибів утворюються на внутрішніх стінках трубочок, у
+                                пластинчастих – на пластинках, у зморшкових – в зморшках, розташованих на поверхні
+                                плодового
+                                тіла, а у дощовиків – всередині плодових тіл.</p>
+
+                        </div>
+                        <div id="mg" class="add-info__mashroom-growth">
+                            <h2>Як росте гриб?</h2>
+
+                            <p>Коли пройдуть сильні дощі і сонечко пропарить грунт, міцелій пробуджується, починаючи
+                                зав’язувати вузлики заповітних капелюшків. Відсидівши своє приховано в землі, вони
+                                з’являються дійсно якось раптом уже готовими кандидатами в кошик. При гарній вологості і
+                                помірній температурі гриби виростають до середніх розмірів за 3-6 днів. У добу вони
+                                ростуть
+                                на 2-3 см у висоту, у вазі додають до 40 грамів. Живе гриб в середньому декаду. Багато
+                                ростуть цілими сім’ями.</p>
+
+                            <p>Як тільки настає тепла погода і в грунті достатньо вологи – гриби
+                                (плодові тіла) ростуть. Немає цих умов – і гриби рости не будуть. Якщо грибницю не
+                                руйнувати, то на одному і тому ж місці можна збирати гриби кілька років.</p>
+
+                            <p>Міцелій багатьох
+                                шапинкових грибів живе на коренях деревних порід, рідше на кореневих закінченнях
+                                трав’янистих рослин, утворюючи мікоризу, або грібокорень. Таке співжиття взаємно
+                                вигідно,
+                                так як корені трав і дерев отримують від грибниці мінеральні речовини, а грибниця від
+                                дерева
+                                – органічні. Є деревні породи (наприклад, дуб), які краще розвиваються, якщо в грунті є
+                                міцелій.</p>
+
+
+                        </div>
+                    </section>
+                    <div class="go-top">
+                        <a href="#nav"> <img
+                                src="img/icons/white-arrow-up-icon-isolated-green-upload-upgrade-sign-north-pointing-png-vector-170157010.jpg"
+                                width="50" alt="up arrow"> Повернутися до змісту <img
+                                src="img/icons/white-arrow-up-icon-isolated-green-upload-upgrade-sign-north-pointing-png-vector-170157010.jpg"
+                                width="50" alt="up arrow"></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer class="foter">
+            <!-- Обмежуючий контейнер колись буде -->
+            <div class="container">
+                <div class="footer__body">
+                    <p>(C) Джерело тут - <a class="main__link" href="https://vse-svit.com.ua/gryby-shho-take/">
+                            https://vse-svit.com.ua/gryby-shho-take/</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
