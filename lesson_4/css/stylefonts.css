@@ -1,0 +1,15 @@
+@import "resetstyle.css";
+@import "fonts.css";
+.larsseit {
+    font-family: "Larsseit";
+}
+.roboto {
+    font-family: "Roboto";
+}
+.lato {
+    font-family: "Lato";
+}
+body {
+    font-size: 34px;
+    font-family: "Times New Roman", Times, serif;
+}

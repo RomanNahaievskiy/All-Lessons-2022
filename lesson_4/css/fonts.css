@@ -1,3 +1,7 @@
+/* Підключаю онлайн шрифт */
+/* Підключення Roboto regular 400 із fonts.google.com */
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); */
+
 /* Підключення локальних шрифтів */
 /* larsseit */
 @font-face {
@@ -46,5 +50,3 @@
     font-weight: 900;
     font-style: normal;
 }
-/* Підключення Roboto regular 400 із fonts.google.com */
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
