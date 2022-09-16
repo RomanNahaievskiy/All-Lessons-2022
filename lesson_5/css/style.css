@@ -70,7 +70,7 @@ h1 {
 }
 /* MAIN-TITLE */
 .main__title {
-    padding: 0 10% 0 10%;
+    padding: 150px 10% 0 10%;
 }
 .main__title > .title__title-main {
     font-size: 26px;
@@ -102,7 +102,7 @@ main img {
     box-shadow: 2px 2px 5px #232323;
 }
 .main__dossier {
-    padding: 0 10% 0 10%;
+    padding: 0 10% 150px 10%;
     text-align: left; /*по замовчуванню*/
 }
 .main__dossier > h3 {
