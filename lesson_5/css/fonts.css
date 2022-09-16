@@ -1,0 +1,29 @@
+/* Правила Синтаксис запису імпортованих шрифтів */
+/* font-family: 'Courier Prime', monospace; */
+/* font-family: 'KoHo', sans-serif; */
+/* font-family: 'Libre Barcode 128 Text', cursive; */
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=KoHo&family=Libre+Barcode+128+Text&display=swap");
+
+@font-face {
+    font-family: "B52";
+    src: url("../fonts/B52.woff2") format("woff2"), url("../fonts/B52.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Times New Zoo-man";
+    src: url("../fonts/TimesNewZoo-man.woff2") format("woff2"), url("../fonts/TimesNewZoo-man.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Esat Hoxha NRML";
+    src: url("../fonts/EsatHoxhaNRML.woff2") format("woff2"), url("../fonts/EsatHoxhaNRML.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

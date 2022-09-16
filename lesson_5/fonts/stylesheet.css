@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'B52';
+    src: url('B52.woff2') format('woff2'),
+        url('B52.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Times New Zoo-man';
+    src: url('TimesNewZoo-man.woff2') format('woff2'),
+        url('TimesNewZoo-man.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Esat Hoxha NRML';
+    src: url('EsatHoxhaNRML.woff2') format('woff2'),
+        url('EsatHoxhaNRML.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,132 @@
+@import "reset.css";
+@import "fonts.css";
+
+/* SPECIAL */
+body {
+    font-family: "Courier Prime", monospace;
+    font-size: 18px;
+}
+hr {
+}
+.container {
+    padding: 0 15px 0 15px;
+}
+/* ACCENT */
+span.red {
+    font-weight: 700;
+    color: darkred;
+}
+span.shadow {
+    text-shadow: 0 0 20px #dcdcdc;
+}
+
+span.shadow::before {
+    content: "";
+    display: inline-block;
+    letter-spacing: normal;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: solid 5px red;
+    position: relative;
+    z-index: 2;
+    top: 40px;
+    left: 77px;
+}
+
+/* HEADER */
+.header {
+    background-color: #232323;
+    font-family: "Esat Hoxha NRML", sans-serif;
+    font-size: 20px;
+    color: #dcdcdc;
+    padding: 20px 0;
+}
+.header img {
+    width: 100%;
+    display: none;
+}
+.header__epigraph {
+    text-transform: lowercase;
+    text-align: right;
+    margin: 0 0 20px 0;
+}
+h1 {
+    font-family: "KoHo", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 48px;
+    line-height: 2;
+    text-align: center;
+}
+/* MAIN */
+.main {
+    background-color: #aa7;
+    font-family: "Esat Hoxha NRML", "Courier Prime", monospace;
+    line-height: 2;
+    text-shadow: 4px 4px 3px #aaaaaa;
+    text-shadow: 4px 4px 3px #670;
+}
+/* MAIN-TITLE */
+.main__title {
+    padding: 0 10% 0 10%;
+}
+.main__title > .title__title-main {
+    font-size: 26px;
+    text-align: center;
+}
+.main__title h2 ~ h3 {
+    text-align: right;
+}
+h3.title__subtitle + h3.title__subtitle {
+    color: darkred;
+    font-weight: bold;
+}
+.title__title-main.abbraviation {
+    font-size: 50px;
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+
+.main__title .title__place + .title__date {
+    font-style: italic;
+}
+/* MAIN-( content )-DOSSIER */
+.dossier div.main__foto {
+    padding: 10px 33%;
+}
+main img {
+    width: 100%;
+    border: solid 15px #aaaaaa;
+    box-shadow: 2px 2px 5px #232323;
+}
+.main__dossier {
+    padding: 0 10% 0 10%;
+    text-align: left; /*по замовчуванню*/
+}
+.main__dossier > h3 {
+    text-indent: 125px;
+    font-size: 28px;
+}
+.main__dossier ul li > span {
+    letter-spacing: 7px;
+    font-weight: bold;
+}
+.main__top-secreet {
+    overflow: hidden;
+    height: 70px;
+    font-family: "Libre Barcode 128 Text", cursive;
+    font-size: 44px;
+    white-space: nowrap;
+}
+/* FOOTER */
+.footer {
+    background-color: #232323;
+    font-family: "Times New Zoo-man", "B52";
+    color: black;
+    text-shadow: 2px 2px 6px #dcdcdc;
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 8px;
+    word-spacing: 20px;
+}
