@@ -90,15 +90,36 @@ body {
 .container {
     padding: 0 8%;
 }
+a:hover {
+    text-decoration: underline;
+}
 /* HEADER */
+.header__body {
+    display: flex;
+    flex-direction: column;
+}
 .header {
     padding: 10px 0;
     background-color: #434343;
+    color: #cccccc;
 }
+
 .header__title {
     font-weight: bold;
     font-size: 50px;
     text-align: center;
+}
+
+.header__row {
+    display: flex;
+    flex-direction:row; 
+}
+.hrow {
+    display: inline-block;
+    flex: 0 0 33.33%;
+    padding: 0 15px;
+}
+.header__subtitle {
 }
 .header__photo img {
     width: 100%;
@@ -108,9 +129,8 @@ body {
     box-shadow: 0px 0px 15px 15px #232323;
 }
 .header__photo {
-    padding: 20px 33%;
 }
-.header__subtitle {
+.header__personal-data {
 }
 .header__nav {
 }
@@ -132,6 +152,11 @@ body {
 .main__list {
 }
 .main__link {
+}
+.main__link::before {
+    content: '';
+    display: inline;
+    background-image: url('img/icons/01.jpg');
 }
 /* FOOTER */
 .footer {
