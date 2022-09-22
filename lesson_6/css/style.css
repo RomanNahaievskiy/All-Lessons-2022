@@ -1,5 +1,13 @@
-@import "reset.css"; /* @import "fonts.css" */
+@import "reset.css";
+@import "fonts.css";
 /* STYLES */
+
+header {
+    font-family: "Lato";
+    font-weight: 700;
+    font-size: 48px;
+}
+
 /* HEADER */
 /* MAIN */
 /* FOTER */
