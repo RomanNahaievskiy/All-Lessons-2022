@@ -10,6 +10,14 @@
     font-size: 16px;
     color: #424551;
 }
+.division {
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+    padding: 120px 0;
+    text-transform: uppercase;
+    color: #1e212c;
+}
 
 [class*="__container"] {
     max-width: 1260px;
@@ -17,16 +25,14 @@
     margin: 0 auto;
 }
 
-
 /* PART ONE */
 .part-one {
 }
 .part-one__container {
     display: flex;
     flex-direction: row;
-
 }
-.article{
+.article {
     max-width: 810px;
     flex: 1 1 810px;
     margin-right: 10px;
@@ -34,7 +40,7 @@
 .aside {
     max-width: 410px;
     background-color: #aaffaa;
-    flex:0 1 410px;
+    flex: 0 1 410px;
     /* display: none; */
 }
 .main__black-title {
@@ -89,10 +95,12 @@ p.last-text {
 /* ===============PART TWO================= */
 /* ======================================== */
 /* SPECIAL */
-.one, .two, .three {
+.one,
+.two,
+.three {
     flex: 0 1 33%;
     padding: 10px;
-    margin:5px
+    margin: 5px;
 }
 .row {
     display: flex;
@@ -102,9 +110,11 @@ p.last-text {
 .part-two {
     background-color: #454545;
     color: #bcbcbc;
+    font-size: 18px;
+    line-height: 1.2;
 }
 .part-two__container > div {
-    border:1px solid red;
+    border: 1px solid red;
     margin-bottom: 25px;
 }
 .part-two__container {
@@ -122,39 +132,42 @@ p.last-text {
 }
 
 .margin {
-    margin:50px 34px
+    margin: 50px 34px;
 }
 .border {
     width: 100%;
 }
 .border__solid {
     flex: 1 1 33%;
-    border:1px solid red;
+    border: 1px solid red;
 }
 .border__dotted {
     flex: 1 1 33%;
-    border:1px dotted red;
+    border: 1px dotted red;
 }
 .border__dashed {
     flex: 1 1 33%;
-    border:1px dashed red;
+    border: 1px dashed red;
 }
 
 .overvlow {
-    height: 350px;
+    height: auto;
 }
 .overvlow__auto {
+    height: 120px;
     overflow: auto;
 }
 .overvlow__hiden {
+    height: 120px;
     overflow: hidden;
 }
 .overvlow__scroll {
+    height: 120px;
     overflow: scroll;
 }
 
 .border-radius {
-    height: 300px ;
+    height: 300px;
     align-items: center;
     justify-content: space-around;
 }
@@ -170,7 +183,7 @@ p.last-text {
 .border-radius__shape-two {
     flex: 0 0 auto;
     height: 150px;
-    width:  150px;
+    width: 150px;
     padding: 30px;
     border-radius: 50px 20px;
     background-color: red;
@@ -185,7 +198,7 @@ p.last-text {
 }
 
 .outline {
-    outline : 20px solid green
+    outline: 20px solid green;
 }
 
 .box-shadow {
@@ -205,7 +218,7 @@ p.last-text {
 .box-shadow__three {
     background-color: #777777;
     border-radius: 50px;
-    box-shadow: 0 0 15px 5px #1e212c , inset 5px 5px 12px 5px #1e212c;
+    box-shadow: 0 0 15px 5px #1e212c, inset 5px 5px 12px 5px #1e212c;
 }
 
 .opacity {
@@ -230,7 +243,7 @@ p.last-text {
     visibility: hidden;
 }
 .visibility__visible {
-    visibility:visible;
+    visibility: visible;
 }
 
 .display {
@@ -271,45 +284,80 @@ p.last-text {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 10px;
-    background: rgb(30,33,44);
-    background: radial-gradient(circle, rgba(30,33,44,1) 0%, rgba(69,69,69,1) 52%, rgba(188,188,188,1) 100%);
+    /* background: rgb(30, 33, 44); */
 }
 .block {
-    flex : 1 1 200px;
+    flex: 1 1 200px;
     height: 250px;
-    background-color: red;
+    background-color: darkcyan;
     margin: 5px;
+    text-align: center;
+    padding: 110px 12px;
+    font-size: 20px;
+    border-radius: 12px;
+    box-shadow: 3px 4px 5px 2px #454545;
 }
 
 .part-three {
+    background: radial-gradient(circle, rgba(30, 33, 44, 1) 0%, rgba(69, 69, 69, 1) 52%, rgba(188, 188, 188, 1) 100%);
 }
+/* PART THREE STYLE*/
 .part-three__container {
 }
-.background__color {
+/* <!-- BACKGROUND COLOR  --> */
+.color {
 }
-.background__image{
-}
-.background__background {
-}
-
+/* <!-- BACKGROUND IMAGE & GRADIENT --> */
 .gradient {
 }
+/* <!-- BACKGROUND IMAGE POSITION --> */
+.b-pos-left-top-0 {
+}
+.b-pos-center {
+}
+.b-pos-left {
+}
+.b-pos-bottom {
+}
+.b-pos-right {
+}
+.b-pos-scroll {
+}
+.b-pos-fixed {
+}
+/* <!-- BACKGROUND ATTACHMENT --> */
+.b-attachment-scroll {
+}
+.b-attachment-fixed {
+}
+.b-attachment-local {
+}
+/* <!-- BACKGROUND REPEAT --> */
 .repeat {
 }
 .no-repeat {
 }
-.absolute {
+.repeat-x {
 }
-.cover {
+.repeat-y {
+}
+.space {
+}
+.round {
+}
+/* <!-- BACKGROUND SIZE --> */
+.b-size {
 }
 .contain {
 }
-.multiply {
+.cover {
 }
+/* <!-- BACKGROUND UNIVERSAL --> */
 .universal {
 }
-
+.universal-multi {
+}
 /* FOOTER */
-footer{
+footer {
     display: none;
 }
