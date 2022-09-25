@@ -298,10 +298,11 @@ p.last-text {
     background-color: darkcyan;
     margin: 5px;
     text-align: center;
+    color: #bbb;
     padding: 110px 12px;
     font-size: 20px;
     border-radius: 12px;
-    box-shadow: 3px 4px 5px 2px #454545;
+    box-shadow: 3px 4px 5px 2px #45454577, inset 3px 4px 5px 2px #bababa77;
 }
 
 .part-three {
@@ -312,57 +313,86 @@ p.last-text {
 }
 /* <!-- BACKGROUND COLOR  --> */
 .color {
+    /* ther is alredy */
 }
 /* <!-- BACKGROUND IMAGE & GRADIENT --> */
 .gradient {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(59deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
 /* <!-- BACKGROUND IMAGE POSITION --> */
 .b-pos-left-top-0 {
+    background: url("../img/background.jpg") top -23px left 0 no-repeat;
 }
 .b-pos-center {
+    background: url("../img/background.jpg") center no-repeat;
 }
 .b-pos-left {
+    background: url("../img/background.jpg") left no-repeat;
 }
 .b-pos-bottom {
+    background: url("../img/background.jpg") bottom no-repeat;
 }
 .b-pos-right {
+    background: url("../img/background.jpg") right no-repeat;
 }
-.b-pos-scroll {
-}
-.b-pos-fixed {
-}
+
 /* <!-- BACKGROUND ATTACHMENT --> */
 .b-attachment-scroll {
+    background: url("../img/background-fixed.jpg") 0 0 no-repeat scroll;
 }
 .b-attachment-fixed {
+    background: url("../img/background-fixed.jpg") 0 0 no-repeat fixed;
 }
 .b-attachment-local {
+    overflow: auto;
+    background: url("../img/background.jpg") 0 0 no-repeat local;
 }
 /* <!-- BACKGROUND REPEAT --> */
 .repeat {
+    background: url("../img/background.jpg") 0 0 repeat;
 }
 .no-repeat {
+    background: url("../img/background.jpg") 0 0 no-repeat;
 }
 .repeat-x {
+    background: url("../img/background.jpg") 0 0 repeat-x;
 }
 .repeat-y {
+    background: url("../img/background.jpg") 0 0 repeat-y;
 }
 .space {
+    background: url("../img/background.jpg") space;
 }
 .round {
+    background: url("../img/background.jpg") round;
 }
 /* <!-- BACKGROUND SIZE --> */
-.b-size {
+.b-size-stock {
+    background: url("../img/background.jpg") 0 0 / auto auto no-repeat;
 }
-.contain {
+.b-size-width {
+    background: url("../img/background.jpg") 0 0 / 100% auto no-repeat;
 }
-.cover {
+.b-size-height {
+    background: url("../img/background.jpg") 0 0 / auto 100% no-repeat;
+}
+.b-size-width-heigth {
+    background: url("../img/background.jpg") 0 0 / 100% 100% no-repeat;
+}
+.b-size-contain {
+    background: url("../img/background.jpg") 0 0 / contain no-repeat;
+}
+.b-size-cover {
+    background: url("../img/background.jpg") 0 0 / cover no-repeat;
 }
 /* <!-- BACKGROUND UNIVERSAL --> */
 .universal {
+    background: linear-gradient(59deg, rgba(2, 0, 36, 0.7) 0%, rgba(9, 9, 121, 0.5) 35%, rgba(0, 212, 255, 0.4) 100%),
+        url("../img/background.jpg") 0 0 / auto auto no-repeat,
+        url("../img/background.jpg") 80px 50px / auto auto no-repeat;
 }
-.universal-multi {
-}
+
 /* FOOTER */
 footer {
     display: none;
