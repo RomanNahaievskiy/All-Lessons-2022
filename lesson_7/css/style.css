@@ -17,6 +17,7 @@
     padding: 120px 0;
     text-transform: uppercase;
     color: #1e212c;
+    text-shadow: 19px 12px 9px gray;
 }
 
 [class*="__container"] {
@@ -179,6 +180,7 @@ p.last-text {
     border-radius: 50%;
     background-color: red;
     overflow: hidden;
+    border: 7px solid darkred;
 }
 .border-radius__shape-two {
     flex: 0 0 auto;
@@ -187,6 +189,8 @@ p.last-text {
     padding: 30px;
     border-radius: 50px 20px;
     background-color: red;
+    overflow: hidden;
+    border: 7px solid darkred;
 }
 .border-radius__shape-three {
     flex: 0 0 auto;
@@ -195,6 +199,8 @@ p.last-text {
     padding: 30px;
     border-radius: 3% 97% 35% 65% / 0% 69% 31% 100%;
     background-color: red;
+    overflow: hidden;
+    border: 7px solid darkred;
 }
 
 .outline {
