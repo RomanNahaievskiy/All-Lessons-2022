@@ -390,7 +390,7 @@ p.last-text {
 .universal {
     background: linear-gradient(59deg, rgba(2, 0, 36, 0.7) 0%, rgba(9, 9, 121, 0.5) 35%, rgba(0, 212, 255, 0.4) 100%),
         url("../img/background.jpg") 0 0 / auto auto no-repeat,
-        url("../img/background.jpg") 80px 50px / auto auto no-repeat;
+        url("../img/background.jpg") 80px 50px / 80% 80% no-repeat;
 }
 
 /* FOOTER */
@@ -398,7 +398,7 @@ footer {
     height: 300px;
     padding-top: 120px;
     text-align: center;
-    background: rgb(2, 0, 36);
+    /* background: rgb(2, 0, 36); */
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
 }
 .footer__container {
@@ -407,7 +407,7 @@ footer {
 .inline-block {
     font-size: 30px;
     display: inline-block;
-    background: rgb(63, 94, 251);
+    /* background: rgb(63, 94, 251); */
     background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
     color: #1e212c;
 }
