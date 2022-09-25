@@ -1,0 +1,158 @@
+/* IMPORT RESETSTYLE & FONTS */
+@import "reset.css";
+@import "fonts.css";
+/* ================================================================================ */
+/* --------------------------------STYLES------------------------------------------ */
+/* ================================================================================ */
+/* SPECIAL */
+.main {
+    font-family: "Lato";
+    font-size: 16px;
+    color: #424551;
+}
+.container {
+    max-width: 1260px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+[class*="_container"] {
+    padding: 0 0;
+    margin-bottom: 150px;
+}
+
+/* PART ONE */
+.part-one {
+}
+.part-one__container {
+    max-width: 810px;
+}
+.main__black-title {
+    font-size: 46px;
+    line-height: 1.3;
+    font-weight: 900;
+    color: #1e212c;
+    margin-bottom: 92px;
+}
+.main__image img {
+    max-width: 100%;
+}
+.main__image {
+    margin-bottom: 60px;
+}
+.main__bold-text {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #1e212c;
+    margin-bottom: 24px;
+}
+/* Якби ми вчили та практикували псевдокласи , то відступ від першого вкладеного параграфа можна було б зробити іншим способом (можливо)  */
+
+.main__text p {
+    margin-bottom: 26px;
+}
+
+.main__text {
+    font-size: 16px;
+    line-height: 1.6;
+    /* margin-bottom: 48px; */
+}
+.main__import-text {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 700;
+    color: #1e212c;
+    padding-left: 58px;
+    margin: 48px 0;
+}
+.main__list {
+    padding-left: 32px;
+    margin: 24px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+p.last-text {
+    margin-bottom: 0;
+}
+/* PART TWO */
+.part-two {
+}
+.part-two__container {
+}
+.padding {
+}
+.row {
+}
+.margin {
+}
+.border {
+}
+.border__solid {
+}
+.one {
+}
+.border__dotted {
+}
+.two {
+}
+.border__dashed {
+}
+.three {
+}
+
+.overvlow {
+}
+.overvlow__auto {
+}
+.overvlow__hiden {
+}
+.overvlow__scroll {
+}
+
+.border-radius {
+}
+.border-radius__shape-one {
+}
+.border-radius__shape-two {
+}
+.border-radius__shape-three {
+}
+
+.outline {
+}
+
+.box-shadow {
+}
+.box-shadow__one {
+}
+.box-shadow__two {
+}
+.box-shadow__three {
+}
+
+.opacity {
+}
+.opacity__one {
+}
+.opacity__two {
+}
+.opacity__three {
+}
+
+.visibility {
+}
+.visibiliti__hiden {
+}
+.visibility__visible {
+}
+
+.display {
+}
+.display__none {
+}
+.display__inline {
+}
+.display__inline-block {
+}
+.display__block {
+}
