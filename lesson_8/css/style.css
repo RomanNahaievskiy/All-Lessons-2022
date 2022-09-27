@@ -1,10 +1,12 @@
 /* IMPORT */
+/* @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"); */
 @import "reset.css";
 @import "fonts.css";
+
 @import "iconsfont.css";
 /* SPECIAL */
 body {
-    font-family: "Lato";
+    font-family: "Lato", sans-serif;
     font-size: 16px;
 }
 [class*="__container"] {
@@ -70,6 +72,7 @@ body {
     width: 32px;
     height: 16px;
     background: url("../img/about/list-icons/check.jpg") 0 0 / auto no-repeat;
+    margin-bottom: -2px; /*? <-- тут Кудлатимо !!!! =) */
 }
 /* AND */
 /* TODO забрати останній марджин дослівно  не дати останньому елементу марджин*/
@@ -130,6 +133,7 @@ body {
     display: inline-block;
     width: 32px;
     height: 16px;
+    margin-bottom: -2px; /*? <-- тут Кудлатимо !!!! =) */
 }
 
 .star-icon::before {
@@ -175,7 +179,8 @@ body {
     color: #787a80;
 }
 
-/* той випадок , коли вперше зробив іконочний шрифт , а витягати об'єкти з FIGMA , ще не вмію */
+/* ICON FONT USE */
+/* той випадок , коли вперше зробив іконочний шрифт , а витягати об'єкти (по-людськи) з FIGMA , ще не вмію )), або ліньки перероблти*/
 .__icon-fb {
     font-size: 22px; /*? <-- тут Кудлатимо !!!! =) */
 }
