@@ -271,6 +271,14 @@ body {
 }
 .pseudo-elements__title {
 }
+
+.pseudo-classes__list li:nth-child(9) ul {
+    display: none;
+}
+.pseudo-classes__list li:nth-child(9):hover ul {
+    display: block;
+}
+
 .pseudo-elements__list li::before {
     content: " :: ";
 }
@@ -312,12 +320,14 @@ body {
 .last-of-type li:last-of-type {
     color: #ff3f3a;
 }
+
 .nth-child {
     display: none;
 }
 .nth-child:target {
     display: block;
 }
+
 .num li:nth-child(3) {
     color: #ff3f3a;
 }

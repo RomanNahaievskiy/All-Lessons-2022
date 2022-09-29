@@ -83,38 +83,45 @@
                         <h2>below is pseudo-classes</h2>
                     </div>
                     <ul class="pseudo-classes__list">
-                        <li class="list-pseudo-classes__item"><a href="#" class="list__link">hover</a></li>
-                        <li class="list-pseudo-classes__item"><a href="#" class="list__link">active</a></li>
-                        <li class="list-pseudo-classes__item"><a href="#focusid" class="list__link">focus</a></li>
-                        <li class="list-pseudo-classes__item"><a href="#" class="list__link">target</a></li>
-                        <li class="list-pseudo-classes__item"><a href="#" class="list__link">first-child</a>
+                        <li class="list-pseudo-classes__item"><a href="#hoverid" class="list__link">hover</a></li>
+                        <li class="list-pseudo-classes__item"><a href="#activeid" class="list__link">active</a></li>
+                        <li class="list-pseudo-classes__item"><a href="#focus-id" class="list__link">focus</a></li>
+                        <li class="list-pseudo-classes__item"><a href="#target-id" class="list__link">target</a></li>
+                        <li class="list-pseudo-classes__item"><a href="#first-childid"
+                                class="list__link">first-child</a>
                         </li>
-                        <li class="list-pseudo-classes__item"><a href="#" class="list__link">last-child</a>
+                        <li class="list-pseudo-classes__item"><a href="#last-childid" class="list__link">last-child</a>
                         </li>
-                        <li class="list-pseudo-classes__item"><a href="#" class="list__link">first-of-type</a></li>
-                        <li class="list-pseudo-classes__item"><a href="#" class="list__link">last-of-type</a></li>
-                        <li class="list-pseudo-classes__item"><a href="#" class="list__link">nth-child</a>
+                        <li class="list-pseudo-classes__item"><a href="#first-of-typeid"
+                                class="list__link">first-of-type</a></li>
+                        <li class="list-pseudo-classes__item"><a href="#last-of-typeid"
+                                class="list__link">last-of-type</a></li>
+                        <li class="list-pseudo-classes__item"><a href="#nth-childid" class="list__link">nth-child</a>
                             <ul class="list-pseudo-classes__item nested-list ">
-                                <li class="nested-list__item"><a href="#" class="list__link">nth-child(#)</a></li>
-                                <li class="nested-list__item"><a href="#" class="list__link">nth-child(odd)</a></li>
-                                <li class="nested-list__item"><a href="#" class="list__link">nth-child(even)</a>
+                                <li class="nested-list__item"><a href="#nth-childid" class="list__link">nth-child(#)</a>
+                                </li>
+                                <li class="nested-list__item"><a href="#nth-childid"
+                                        class="list__link">nth-child(odd)</a>
+                                </li>
+                                <li class="nested-list__item"><a href="#nth-childid"
+                                        class="list__link">nth-child(even)</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="list-pseudo-classes__item"><a href="#" class="list__link">not()</a></li>
+                        <li class="list-pseudo-classes__item"><a href="#notid" class="list__link">not()</a></li>
 
                     </ul>
                     <div class="pseudo-elements__title">
                         <h2>below is pseudo-elements</h2>
                     </div>
                     <ul class="pseudo-elements__list">
-                        <li class="list-pseudo-classes__item"><a href="#" class="list__link">before</a></li>
-                        <li class="list-pseudo-classes__item"><a href="#" class="list__link">after</a></li>
+                        <li class="list-pseudo-classes__item"><a href="#beforeid" class="list__link">before</a></li>
+                        <li class="list-pseudo-classes__item"><a href="#afterid" class="list__link">after</a></li>
                     </ul>
                     <div class="work-examples-classes">
                         <h2>Classes</h2>
                         <div class="work-example">
-                            <h3>Hover</h3>
+                            <h3 id="hoverid">Hover</h3>
                             <ul class="hover">
                                 <li><a href="#">first element of the exemple list</a></li>
                                 <li><a href="#">second element of the exemple list</a></li>
@@ -123,7 +130,7 @@
                             </ul>
                         </div>
                         <div class="work-example">
-                            <h3>Active</h3>
+                            <h3 id="activeid">Active</h3>
                             <ul class="active">
                                 <li><a href="#">first element of the exemple list</a></li>
                                 <li><a href="#">second element of the exemple list</a></li>
@@ -132,7 +139,7 @@
                             </ul>
                         </div>
                         <div class="work-example">
-                            <h3>Focus</h3>
+                            <h3 id="focus-id">Focus</h3>
                             <ul id="focusid" class="focus">
                                 <li><a href="#">first element of the exemple list</a></li>
                                 <li><a href="#">second element of the exemple list</a></li>
@@ -141,7 +148,7 @@
                             </ul>
                         </div>
                         <div class="work-example">
-                            <h3><a href="#targetid">Target</a></h3>
+                            <h3 id="target-id"><a href="#targetid">Target</a></h3>
                             <div id="targetid" class="target">
                                 <ul>
                                     <li><a href="#">first element of the exemple list</a></li>
@@ -152,7 +159,7 @@
                             </div>
                         </div>
                         <div class="work-example">
-                            <h3>First-child</h3>
+                            <h3 id="first-childid">First-child</h3>
                             <ul class="first-child">
                                 <li><a href="#">first element of the exemple list</a></li>
                                 <li><a href="#">second element of the exemple list</a></li>
@@ -161,7 +168,7 @@
                             </ul>
                         </div>
                         <div class="work-example">
-                            <h3>Last-child</h3>
+                            <h3 id="last-childid">Last-child</h3>
                             <ul class="last-child">
                                 <li><a href="#">first element of the exemple list</a></li>
                                 <li><a href="#">second element of the exemple list</a></li>
@@ -170,7 +177,7 @@
                             </ul>
                         </div>
                         <div class="work-example">
-                            <h3>First-of-type</h3>
+                            <h3 id="first-of-typeid">First-of-type</h3>
                             <ul class="first-of-type">
                                 <li class="num-or-type-one"><a href="#">first element of the exemple list</a></li>
                                 <li class="num-or-type-two"><a href="#">second element of the exemple list</a></li>
@@ -179,7 +186,7 @@
                             </ul>
                         </div>
                         <div class="work-example">
-                            <h3>Last-of-type</h3>
+                            <h3 id="last-of-typeid">Last-of-type</h3>
                             <ul class="last-of-type">
                                 <li class="num-or-type-one"><a href="#">first element of the exemple list</a></li>
                                 <li class="num-or-type-two"><a href="#">second element of the exemple list</a></li>
@@ -187,10 +194,10 @@
                                 <li class="num-or-type-four"><a href="#">fourth element of the exemple list</a></li>
                             </ul>
                         </div>
-                        <h2><a href="#nth-cildid">Nth-child</a></h2>
-                        <div id="nth-cildid" class="nth-child">
+                        <h2><a href="#nth-childid">Nth-child</a></h2>
+                        <div id="nth-childid" class="nth-child">
                             <div class="work-example">
-                                <h3>Nth-child(#)</h3>
+                                <h3 id="numid">Nth-child(#)</h3>
                                 <ul class="num">
                                     <li><a href="#">first element of the exemple list</a></li>
                                     <li><a href="#">second element of the exemple list</a></li>
@@ -199,7 +206,7 @@
                                 </ul>
                             </div>
                             <div class="work-example">
-                                <h3>Nth-child(odd)</h3>
+                                <h3 id="oddid">Nth-child(odd)</h3>
                                 <ul class="odd">
                                     <li><a href="#">first element of the exemple list</a></li>
                                     <li><a href="#">second element of the exemple list</a></li>
@@ -208,7 +215,7 @@
                                 </ul>
                             </div>
                             <div class="work-example">
-                                <h3>Nth-child(even)</h3>
+                                <h3 id="evenid">Nth-child(even)</h3>
                                 <ul class="even">
                                     <li><a href="#">first element of the exemple list</a></li>
                                     <li><a href="#">second element of the exemple list</a></li>
@@ -218,7 +225,7 @@
                             </div>
                         </div>
                         <div class="work-example">
-                            <h3>Not()</h3>
+                            <h3 id="notid">Not()</h3>
                             <ul class="not">
                                 <li><a href="#">first element of the exemple list</a></li>
                                 <li><a href="#">second element of the exemple list</a></li>
@@ -231,7 +238,7 @@
                     <div class="work-examples-elements">
                         <h2>Eelements</h2>
                         <div class="work-example">
-                            <h3>Before</h3>
+                            <h3 id="beforeid">Before</h3>
                             <ul class="before">
                                 <li><a href="#">first element of the exemple list</a></li>
                                 <li><a href="#">second element of the exemple list</a></li>
@@ -240,7 +247,7 @@
                             </ul>
                         </div>
                         <div class="work-example">
-                            <h3>After</h3>
+                            <h3 id="afterid">After</h3>
                             <ul class="after">
                                 <li><a href="#">first element of the exemple list</a></li>
                                 <li><a href="#">second element of the exemple list</a></li>
