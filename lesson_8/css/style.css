@@ -16,6 +16,15 @@ body {
 }
 /* HEADER */
 .header {
+    font-size: 42px;
+    text-align: center;
+    padding: 150px 0;
+    background: linear-gradient(
+        180deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(9, 9, 121, 0.4150035014005602) 35%,
+        rgba(0, 212, 255, 0) 100%
+    );
 }
 .header__container {
 }
@@ -211,26 +220,360 @@ body {
 .__icon-in:hover {
     color: #ff3f3a;
 }
+/* ============================================================== */
+/* ==========================PSEUDO============================== */
+/* ============================================================== */
+.pseudo {
+    margin-bottom: 50px;
+    background-color: #4477dd22;
+    font-size: 20px;
+}
+.pseudo__container {
+    width: 70%;
+    border-left: 2px dotted yellow;
+    border-right: 2px dotted yellow;
+}
+.pseudo__title {
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.5;
+}
+/* navigation style */
+
+.pseudo-classes__title {
+}
+.pseudo-classes__list li::before {
+    content: " : ";
+    color: #ff3f3a;
+    font-weight: 400;
+}
+.pseudo-classes__list li:hover::before {
+    color: #000;
+    font-weight: 900;
+    text-shadow: 0 0 4px #ff4400;
+}
+.pseudo-classes__list {
+    padding: 20px;
+}
+
+.list-pseudo-classes__item {
+}
+.list__link {
+}
+.nested-list li:hover::before {
+    content: "-->";
+    color: green;
+}
+.nested-list {
+    padding-left: 20px;
+}
+.nested-list__item {
+}
+.pseudo-elements__title {
+}
+.pseudo-elements__list li::before {
+    content: " :: ";
+}
+.pseudo-elements__list li:hover::before {
+    color: #ff4400;
+    text-shadow: 0 0 4 #ff4400;
+}
+.pseudo-elements__list {
+    padding: 20px;
+}
+/* pseudo classes */
+.hover li a:hover {
+    text-decoration: underline;
+    color: #ff3f3a;
+}
+.active li a:active {
+    color: #ff3f3a;
+}
+.focus li a:focus {
+    outline: 1px dotted #ff3f3a;
+    color: green;
+}
+.target {
+    display: none;
+}
+.target:target {
+    display: block;
+    background-color: #787a80;
+}
+.first-child li:first-child {
+    color: #ff3f3a;
+}
+.last-child li:last-child {
+    color: #ff3f3a;
+}
+.first-of-type li:first-of-type {
+    color: #ff3f3a;
+}
+.last-of-type li:last-of-type {
+    color: #ff3f3a;
+}
+.nth-child {
+    display: none;
+}
+.nth-child:target {
+    display: block;
+}
+.num li:nth-child(3) {
+    color: #ff3f3a;
+}
+.odd li:nth-child(odd) {
+    color: #ff3f3a;
+}
+.even li:nth-child(even) {
+    color: #ff3f3a;
+}
+.not li:not(:nth-child(2)) {
+    color: #ff3f3a;
+}
+.link a:link {
+    text-decoration: underline;
+    color: blue;
+}
+.link a:link::after {
+    content: '"you weren*t here yet!!!"';
+    color: #ff3f3a;
+}
+
+/*pseudo elements */
+.before li::before {
+    content: ' "i am before" ';
+    color: #ff3f3a;
+}
+.after li::after {
+    content: ' "i am after" ';
+    color: #ff3f3a;
+}
+
+/* examples */
+.work-examples-classes {
+    font-size: 18px;
+    line-height: 1.2;
+}
+.work-examples-elements {
+    font-size: 18px;
+    line-height: 1.2;
+}
+.work-example {
+    padding: 15px;
+}
 
 /* GAME  */
 .game-hover {
 }
+.game-hover__title {
+    font-size: 42px;
+    text-align: center;
+    display: block;
+    padding: 150px 0;
+    background: linear-gradient(
+        0deg,
+        rgba(2, 0, 36, 0) 0%,
+        rgba(9, 9, 121, 0.4150035014005602) 47%,
+        rgba(0, 212, 255, 0) 100%
+    );
+}
+.game-hover__body > div:not(.game-hover__map) {
+    box-shadow: 0 0 5px 2px #424551;
+}
 .game-hover__body {
+    padding-top: 25px;
+    background-color: #1e212c;
+    height: 1500px;
+    max-width: 678px;
+    margin: 0 auto;
+    box-shadow: 0 0 45px 5px #787a80;
+}
+.game-hover__map {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.game-hover__map img {
+    max-width: 500px;
 }
 .game-hover__start {
-}
-.game-hover__exercise-one {
-}
-.game-hover__exercise-two {
-}
-.game-hover__exercise-three {
-}
-/* GAME-OVER */
-.game-hover__finish {
+    width: 200px;
+    height: 200px;
+    background-color: #787a80;
+    text-align: center;
+    padding-top: 90px;
+    border-radius: 125px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: -50px;
+    /* display: none; */
 }
 
+.game-hover__exercise-one {
+    width: 50px;
+    height: 300px;
+    padding-top: 140px;
+    background-color: #787a80;
+    margin-top: -5px;
+    margin-left: 125px;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.game-hover__exercise-two {
+    height: 50px;
+    width: 400px;
+    background-color: #787a80;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: -50px;
+    margin-left: 125px;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.game-hover__exercise-three {
+    height: 150px;
+    width: 50px;
+    padding-top: 40px;
+    background-color: #787a80;
+    margin-left: 475px;
+    margin-top: -50px;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.game-hover__exercise-four {
+    height: 25px;
+    width: 200px;
+    background-color: #787a80;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: -25px;
+    margin-left: 325px;
+    visibility: hidden;
+}
+
+.game-hover__exercise-five {
+    height: 150px;
+    width: 25px;
+    padding-top: 40px;
+    background-color: #787a80;
+    margin-left: 325px;
+    margin-top: -25px;
+    border-radius: 5px;
+    visibility: hidden;
+}
+.game-hover__exercise-six {
+    height: 15px;
+    width: 200px;
+    background-color: #787a80;
+    border-radius: 5px;
+    margin-left: 325px;
+    margin-top: -15px;
+    visibility: hidden;
+}
+.game-hover__exercise-seven {
+    height: 100px;
+    width: 15px;
+    background-color: #787a80;
+    border-radius: 5px;
+    margin-top: -100px;
+    margin-left: 510px;
+    visibility: hidden;
+}
+.game-hover__exercise-eight {
+    height: 15px;
+    width: 100px;
+    background-color: #787a80;
+    border-radius: 5px;
+    margin-left: 425px;
+    margin-top: -100px;
+    visibility: hidden;
+}
+.game-hover__exercise-nine {
+    height: 50px;
+    width: 15px;
+    background-color: #787a80;
+    border-radius: 5px;
+    margin-top: -15px;
+    margin-left: 420px;
+    visibility: hidden;
+}
+.game-hover__finish {
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    background-color: #ff3f3a;
+    box-shadow: 0px 0px 3px 4px #787a80;
+    border-radius: 50%;
+    margin-left: 417.5px;
+    margin-top: -5px;
+    visibility: hidden;
+}
+/* loading in progress */
+.game-hover__start:hover + div {
+    visibility: visible;
+}
+.game-hover__exercise-one:hover,
+.game-hover__exercise-one:hover + div {
+    visibility: visible;
+}
+/* .game-hover__exercise-one, */
+.game-hover__exercise-two:hover,
+.game-hover__exercise-two:hover + div {
+    visibility: visible;
+}
+/* .game-hover__exercise-one, */
+.game-hover__exercise-three:hover,
+.game-hover__exercise-three:hover + div {
+    visibility: visible;
+}
+.game-hover__exercise-four:hover,
+.game-hover__exercise-four:hover + div {
+    visibility: visible;
+}
+.game-hover__exercise-five:hover,
+.game-hover__exercise-five:hover + div {
+    visibility: visible;
+}
+.game-hover__exercise-six:hover,
+.game-hover__exercise-six:hover + div {
+    visibility: visible;
+}
+.game-hover__exercise-seven:hover,
+.game-hover__exercise-seven:hover + div {
+    visibility: visible;
+}
+.game-hover__exercise-eight:hover,
+.game-hover__exercise-eight:hover + div {
+    visibility: visible;
+}
+.game-hover__exercise-nine:hover,
+.game-hover__exercise-nine:hover + div {
+    visibility: visible;
+}
+/* GAME-OVER */
+.game-hover__finish:hover,
+.game-hover__finish:hover ~ div {
+    visibility: visible;
+    transition-duration: 2000ms;
+    transform: scale(7);
+}
+.fin {
+    font-size: 3px;
+    visibility: inherit;
+}
 /* FOOTER */
 .footer {
+    padding: 150px 0;
+    text-align: center;
+    background: linear-gradient(
+        0deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(9, 9, 121, 0.4150035014005602) 35%,
+        rgba(0, 212, 255, 0) 100%
+    );
 }
 .footer__container {
 }
