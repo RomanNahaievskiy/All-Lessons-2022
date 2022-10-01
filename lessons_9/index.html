@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 9</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__title">Урок № 9</div>
+            <div class="header__subtitle">Аналіз макету</div>
+            <nav class="header__nav">
+                <p>Аналіз сторінок макету <a target="_blank"
+                        href="https://www.figma.com/file/PuydZGiq8BT9uV3EzKzTGY/OnlineCourse?node-id=0%3A1">Online
+                        Course</a> з <span>figma</span></p>
+                <ul>
+                    <li><a href="#">Homepage</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="main__homepage">
+                <p>Всі зображення оптимізовано за допомогою <a target="_blank" href="https://tinypng.com/">
+                        <div class="shape"><img src="img/logo-tiny.jpg" alt="лого тіні"></div>
+                    </a></p>
+                <div class="homepage__header">
+                    <div class="info">
+                        <p>Цей блок хедер має декоративні та контентні зображення, також тут присутні іконки. Деякі
+                            елементи декору я вважаю краще зробити засобами css, аби не "перевантажувати" сторінку
+                            зайвими зображеннями</p>
+                        <p>Контентне зображення є векторним , тому варто на це зважати і попіклуватися про те, щоб воно
+                            могло мати прозорість, адже бекграунд може змінюватися, отже принцип надійності</p>
+                    </div>
+                    <div class="image"><img src="img/homepage/header.jpg" alt="аналіз блоку сторінки"></div>
+                </div>
+                <div class="homepage__about">
+                    <div class="info">
+                        <p>Блок "About" також має контентні та декоративні зображення </p>
+                        <p>Елементи списоку декоровані зображенням, яке на мою думку повинне зберігати прозорість</p>
+                        <p>Декоративні елементи по-за обмежуючим контейнером також повинні зберігати прозорість</p>
+                    </div>
+                    <div class="image"><img src="img/homepage/about.jpg" alt="аналіз блоку сторінки"></div>
+                </div>
+                <div class="homepage__courses">
+                    <div class="info">
+                        <p>Блок "Courses" не має декоративних зображень</p>
+                        <p>Натомість контентні зображення можна реалізувати кількома шляхами. Наприклад фон контейнеру
+                            зображень може мати однаковий бекграунд, а зображення - прозорість. Або просто вивантажити з
+                            фігми усе зображення (але це не надійно)</p>
+                    </div>
+                    <div class="image"><img src="img/homepage/courses.jpg" alt="аналіз блоку сторінки"></div>
+                </div>
+                <div class="homepage__benefits">
+                    <div class="info">
+                        <p>Блок "Benefits" має іконки та контентне зображення </p>
+                        <p>Векторне зображення двох людей біля комп'ютера "натякає на контентність" по змісту блоку ,
+                            хоча є одночасні і декоративним елементом , адже не вирізняється від усієї концепції
+                            стилізованих зображень усього сайту</p>
+                    </div>
+                    <div class="image"><img src="img/homepage/benefits.jpg" alt="аналіз блоку сторінки"></div>
+                </div>
+                <div class="homepage__events">
+                    <div class="info">
+                        <p>Блок "Events" не містить іконок та контентних зображень</p>
+                        <p>Проте він має ледь помітні дизайнерські елементи декору </p>
+                    </div>
+                    <div class="image"><img src="img/homepage/events.jpg" alt="аналіз блоку сторінки"></div>
+                </div>
+                <div class="homepage__certificate">
+                    <div class="info">
+                        <p> Блок "Certificate" має яскраво виражене контентне зображення, та позбавлений декоративних
+                            прикрас</p>
+                        <p>Втім, інші контентні зображення що ілюструють організації , можна реалізувати кількома
+                            альтернативними шляхами, якщо це не "зломить" їх концепцію логотипу </p>
+                        <p>Особливої уваги заслуговує диайнерське рішення : зміщення зображення сертифікату нижче за
+                            межі блоку (можна спробвати мінусовим марджином, але після теми позиціонування буде
+                            зрозуміліше)</p>
+                    </div>
+                    <div class="image"><img src="img/homepage/certificate.jpg" alt="аналіз блоку сторінки"></div>
+                </div>
+                <div class="homepage__meet">
+                    <div class="info">
+                        <p>Блоки "Team" та "Testimonials" мають пов'язаний за логікою зміст та дизайн , тому я б їх
+                            робив в одному блоці , якщо це не суперечитиме адаптивній версії (де їх потрібно буде
+                            розділити чи перегрупувати)</p>
+                        <p>Тут присутні як і контентні такі і декоративні зображення. Елементи керування галереєю мають
+                            іконки у вигляді стрілочок (які можна виконати шрифтом, або одним-єдиним векторним
+                            зображенням - з подальшою декорацією в css та обертанням ). Індикація галереї може також
+                            бути декорована засабами html/css</p>
+                        <p>Контентні зображення очевидно будуть анімовані та інтерактивні з іконками контактів </p>
+                    </div>
+                    <div class="image"><img src="img/homepage/meet.jpg" alt="аналіз блоку сторінки"></div>
+                </div>
+                <div class="homepage__blog">
+                    <div class="info">
+                        <p>Блог містить велику кількість іконок одного стилю , деякі із них є елеметами посилання</p>
+                        <p>Контентні зображення, мабуть, будуть автоматично "підтягуватися" із інших джерел</p>
+                    </div>
+                    <div class="image"><img src="img/homepage/blog.jpg" alt="аналіз блоку сторінки"></div>
+                </div>
+                <div class="homepage__subscribe">
+                    <div class="info">
+                        <p>Цей блок не має на меті ілюструвати якісь зображення , тому об'єкти за межами основного
+                            контенту є лише декоративними елкментами , варто подбати про їх "прозорість"</p>
+                    </div>
+                    <div class="image"><img src="img/homepage/subscribe.jpg" alt="аналіз блоку сторінки"></div>
+                </div>
+                <div class="homepage__footer">
+                    <div class="info">
+                        <p>Ця частина сайту містить багато посилань на сторонні ресурси у вигляді іконок. Посилання
+                            навігації виконані без використання іконок , але контакти легко знайти завдяки стилізованим
+                            зображенням телефону та листа (це також іконки (дбаємо про прозорість))</p>
+                        <p>Особливої уваги вартий логотип сайту , що також містить стилізовану літеру "X" увесь логотип,
+                            мабуть, також буде посиланням</p>
+                    </div>
+                    <div class="image"><img src="img/homepage/footer.jpg" alt="аналіз блоку сторінки"></div>
+                </div>
+
+            </div>
+            <div class="main__about-us">
+                <p>Всі зображення конвертовано у формат .webp <a target="_blank"
+                        href="https://image.online-convert.com/ru/convert-to-webp">
+                        <div class="shape"><img src="img/logo-convert.com.jpg" alt="лого конверт"></div>
+                    </a></p>
+                <div class="about-us__intro">
+                    <div class="info"></div>
+                    <div class="image">
+                        <picture>
+                            <source srcset="img/about_us/converted/intro.webp" type="image/webp">
+                            <img src="img/about_us/intro.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+                <div class="about-us__video-and-statistic">
+                    <div class="info"></div>
+                    <div class="image">
+                        <picture>
+                            <source srcset="img/about_us/converted/video_and_statistic.webp" type="image/webp">
+                            <img src="img/about_us/video_and_statistic.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+                <div class="about-us__values">
+                    <div class="info"></div>
+                    <div class="image">
+                        <picture>
+                            <source srcset="img/about_us/converted/values.webp" type="image/webp">
+                            <img src="img/about_us/values.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+                <div class="about-us__directions">
+                    <div class="info"></div>
+                    <div class="image">
+                        <picture>
+                            <source srcset="img/about_us/converted/directions.webp" type="image/webp">
+                            <img src="img/about_us/directions.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+                <div class="about-us__studying-process">
+                    <div class="info"></div>
+                    <div class="image">
+                        <picture>
+                            <source srcset="img/about_us/converted/studying-process.webp" type="image/webp">
+                            <img src="img/about_us/studying-process.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+                <div class="about-us__team">
+                    <div class="info"></div>
+                    <div class="image">
+                        <picture>
+                            <source srcset="img/about_us/converted/team.webp" type="image/webp">
+                            <img src="img/about_us/team.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+                <div class="about-us__testimonials">
+                    <div class="info"></div>
+                    <div class="image">
+                        <picture>
+                            <source srcset="img/about_us/converted/testimonials.webp" type="image/webp">
+                            <img src="img/about_us/testimonials.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+                <div class="about-us__companies">
+                    <div class="info"></div>
+                    <div class="image">
+                        <picture>
+                            <source srcset="img/about_us/converted/companies.webp" type="image/webp">
+                            <img src="img/about_us/companies.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+
+        </div>
+    </footer>
+</body>
+
+</html>
