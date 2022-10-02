@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
@@ -12,7 +12,9 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__title">Урок № 9</div>
+            <div class="header__title">
+                <h1>Урок № 9</h1>
+            </div>
             <div class="header__subtitle">Аналіз макету</div>
             <nav class="header__nav">
                 <p>Аналіз сторінок макету <a target="_blank"
@@ -85,7 +87,7 @@
                     </div>
                     <div class="image"><img src="img/homepage/certificate.jpg" alt="аналіз блоку сторінки"></div>
                 </div>
-                <div class="homepage__meet items">
+                <div id="hp-meet" class="homepage__meet items">
                     <div class="info">
                         <p>Блоки "Team" та "Testimonials" мають пов'язаний за логікою зміст та дизайн , тому я б їх
                             робив в одному блоці , якщо це не суперечитиме адаптивній версії (де їх потрібно буде
@@ -125,12 +127,14 @@
 
             </div>
             <div class="main__about-us items">
-                <p>Всі зображення конвертовано у формат .webp <a target="_blank"
+                <p>Всі зображення конвертовано у формат .webp за допомогою <a target="_blank"
                         href="https://image.online-convert.com/ru/convert-to-webp">
                         <div class="shape"><img src="img/logo-convert.com.jpg" alt="лого конверт"></div>
                     </a></p>
                 <div class="about-us__intro items">
-                    <div class="info"></div>
+                    <div class="info">
+                        <p>Блок "Intro" містить контентне зображення що носить декоративний характер</p>
+                    </div>
                     <div class="image">
                         <picture>
                             <source srcset="img/about_us/converted/intro.webp" type="image/webp">
@@ -139,7 +143,12 @@
                     </div>
                 </div>
                 <div class="about-us__video-and-statistic items">
-                    <div class="info"></div>
+                    <p class="info">
+                    <p>У цьому блоці напевне має бути відеофрагмент із стороннього джерела , але наразі це є контентне
+                        зображення</p>
+                    <p>Також присутні елементи декору, які варто зробити з "прозорістю"</p>
+                    <p>Копка "Дивитися відео" містить іконку та може бути декорована засобами html/css</p>
+
                     <div class="image">
                         <picture>
                             <source srcset="img/about_us/converted/video_and_statistic.webp" type="image/webp">
@@ -148,7 +157,9 @@
                     </div>
                 </div>
                 <div class="about-us__values items">
-                    <div class="info"></div>
+                    <div class="info">Цей блок містить стилізовані зображення , які допомагають користувачу розуміти
+                        контент, це швидше за все будуть іконки. Декорування колонок можна зробити засобами html/css
+                    </div>
                     <div class="image">
                         <picture>
                             <source srcset="img/about_us/converted/values.webp" type="image/webp">
@@ -157,7 +168,8 @@
                     </div>
                 </div>
                 <div class="about-us__directions items">
-                    <div class="info"></div>
+                    <div class="info">Блок "Directions" містить яскраво виражені контентні зображення, а також іконки
+                        стрілочок у посиланнях </div>
                     <div class="image">
                         <picture>
                             <source srcset="img/about_us/converted/directions.webp" type="image/webp">
@@ -166,7 +178,11 @@
                     </div>
                 </div>
                 <div class="about-us__studying-process items">
-                    <div class="info"></div>
+                    <div class="info">
+                        <p>У блоці "Навчальний процес" присутнє контентне зображення декоративного характеру, тому варто
+                            попвіклуватися про його прозорість</p>
+                        <p>Присутні і "прозорі" елементи декору по-за обмежуючим контейнром </p>
+                    </div>
                     <div class="image">
                         <picture>
                             <source srcset="img/about_us/converted/studying-process.webp" type="image/webp">
@@ -175,7 +191,10 @@
                     </div>
                 </div>
                 <div class="about-us__team items">
-                    <div class="info"></div>
+                    <div class="info">
+                        <p>Цей блок, як і деякі інші уже відображено на сторінці <a href="#hp-meet">"Homepage"</a> ,
+                            тому він не зазнав змін</p>
+                    </div>
                     <div class="image">
                         <picture>
                             <source srcset="img/about_us/converted/team.webp" type="image/webp">
@@ -184,7 +203,7 @@
                     </div>
                 </div>
                 <div class="about-us__testimonials items">
-                    <div class="info"></div>
+                    <div class="info">Цей блок також є тотожним на сторінці <a href="#hp-meet">"Homapage"</a></div>
                     <div class="image">
                         <picture>
                             <source srcset="img/about_us/converted/testimonials.webp" type="image/webp">
@@ -193,7 +212,11 @@
                     </div>
                 </div>
                 <div class="about-us__companies items">
-                    <div class="info"></div>
+                    <div class="info">
+                        <p>Іконки блоку "Companies" мають контентний характер, їх анімування натякає на те, що їх
+                            стильове оформлення буде містити звернення до елементів зображення з подальшою зміною
+                            кольору логотипних елементів та фрагментів тексту</p>
+                    </div>
                     <div class="image">
                         <picture>
                             <source srcset="img/about_us/converted/companies.webp" type="image/webp">
