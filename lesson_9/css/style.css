@@ -87,6 +87,9 @@ h6 {
     padding: 0 15px;
     margin: 0 auto;
 }
+.items {
+    padding: 0 5px;
+}
 body {
     font-size: 20px;
     background-color: #fff;
@@ -138,6 +141,7 @@ a {
     color: blue;
 }
 .image img {
+    border-radius: 5px;
     width: 100%;
 }
 .image:hover {
@@ -179,7 +183,7 @@ a {
     border-radius: 15px;
     border: 8px solid #232323aa;
     overflow: hidden;
-    box-shadow: 0 0 12px 12px #23232333;
+    box-shadow: 0 0 4px 2px #23232333;
     transition: 0.3s;
 }
 .info {
