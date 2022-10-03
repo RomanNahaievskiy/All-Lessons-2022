@@ -104,6 +104,11 @@ h1 {
 a {
     color: green;
 }
+
+.button {
+    display: inline-block;
+    text-align: center;
+}
 .header__nav li {
     padding-left: 20px;
 }
@@ -136,10 +141,7 @@ a {
 .header__nav li:not(li:last-child) {
     margin-bottom: 10px;
 }
-[class*="main__"] > div:first-child {
-    text-align: right;
-    color: blue;
-}
+
 .image img {
     border-radius: 5px;
     width: 100%;
@@ -148,6 +150,11 @@ a {
     padding: 10px;
     transition: 1s;
 }
+
+h2 > span {
+    font-size: 46px;
+}
+
 .shape img {
     display: block;
     max-width: 100%;
@@ -157,6 +164,7 @@ a {
     border: 2px solid #f0f0f0;
 }
 .shape {
+    margin: 0 auto;
     overflow: hidden;
     width: 230px;
     height: 70px;
@@ -219,4 +227,11 @@ span {
 }
 .main__about-us .items:nth-child(odd) {
     background-color: #ddd;
+}
+
+footer {
+    padding: 120px 0;
+}
+.author {
+    text-align: center;
 }
