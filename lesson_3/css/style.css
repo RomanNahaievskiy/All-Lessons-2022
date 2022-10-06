@@ -81,3 +81,29 @@ a {
 p.copiright {
     color: darkred;
 }
+.backtohome {
+    display: block;
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    bottom: 10px;
+    right: 12px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 20px;
+    background-color: #232323;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1;
+    transition: 0.5s;
+}
+.backtohome:hover {
+    background-color: #dcdcdc;
+    box-shadow: 0 0 4px 4px #232323;
+    color: #232323;
+    transition: 0.5ms;
+}

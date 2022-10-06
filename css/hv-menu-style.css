@@ -112,7 +112,7 @@ a:hover {
 
 .header__row {
     display: flex;
-    flex-direction:row; 
+    flex-direction: row;
 }
 .hrow {
     display: inline-block;
@@ -146,6 +146,10 @@ a:hover {
     padding: 10px 0;
 }
 .main__item {
+    display: none;
+}
+.main__item:target {
+    display: block;
 }
 .main__month {
 }
@@ -154,9 +158,9 @@ a:hover {
 .main__link {
 }
 .main__link::before {
-    content: '';
+    content: "";
     display: inline;
-    background-image: url('img/icons/01.jpg');
+    background-image: url("img/icons/01.jpg");
 }
 /* FOOTER */
 .footer {

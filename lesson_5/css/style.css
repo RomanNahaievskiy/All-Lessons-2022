@@ -131,3 +131,31 @@ main img {
     letter-spacing: 8px;
     word-spacing: 20px;
 }
+
+.backtohome {
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 12px;
+    width: 75px;
+    height: 75px;
+    overflow: hidden;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 20px;
+    background-color: #232323;
+    text-shadow: none;
+    font-family: Arial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1;
+    transition: 0.5s;
+}
+.backtohome:hover {
+    background-color: #dcdcdc;
+    box-shadow: 0 0 4px 4px #232323;
+    color: #232323;
+    transition: 0.5ms;
+}

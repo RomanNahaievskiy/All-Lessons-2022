@@ -255,3 +255,28 @@
     display: inline-block;
     background-color: #77aa43;
 }
+.backtohome {
+    display: block;
+    width: 75px;
+    height: 75px;
+    position: fixed;
+    bottom: 10px;
+    right: 12px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 20px;
+    background-color: #232323;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1;
+    transition: 0.5ms;
+}
+.backtohome:hover {
+    background-color: #dcdcdc;
+    color: #232323;
+    box-shadow: 0 0 4px 4px #232323;
+    transition: 0.5ms;
+}
