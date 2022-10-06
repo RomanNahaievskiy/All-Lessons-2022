@@ -94,6 +94,7 @@ a:hover {
     text-decoration: underline;
 }
 /* HEADER */
+
 .header__body {
     display: flex;
     flex-direction: column;
@@ -167,4 +168,16 @@ a:hover {
     font-size: 12px;
 }
 .footer__text {
+}
+@media (max-width: 786px) {
+    .header__subtitle,
+    .header__personal-data {
+        display: none;
+    }
+    .header__row {
+        justify-content: space-around;
+    }
+    .hrow {
+        flex: 0 0 75%;
+    }
 }
