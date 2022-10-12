@@ -425,6 +425,18 @@ h6 {
     padding: 60px 0;
 }
 @media (max-width: 769px) {
+    .about__column:first-child {
+        margin-right: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about__image img {
+        display: block;
+    }
+    .about__image {
+    }
+
     .courses__columns {
         flex-direction: column;
         margin: 0 auto;
@@ -471,5 +483,31 @@ h6 {
     }
     .card__pic {
         text-align: center;
+    }
+    .card__content {
+        border: none;
+    }
+
+    .about__columns {
+        flex-direction: column;
+    }
+    .about__column:first-child {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about__image {
+        margin-bottom: 50px;
+    }
+
+    .courses__row {
+        flex-direction: column;
+    }
+    .courses__title {
+        margin-bottom: 25px;
+    }
+    .courses__btn {
+        align-self: center;
     }
 }
