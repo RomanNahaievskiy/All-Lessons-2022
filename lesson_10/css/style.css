@@ -424,3 +424,52 @@ h6 {
 .footer__copy {
     padding: 60px 0;
 }
+@media (max-width: 769px) {
+    .courses__columns {
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    .courses__column {
+        justify-content: center;
+        padding: 0;
+        margin-right: 0;
+    }
+    .card__content {
+        border: 1px solid #e5e8ed;
+        padding: 32px;
+        flex: 0 1 100%;
+    }
+    /* .card__content {
+        width: 100%;
+    } */
+    .courses__column:not(:last-child) {
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+    .benefits__content {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .benefits__image img {
+        max-width: 100%;
+    }
+    .benefits__image {
+        max-width: 100%;
+        text-align: center;
+    }
+    .benefits__text {
+        text-align: center;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 426px) {
+    .card {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card__pic {
+        text-align: center;
+    }
+}
