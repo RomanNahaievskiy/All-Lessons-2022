@@ -200,9 +200,12 @@ h6 {
 .about__column {
 }
 .about__image img {
+    display: block;
     max-width: 100%;
 }
 .about__image {
+    border-radius: 4px;
+    overflow: hidden;
 }
 .about__title {
     margin-bottom: 40px;
@@ -210,7 +213,12 @@ h6 {
 .about__list {
     margin-bottom: 22px;
 }
-.list--chngedhl li:not(:last-child) {
+.list--changedhl {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #424551;
+}
+.list--changedhl li:not(:last-child) {
     margin-bottom: 12px;
 }
 .about__btn {
@@ -230,17 +238,21 @@ h6 {
 }
 /* ============================ */
 .main__courses {
+    margin-bottom: 180px;
 }
 .courses {
 }
 .courses__row {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 60px;
 }
 .courses__title {
     display: inline-block;
+    
 }
 .courses__btn {
+    align-self: flex-end;
 }
 .button--outline {
     width: 200px;
@@ -251,42 +263,78 @@ h6 {
 }
 .courses__columns {
     display: flex;
+    justify-content: space-between;
 }
+.courses__column:first-child {
+    margin-right: 30px;
+} 
 .courses__column {
-    flex: 1 1 50%;
+    flex: 1 1 47.4%;
 }
-.courses__card {
+.courses__card:not(:last-child) {
     margin-bottom: 30px;
+}
+.card:hover {
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
 }
 .card {
     display: flex;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    border-radius: 4px;
+
 }
 .card__pic {
     flex: 0 0 214px;
+    overflow: hidden;
 }
 .card__link {
 }
+.card__content div:not(:last-child) {
+    margin-bottom: 20px;
+}
 .card__content {
+    border: 1px solid #E5E8ED;
     padding: 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex: 0 1 386px;
 }
 .card__badge-of-dept {
+    display: inline-block;
+    border-radius: 4px;
+    text-align: center;
+    padding: 1px 8px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
 }
 .badge-of-dept--green {
+    background-color:#03CEA4;
 }
 .card__title {
+    color: #1e212c;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 700;
 }
 .card__info {
 }
+.card__price::after {
+    content:' | ';
+    display: inline;
+    color: #424551;
+}
 .card__price {
+    color: #FF4242;
+    font-weight: 700;font-size: 18px;
+    line-height: 1.5;
 }
 .badge-of-dept--orange {
+    background-color: #F89828;
 }
 .badge-of-dept--blue {
+    background-color: #5A87FC;
 }
 .badge-of-dept--pink {
+    background-color: #F52F6E;
 }
 /* ============================ */
 .main__benefits {
