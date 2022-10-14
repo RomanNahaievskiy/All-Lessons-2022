@@ -311,7 +311,7 @@ h6 {
     font-size: 14px;
     line-height: 1.5;
 }
-.badge-of-dept--green {
+.card__badge-of-dept--green {
     background-color: #03cea4;
 }
 .card__title {
@@ -333,13 +333,13 @@ h6 {
     font-size: 18px;
     line-height: 1.5;
 }
-.badge-of-dept--orange {
+.card__badge-of-dept--orange {
     background-color: #f89828;
 }
-.badge-of-dept--blue {
+.card__badge-of-dept--blue {
     background-color: #5a87fc;
 }
-.badge-of-dept--pink {
+.card__badge-of-dept--pink {
     background-color: #f52f6e;
 }
 /* ============================ */
@@ -366,7 +366,7 @@ h6 {
     text-align: center;
 }
 .tab {
-    background:none;
+    background: none;
     color: #9a9ca5;
     font-weight: 700;
     font-size: 16px;
