@@ -1,0 +1,229 @@
+/* IMPORT */
+@import "nullstyle.css";
+@import "fonts.css";
+/* SPECIAL */
+body {
+    font-size: 18px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
+}
+.wrraper {
+    height: 100%;
+    padding-top: 75px;
+    position: relative;
+}
+[class*="__container"] {
+    width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* HEADER */
+.header {
+    background: rgb(36, 0, 0);
+    background: linear-gradient(135deg, rgba(36, 0, 0, 1) 0%, rgba(93, 9, 121, 1) 40%, rgba(226, 0, 255, 1) 100%);
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.header__body {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 0;
+}
+.header__logo img {
+    max-width: 100%;
+    display: block;
+}
+.header__logo {
+    background-color: #f4f4f477;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.header__nav {
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+.header__menu {
+    color: #f2f2f2;
+}
+.menu {
+    display: flex;
+}
+.menu__item:not(:last-child) {
+    margin-right: 28px;
+}
+
+.header__link:hover {
+    color: #ffffff;
+    text-shadow: 0 5px 10px #f4f4f477;
+}
+.header__link {
+}
+/* =========== */
+/* MAIN */
+/* -->SPECIAL */
+[class*="main__"]:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+[class*="main__"]:hover:not(.main__title) {
+    background: linear-gradient(
+        0deg,
+        rgba(242, 242, 242, 1) 0%,
+        rgba(73, 66, 111, 0.6699054621848739) 52%,
+        rgba(242, 242, 242, 1) 100%
+    );
+    box-shadow: 0 0 12px 12px rgba(242, 242, 242, 0.8), inset 0 0 12px 12px rgba(242, 242, 242, 0.8);
+}
+[class*="main__"] {
+    padding: 35px 0;
+}
+
+.main [class*="__body"] {
+    position: relative;
+}
+.main__title {
+    text-align: center;
+    font-size: 38px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+.block-exemple:not(:last-child) {
+    margin-bottom: 15px;
+}
+.block-exemple {
+    text-align: center;
+    font-weight: 700;
+    padding: 50px;
+    border-top: 2px solid #f2f2f2;
+    border-bottom: 2px solid #2f2f2f;
+    border-left: 2px solid #f2f2f2;
+    border-right: 2px solid #787878;
+    border-radius: 5px;
+}
+.block-one {
+    background: rgb(242, 242, 242);
+    background: linear-gradient(135deg, rgba(242, 242, 242, 1) 0%, rgba(132, 0, 255, 1) 31%, rgba(47, 47, 47, 1) 100%);
+}
+.block-two {
+    background: rgb(242, 242, 242);
+    background: linear-gradient(135deg, rgba(242, 242, 242, 1) 0%, rgba(171, 0, 255, 1) 31%, rgba(47, 47, 47, 1) 100%);
+}
+.block-three {
+    background: rgb(242, 242, 242);
+    background: linear-gradient(135deg, rgba(242, 242, 242, 1) 0%, rgba(235, 0, 255, 1) 31%, rgba(47, 47, 47, 1) 100%);
+}
+/*--> ====================== */
+/* ========== */
+/* ITEM-CONTENT */
+.main__item {
+}
+/* static */
+.static {
+}
+.static__body {
+}
+.relative {
+}
+.relative__body > .block-two {
+    position: relative;
+    top: -45px;
+    left: 45px;
+}
+
+/* absolute */
+.absolute {
+}
+.absolute__body > .block-two {
+    position: absolute;
+    top: 3px;
+    left: -10px;
+}
+.absolute__body > .block-three {
+    position: absolute;
+    top: 3px;
+    right: -10px;
+}
+/* sticky */
+/* ? not working need practix */
+.sticky {
+}
+.sticky__body > .block-one {
+    position: sticky;
+    top: 60px;
+    left: 0;
+}
+
+/* z-index */
+.z-index__container > .main__title {
+    text-align: left;
+}
+
+.z-index__body > .block-one {
+    position: absolute;
+    right: 28px;
+    bottom: 14px;
+    z-index: 2;
+    width: 30%;
+}
+.z-index__body > .block-two {
+    position: absolute;
+    right: 14px;
+    bottom: 28px;
+    z-index: 3;
+    width: 30%;
+}
+.z-index__body > .block-three {
+    position: absolute;
+    right: 46px;
+    bottom: 14px;
+    z-index: 1;
+    width: 30%;
+}
+/* inherit */
+.inherit {
+}
+.inherit__body {
+    overflow: hidden;
+}
+.inherit__body > .block-one {
+    position: inherit; /*in this place we inherit the position value of parent block (ther is "relstive")*/
+    top: 0px;
+    left: 200px;
+}
+.inherit__body > .block-two {
+    position: inherit;
+    top: 0px;
+    left: 100px;
+}
+.inherit__body > .block-three {
+    position: inherit;
+    bottom: 0px;
+    right: 100px;
+}
+
+/* car */
+.car {
+}
+.car__container {
+}
+.car__body {
+}
+/* ========== */
+/* FOOTER */
+.footer {
+    background-color: #2f2f2f;
+}
+.footer__container {
+    padding: 50px 0;
+}
+.copy {
+    text-align: center;
+    color: #f4f4f4;
+}
+/* ========== */
