@@ -13,7 +13,7 @@ body {
     position: relative;
 }
 [class*="__container"] {
-    width: 1230px;
+    max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -39,10 +39,11 @@ body {
     display: block;
 }
 .header__logo {
+    flex: 0 0 50px;
     background-color: #f4f4f477;
-    width: 50px;
     overflow: hidden;
     border-radius: 50%;
+    margin: 4px;
 }
 .header__nav {
     text-transform: uppercase;
@@ -227,3 +228,14 @@ body {
     color: #f4f4f4;
 }
 /* ========== */
+@media (max-width: 676px) {
+    .header__nav {
+        display: none;
+    }
+    .header__body {
+        justify-content: center;
+    }
+    .relative__body {
+        overflow: hidden;
+    }
+}
