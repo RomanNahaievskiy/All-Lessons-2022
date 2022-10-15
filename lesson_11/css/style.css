@@ -140,6 +140,9 @@ body {
 /* absolute */
 .absolute {
 }
+.absolute__body {
+    position: relative;
+}
 .absolute__body > .block-two {
     position: absolute;
     top: 3px;
@@ -163,6 +166,9 @@ body {
 /* z-index */
 .z-index__container > .main__title {
     text-align: left;
+}
+.z-index__body {
+    position: relative;
 }
 
 .z-index__body > .block-one {
@@ -210,11 +216,108 @@ body {
 
 /* car */
 .car {
+    width: 100%;
+    height: 900px;
 }
 .car__container {
+   height: 100%;
 }
-.car__body {
+.main__title {
 }
+.car__physical-body {
+    height: 100%;
+    background: url('../img/car/Screenshot_1.jpg')0 0/ 1230px auto no-repeat;
+}
+.car__body-top {
+    position: relative;
+}
+.engine-compartment img {
+    width: 160%;
+}
+.engine-compartment {
+    position: absolute;
+    top:70px;
+    left: 50px;
+}
+.hood img {
+    width: 127%;
+}
+.hood {
+    position: absolute;
+    top:91px;
+    left: 31px;
+    z-index: 2;
+}
+.roof img {
+    width: 1364px;
+}
+.roof {
+    position: absolute;
+    top:37px;
+    left:373px
+}
+.door--front img {
+    width: 140%;
+}
+.door--front {
+    position: absolute;
+    top: 33px;
+    left: 394px
+}
+.door--rear img {
+    width: 141%;
+}
+.door--rear {
+    position: absolute;
+    top: 62px;
+    left: 669px
+}
+
+.backtrunk-lid img{
+    width: 141%;
+}
+.backtrunk-lid {
+    position: absolute;
+    top: 133px;
+    left: 915px;
+}
+
+.backtrunk img {
+    width: 138%;
+}
+.backtrunk {
+    position: absolute;
+    top:122px;
+    left: 845px;
+    z-index: 1;
+}
+
+.frame img {
+    width: 140%;
+}
+.frame {
+    position: absolute;
+    top: 205px;
+    left: 350px;
+    z-index: 0;
+}
+
+.car__suspension {
+    position: relative;
+}
+.car__wheel--front {
+    position: absolute;
+    top: 215px;
+    left: 155px;
+    z-index: 3;
+}
+.car__wheel--rear {
+    position: absolute;
+    top: 215px;
+    left: 855px;
+    z-index: 3;
+}
+
 /* ========== */
 /* FOOTER */
 .footer {
