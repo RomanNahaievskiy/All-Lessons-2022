@@ -13,7 +13,7 @@ body {
     position: relative;
 }
 [class*="__container"] {
-    max-width: 1230px;
+    width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -39,7 +39,9 @@ body {
     display: block;
 }
 .header__logo {
-    flex: 0 0 50px;
+    display: block;
+    width: 50px;
+    height: 50px;
     background-color: #f4f4f477;
     overflow: hidden;
     border-radius: 50%;
@@ -58,7 +60,29 @@ body {
 .menu__item:not(:last-child) {
     margin-right: 28px;
 }
-
+.menu__item {
+    position: relative;
+    padding: 5px 10px;
+}
+.open-menu:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+    transition-duration: 0.5s;
+}
+.sub-menu {
+    background-color: #787878;
+    padding: 15px;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 240px;
+    position: absolute;
+    top: 130%;
+    left: 0;
+}
+.sub-menu__item:not(:last-child) {
+    margin-bottom: 12px;
+}
 .header__link:hover {
     color: #ffffff;
     text-shadow: 0 5px 10px #f4f4f477;
@@ -226,11 +250,10 @@ body {
 .main__title {
 }
 .car__physical-body:hover {
-    
     height: 430px;
     transition-duration: 3s;
 }
-.car__physical-body:hover  img {
+.car__physical-body:hover img {
     opacity: 0.2;
     transition-duration: 6s;
 }
@@ -240,8 +263,8 @@ body {
 }
 .car__physical-body {
     height: 0;
-    
-    background: url('../img/car/Screenshot_1.jpg')0 0 / 1230px auto no-repeat;
+
+    background: url("../img/car/Screenshot_1.jpg") 0 0 / 1230px auto no-repeat;
     /* background: url('https://pibig.info/uploads/posts/2021-05/1620937749_27-pibig_info-p-doroga-v-sosnovom-lesu-priroda-krasivo-fot-31.jpg')0 -400px/ 1330px auto no-repeat; */
     transition-duration: 3s;
 }
@@ -253,7 +276,7 @@ body {
 }
 .engine-compartment {
     position: absolute;
-    top:70px;
+    top: 70px;
     left: 50px;
 }
 .hood img {
@@ -261,7 +284,7 @@ body {
 }
 .hood {
     position: absolute;
-    top:91px;
+    top: 91px;
     left: 31px;
     z-index: 2;
 }
@@ -270,8 +293,8 @@ body {
 }
 .roof {
     position: absolute;
-    top:35px;
-    left:373px
+    top: 35px;
+    left: 373px;
 }
 .door--front img {
     width: 140%;
@@ -280,7 +303,7 @@ body {
     position: absolute;
     top: 33px;
     left: 394px;
-    z-ingex:2
+    z-ingex: 2;
 }
 .door--rear img {
     width: 141%;
@@ -292,7 +315,7 @@ body {
     z-index: 2;
 }
 
-.backtrunk-lid img{
+.backtrunk-lid img {
     width: 141%;
 }
 .backtrunk-lid {
@@ -306,7 +329,7 @@ body {
 }
 .backtrunk {
     position: absolute;
-    top:122px;
+    top: 122px;
     left: 845px;
     z-index: 1;
 }
@@ -315,7 +338,6 @@ body {
     width: 140%;
 }
 .frame {
-    
     position: absolute;
     top: 205px;
     left: 350px;
