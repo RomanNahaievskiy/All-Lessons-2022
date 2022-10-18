@@ -1,7 +1,7 @@
 @import "nullstyle.css";
 
 body {
-    background: url("../img/space/outerspace-70.gif") 0 0/ 100% repeat-y;
+    background: url("../img/space/outerspace-70.gif") 0 0/ 100% fixed;
     color: #f4f4f4;
     font-size: 16px;
     height: 100%;
@@ -72,6 +72,7 @@ body {
 .tatooine {
 }
 .tatooine__container {
+    width: 100%;
 }
 span::before {
     content: "";
@@ -112,6 +113,8 @@ span::after {
     z-index: 2;
 }
 .tatooine__title ul {
+    margin-top: -100px;
+    padding-top: 100px;
     visibility: hidden;
     opacity: 0;
 }
@@ -125,9 +128,11 @@ span::after {
 }
 .tatooine-pic img {
     width: 107%;
+    transform: rotate(0deg);
     position: relative;
     top: -15px;
     left: -15px;
+    transition: 7s;
 }
 .tatooine-pic {
     overflow: hidden;
@@ -136,11 +141,15 @@ span::after {
     height: 500px;
     border-radius: 50%;
     box-shadow: 0 0 15px 12px #7777ff77;
+}
+
+.tatooine-pic {
     position: relative;
     top: -100px;
     left: 670px;
     z-index: 1;
-    transition: 0.5s;
+
+    transition: 7.5s;
 }
 .tatooine-pic:hover img {
     transform: translate(-4px, -4px) rotate(13deg);
@@ -149,4 +158,71 @@ span::after {
 .tatooine-pic:hover {
     transform: translate(43px, 48px) scale(3);
     transition: 4s;
+}
+.tatooine p {
+    margin-top: -120px;
+}
+.main__spaceship {
+}
+.spaceship {
+}
+.spaceship__container {
+    max-width: 100%;
+    margin-top: -400px;
+    position: relative;
+    z-index: 3;
+}
+.spaceship__img img {
+    width: 100%;
+}
+.spaceship__img {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: -30%;
+    z-index: 4;
+    border-radius: 0px 133px 29px 0px / 0px 150px 0px 0px;
+    transition: 5s;
+}
+.spaceship__container:hover .spaceship__img {
+    top: -159px;
+    transform: translate(50%) scale(0.6);
+    transition: 5s;
+}
+.spaceship__on-boart img {
+    width: 100%;
+}
+.spaceship__on-boart {
+    perspective-origin: (0% 50%);
+    perspective: 300px;
+    /* display: none; */
+}
+.spaceship__on-boart:target {
+    display: block;
+    position: relative;
+    visibility: visible;
+    /* opacity: 0; */
+}
+.spaceship__on-boart:hover {
+    visibility: visible;
+    opacity: 1;
+    transition: 1.3s;
+}
+.main__protogonist {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    perspective-origin: (23% -100%);
+    perspective: 1200px;
+}
+.zedi {
+    /* width: 320px; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+
+    transform-origin: 0 0;
+    transform: rotateY(90deg);
 }
