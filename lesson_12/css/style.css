@@ -67,6 +67,7 @@ body {
     transition: 10s linear;
 }
 
+/* THE TAOOINE PLANET */
 .main__tatooine {
 }
 .tatooine {
@@ -162,6 +163,8 @@ span::after {
 .tatooine p {
     margin-top: -120px;
 }
+
+/* THE SPASESHIP */
 .main__spaceship {
 }
 .spaceship {
@@ -189,40 +192,94 @@ span::after {
     transform: translate(50%) scale(0.6);
     transition: 5s;
 }
-.spaceship__on-boart img {
+.main__space-shadow {
     width: 100%;
-}
-.spaceship__on-boart {
-    perspective-origin: (0% 50%);
-    perspective: 300px;
-    /* display: none; */
-}
-.spaceship__on-boart:target {
-    display: block;
+    height: 550px;
+    background: rgb(2, 2, 31);
+    background: linear-gradient(
+        180deg,
+        rgba(2, 2, 31, 0) 0%,
+        rgba(10, 1, 17, 0.77) 10%,
+        rgba(0, 0, 0, 1) 25%,
+        rgba(0, 0, 0, 1) 75%,
+        rgba(2, 2, 31, 0.7707457983193278) 90%,
+        rgba(43, 6, 66, 0) 100%
+    );
     position: relative;
-    visibility: visible;
-    /* opacity: 0; */
+    z-index: 5;
 }
-.spaceship__on-boart:hover {
-    visibility: visible;
-    opacity: 1;
-    transition: 1.3s;
+.main__on-boart {
 }
-.main__protogonist {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 4;
-    perspective-origin: (23% -100%);
-    perspective: 1200px;
+.on-boart {
+    display: none;
 }
-.zedi {
-    /* width: 320px; */
+.on-boart:target {
+    display: block;
+}
+.on-boart__container {
+    margin: 0 auto;
+    position: relative;
+}
+
+.tatooine-pic--cockpit img {
+    position: relative;
+    top: -6px;
+    left: -6px;
+    width: 107%;
+}
+.tatooine-pic--cockpit {
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.on-boart:hover .tatooine-pic--cockpit {
+    transform: rotate(45deg) scale(1.8);
+    transition: 12s;
+}
+.tatooine-img {
+}
+.cockpit img {
+    max-width: 100%;
+}
+.cockpit {
+    width: 1230px;
+    outline: 150px solid #000;
     position: absolute;
     top: 0px;
-    left: 0px;
     z-index: 4;
+    transform: scale(1.5);
+}
+.on-boart:hover .cockpit {
+    transform: rotate(-11deg) scale(1.4);
+    transition: 7s ease;
+}
 
-    transform-origin: 0 0;
-    transform: rotateY(90deg);
+/* THE PERSON */
+.main__person {
+    display: flex;
+}
+[class*="__pic"] {
+    flex: 1 1 500px;
+    overflow: hidden;
+}
+.ontogonist {
+    flex-direction: row-reverse;
+}
+.ontogonist__pic {
+}
+.main__chat {
+    flex: 1 1 450px;
+    font-size: 22px;
+    line-height: 2.4;
+    color: yellow;
+    padding: 40px;
+}
+.main__chat--o {
+}
+.protogonist {
+}
+.protogonist__pic {
+}
+.main__chat--p {
 }
