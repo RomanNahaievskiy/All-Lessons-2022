@@ -1,0 +1,423 @@
+@import "nullstyle.css";
+
+body {
+    background: url("../img/space/outerspace-70.gif") 0 0/ 100% fixed;
+    color: #f4f4f4;
+    font-size: 16px;
+    height: 100%;
+}
+.header {
+    background-color: #22332255;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 200;
+}
+.header__nav {
+    display: inline-block;
+}
+.header__list {
+    display: flex;
+    justify-content: space-around;
+}
+.header__li-item {
+    margin-right: 23px;
+}
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+[class*="__container"] {
+    margin: 0 auto;
+}
+
+.main {
+    height: 100%;
+    padding-top: 60px;
+}
+.main__text-body {
+    perspective: 200px;
+    height: 400px;
+    overflow: hidden;
+}
+.main__text {
+    margin: 0 auto;
+    width: 600px;
+    /* background-color: goldenrod; */
+    position: relative;
+    top: 400px;
+    color: yellow;
+    text-align: center;
+    line-height: 1.3;
+    font-size: 14px;
+    opacity: 0.9;
+    transform: translate(0, 150px) rotatex(45deg) scale(3);
+}
+.main__text-body:hover .main__text {
+    opacity: 1;
+    top: -100px;
+    transform: translate(0, 0px) rotatex(45deg) scale(0.2);
+    transition: 45s ease-out;
+}
+
+/* THE TAOOINE PLANET */
+.main__tatooine {
+}
+.tatooine {
+}
+.tatooine__container {
+    height: 1560px;
+    overflow: hidden;
+}
+span.line::before {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 157px;
+    border-bottom: 3px dashed #f4f4f4;
+    position: relative;
+    top: 0px;
+    left: 100px;
+    z-index: 0;
+}
+
+span.line::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 1px;
+    border-bottom: 3px dashed #f4f4f4;
+    position: relative;
+    top: -46px;
+    left: 140px;
+    z-index: 0;
+    transform-origin: -2px 200px;
+    transform: rotate(38deg);
+}
+.tatooine__container:hover span::after {
+    width: 620px;
+    transition: 2s;
+}
+.tatooine__title {
+    display: inline-block;
+    padding-top: 100px;
+    width: 450px;
+    line-height: 2;
+    font-size: 28px;
+    text-shadow: 1px 3px 2px #232323;
+    position: relative;
+    left: 100px;
+    z-index: 2;
+}
+.tatooine__title ul {
+    margin-top: -100px;
+    padding-top: 100px;
+    visibility: hidden;
+    opacity: 0;
+}
+.tatooine__title ul:target {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.7s;
+}
+.tatooine__title li {
+    padding-left: 34px;
+}
+.tatooine-pic img {
+    width: 107%;
+    transform: rotate(0deg);
+    position: relative;
+    top: -15px;
+    left: -15px;
+    transition: 7s;
+}
+.tatooine-pic {
+    overflow: hidden;
+    display: block;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 12px #7777ff77;
+}
+
+.tatooine-pic {
+    position: relative;
+    top: -100px;
+    left: 670px;
+    z-index: 1;
+
+    transition: 7.5s;
+}
+.tatooine-pic:hover img {
+    transform: translate(-4px, -4px) rotate(13deg);
+    transition: 13s;
+}
+.tatooine-pic:hover {
+    transform: translate(43px, 48px) scale(3);
+    transition: 4s;
+}
+.tatooine p {
+    margin-top: -120px;
+}
+
+/* THE SPASESHIP */
+.main__spaceship {
+}
+.spaceship {
+    position: relative;
+}
+.spaceship__container {
+    margin-top: -900px;
+    position: relative;
+    z-index: 3;
+}
+.spaceship__img img {
+    width: 100%;
+}
+.spaceship__img {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: -30%;
+    z-index: 4;
+    border-radius: 0px 133px 29px 0px / 0px 150px 0px 0px;
+    transition: 5s;
+}
+.spaceship__container:hover .spaceship__img {
+    top: -159px;
+    transform: translate(50%) scale(0.6);
+    transition: 5s;
+}
+.main__space-shadow {
+    width: 100%;
+    height: auto;
+    background: rgb(2, 2, 31);
+    background: linear-gradient(
+        180deg,
+        rgba(2, 2, 31, 0) 0%,
+        rgba(10, 1, 17, 0.77) 10%,
+        rgba(0, 0, 0, 1) 25%,
+        rgba(0, 0, 0, 1) 75%,
+        rgba(2, 2, 31, 0.7707457983193278) 90%,
+        rgba(43, 6, 66, 0) 100%
+    );
+}
+.main__on-boart {
+}
+.on-boart {
+    display: none;
+}
+.on-boart:target {
+    display: block;
+}
+.on-boart__container {
+    perspective: 900px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tatooine-pic-cockpit img {
+    position: relative;
+    top: -6px;
+    left: -6px;
+    width: 107%;
+}
+.tatooine-pic-cockpit {
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.on-boart:hover .tatooine-pic-cockpit {
+    transform: rotate(45deg) scale(1.8);
+    transition: 12s;
+}
+
+.tatooine-img {
+}
+.cockpit img {
+    max-width: 100%;
+}
+.cockpit {
+    width: 100%;
+    outline: 150px solid #000;
+    position: absolute;
+    top: 0px;
+    z-index: 4;
+    transform: scale(1.5);
+}
+.on-boart:hover .cockpit {
+    transform: rotate(-11deg) scale(1.4);
+    transition: 7s ease;
+}
+
+/* THE PERSON */
+
+.decal::after {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 5px;
+    background-color: #232323;
+    border-radius: 5px;
+    position: relative;
+    top: -25px;
+    left: 155px;
+}
+
+.main__person {
+    width: 500px;
+    height: 789px;
+    border-radius: 50px;
+    border: 3px solid gray;
+    overflow: hidden;
+    padding: 50px 4px;
+    background-color: #000;
+}
+.person__screen {
+    height: 560px;
+    overflow: auto;
+}
+.person__btn {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    z-index: 6;
+    position: relative;
+    top: 50px;
+    left: 223px;
+}
+.person__btn:hover {
+    background-color: #232323;
+}
+
+.person__pic img {
+    width: 100%;
+}
+.main__chat {
+    height: auto;
+    width: 450px;
+    border-radius: 43px;
+    border: 3px solid yellow;
+    font-size: 22px;
+    line-height: 1.4;
+    color: yellow;
+    padding: 14px;
+}
+.main__chat--o {
+    border-radius: 60px 60px 60px 0px / 60px 60px 60px 0px;
+}
+
+.main__chat--p {
+}
+.red-btn {
+    display: inline-block;
+    padding: 20px;
+    font-size: 26px;
+    text-align: center;
+    width: 320px;
+    height: 90px;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    z-index: 6;
+    transform: skew(10deg, 0deg);
+    background-color: red;
+    color: #f4f4f4;
+    visibility: hidden;
+    opacity: 0;
+    transition: 3s;
+}
+.on-boart:hover .red-btn {
+    visibility: visible;
+    opacity: 0.8;
+}
+.red-btn:hover {
+    top: 46px;
+}
+.person--ontogonist {
+    visibility: hidden;
+    position: relative;
+    top: 0px;
+    left: 45%;
+    transform: scale(0.75);
+}
+.person--ontogonist:target {
+    visibility: visible;
+}
+.main__impaire-navy {
+    height: 1300px;
+    visibility: hidden;
+    overflow: hidden;
+    position: relative;
+}
+.main__impaire-navy:target {
+    visibility: visible;
+}
+
+.impaire-navy .sp-ship:hover {
+    transform: scale(1.03);
+    transition: 5s;
+}
+
+.impaire-navy__sp-ship img {
+    width: 100%;
+}
+.impaire-navy__sp-ship {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.sp-ship {
+}
+.sp-ship--1 {
+}
+.person--protogonist {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translatex(300%);
+}
+.impaire-navy:hover .person--protogonist {
+    transform: translate(100%, -10%) scale(0.7);
+    transition: 3s;
+}
+.footer {
+    overflow: hidden;
+    height: 360px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 1.5;
+    padding-bottom: 200px;
+}
+.footer__copy {
+    position: relative;
+    z-index: 3;
+}
+.footer__planet {
+    overflow: visible;
+}
+.tatooine {
+}
+.tatooine--footer {
+    z-index: 2;
+}
+.tatooine-pic--footer:hover {
+    transform: scale(4);
+}
+.tatooine-pic--footer {
+    position: relative;
+    top: 760px;
+    left: 10px;
+    transform: scale(4);
+}
+.tatooine-img--footer {
+}

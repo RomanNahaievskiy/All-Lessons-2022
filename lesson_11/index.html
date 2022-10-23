@@ -22,23 +22,32 @@
                     </div>
                     <nav class="header__nav">
                         <ul class="header__menu menu">
-                            <li class="menu__item"><a href="#" class="header__link">Position static</a></li>
-                            <li class="menu__item"><a href="#" class="header__link">Position absolute</a></li>
-                            <li class="menu__item"><a href="#" class="header__link">Position sticky</a></li>
-                            <li class="menu__item"><a href="#" class="header__link">Position z-index</a></li>
-                            <li class="menu__item"><a href="#" class="header__link">Car</a></li>
-                            <li class="menu__item"><a href="#" class="header__link">To all Homeworks</a></li>
+                            <li class="menu__item open-menu"><a class="header__link" href="#">Position</a>
+                                <ul class="open-menu__sub-menu sub-menu">
+                                    <li class="sub-menu__item"><a href="#st" class="header__link">Position static</a>
+                                    </li>
+                                    <li class="sub-menu__item"><a href="#abs" class="header__link">Position absolute</a>
+                                    </li>
+                                    <li class="sub-menu__item"><a href="#rel" class="header__link">Position relative</a>
+                                    </li>
+                                    <li class="sub-menu__item"><a href="#stky" class="header__link">Position sticky</a>
+                                    </li>
+                                    <li class="sub-menu__item"><a href="#zi" class="header__link">Position z-index</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu__item"><a href="#cr" class="header__link">Car</a></li>
+                            <li class="menu__item"><a href="https://romannahaievskiy.github.io/all-lessons-2022/"
+                                    class="header__link">To all Homeworks</a></li>
                         </ul>
+                    </nav>
                 </div>
-                </nav>
             </div>
         </header>
         <!-- MAIN -->
         <main class="main">
-
-
             <!-- POSITION: STATIC -->
-            <div class="main__item static">
+            <div id="st" class="main__item static">
                 <div class="satic__container">
                     <div class="main__title">The Static position</div>
                     <div class="static__body">
@@ -49,7 +58,7 @@
                 </div>
             </div>
             <!-- POSITION: RELATIVE -->
-            <div class="main__item relative">
+            <div id="rel" class="main__item relative">
                 <div class="relative__container">
                     <div class="main__title">The Relative position</div>
                     <div class="relative__body">
@@ -60,7 +69,7 @@
                 </div>
             </div>
             <!-- POSITION: ABSOLUTE -->
-            <div class="main__item absolute">
+            <div id="abs" class="main__item absolute">
                 <div class="absolute__container">
                     <div class="main__title">The Absolute position</div>
                     <div class="absolute__body">
@@ -71,7 +80,7 @@
                 </div>
             </div>
             <!-- POSITION: STIKY -->
-            <div class="main__item sticky">
+            <div id="stky" class="main__item sticky">
                 <div class="stiky__container">
                     <div class="main__title">The Stiky position</div>
                     <div class="sticky__body">
@@ -139,7 +148,7 @@
                 </div>
             </div>
             <!-- POSITION: Z-INDEX -->
-            <div class="main__item z-index">
+            <div id="zi" class="main__item z-index">
                 <div class="z-index__container">
                     <div class="main__title">The Z-index position</div>
                     <div class="z-index__body">
@@ -149,64 +158,52 @@
                     </div>
                 </div>
             </div>
-            <!-- POSITION: INHERIT -->
-            <div class="main__item inherit">
-                <div class="iherit__container">
-                    <div class="main__title">Position inherit</div>
-                    <div class="inherit__body">
-                        <div class="block-one block-exemple">I am a one</div>
-                        <div class="block-two block-exemple">I am two</div>
-                        <div class="block-three block-exemple">I am three</div>
-                    </div>
-                </div>
-            </div>
+
             <!-- CAR  -->
-            <div class="main__item car">
+            <div id="cr" class="main__item car">
                 <div class="car__container">
                     <div class="main__title">The car</div>
                     <div class="car__physical-body">
                         <div class="car__body-top body-top">
-                            <div class="body-top__part roof "><img src="img/car/roof.png" alt=""></div>
-                            <div class="body-top__part hood"><img src="img/car/hood.png" alt=""></div>
+                            <div class="body-top__part roof "><img src="img/car/roof.png" alt="car roof"></div>
+                            <div class="body-top__part hood"><img src="img/car/hood.png" alt="car hood"></div>
                             <div class="body-top__part engine-compartment">
-                                <img src="img/car/engine-compartment.png" alt="">
+                                <img src="img/car/engine-compartment.png" alt="engine compartment">
                                 <div class="engine-compartment__content">
                                     <div class="engine-compartment__engine"></div>
                                 </div>
-
                             </div>
-
-                            <div class="body-top__part door door--front"><img src="img/car/dor-front.png" alt="">
+                            <div class="body-top__part door door--front"><img src="img/car/dor-front.png"
+                                    alt="front door">
                             </div>
-                            <div class="body-top__part door door--rear"><img src="img/car/dor-rear.png" alt=""></div>
-                            <div class="body-top__part backtrunk-lid"><img src="img/car/lid.png" alt=""></div>
-                            <div class="body-top__part backtrunk"><img src="img/car/backtrunk.png" alt=""></div>
+                            <div class="body-top__part door door--rear"><img src="img/car/dor-rear.png" alt="rear door">
+                            </div>
+                            <div class="body-top__part backtrunk-lid"><img src="img/car/lid.png" alt="lid"></div>
+                            <div class="body-top__part backtrunk"><img src="img/car/backtrunk.png" alt="backtrunk">
+                            </div>
                             <div class="backtrunk__contents content-backtrunk">
-                                <div class="content-backtrunk__fuel-tank"></a>
+                                <div class="content-backtrunk__fuel-tank">
                                 </div>
                                 <div class="content-backtrunk__travel-bag"></div>
                                 <div class="content-backtrunk__first-aid-kit"></div>
                                 <div class="content-backtrunk__tool-box"></div>
                                 <div class="content-backtrunk__extinguisher"></div>
                             </div>
-                            <div class="body-top__part frame"><img src="img/car/frame.png" alt=""></div>
-
+                            <div class="body-top__part frame"><img src="img/car/frame.png" alt="car frame"></div>
                         </div>
                         <div class="car__suspension">
                             <div class="car__suspension">
                                 <div class="car__weel  car__wheel--front">
-                                    <img src="img/car/wheelpng.png" alt="">
+                                    <img src="img/car/wheelpng.png" alt="front wheel">
                                 </div>
                                 <div class="car__weel car__wheel--rear ">
-                                    <img src="img/car/wheel-rear.png" alt="">
+                                    <img src="img/car/wheel-rear.png" alt="rear wheel">
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
-
-
+                </div>
+            </div>
         </main>
         <!-- FOOTER -->
         <footer class="footer">
@@ -214,6 +211,7 @@
                 <div class="copy">Нагаєвський Роман Сергійович | Осінь 2022</div>
             </div>
         </footer>
+    </div>
 </body>
 
 </html>
