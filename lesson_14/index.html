@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HW # 14</title>
+</head>
+
+<body>
+    <div class="wrraper">
+        <header class="header">
+            <div class="header__container">
+                <nav class="haeder__nav">
+                    <ul class="header__general-menu general-menu">
+                        <li class="general-menu__item"><a href="#" class="header__link">To flex-container</a>
+                            <ul class="header__menu menu">
+                                <li class="menu__item"><a href="#df" class="header__link">Display: flex</a></li>
+                                <li class="menu__item"><a href="#dif" class="header__link">Display: inline-flex</a></li>
+                                <li class="menu__item"><a href="#flw" class="header__link">Flex-wrap</a>
+                                    <ul class="menu__sub-menu sub-menu">
+                                        <li class="sub-menu__item"><a href="#flww" class="header__link">wrap</a></li>
+                                        <li class="sub-menu__item"><a href="#flwn" class="header__link">no-wrap</a></li>
+                                        <li class="sub-menu__item"><a href="#flwr" class="header__link">wrap-reverse</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__item"><a href="#jc" class="header__link">Justify-content</a>
+                                    <ul class="menu__sub-menu sub-menu">
+                                        <li class="sub-menu__item"><a href="#jcs" class="header__link">flex-start</a>
+                                        </li>
+                                        <li class="sub-menu__item"><a href="#jce" class="header__link">flex-end</a></li>
+                                        <li class="sub-menu__item"><a href="#jcc" class="header__link">center</a></li>
+                                        <li class="sub-menu__item"><a href="#jcsb"
+                                                class="header__link">space-between</a>
+                                        </li>
+                                        <li class="sub-menu__item"><a href="#jcsaro"
+                                                class="header__link">space-around</a>
+                                        </li>
+                                        <li class="sub-menu__item"><a href="#jcsev"
+                                                class="header__link">space-evenly</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__item"><a href="#ai" class="header__link">Align-items</a>
+                                    <ul class="menu__sub-menu sub-menu">
+                                        <li class="sub-menu__item"><a href="#aish" class="header__link">stretch</a></li>
+                                        <li class="sub-menu__item"><a href="#ais" class="header__link">flex-start</a>
+                                        </li>
+                                        <li class="sub-menu__item"><a href="#aie" class="header__link">flex-end</a></li>
+                                        <li class="sub-menu__item"><a href="#aic" class="header__link">center</a></li>
+                                        <li class="sub-menu__item"><a href="#aib" class="header__link">baseline</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu__item"><a href="#fx" class="header__link">Flex-direction</a>
+                                    <ul class="menu__sub-menu sub-menu">
+                                        <li class="sub-menu__item"><a href="#fxdr" class="header__link">row</a></li>
+                                        <li class="sub-menu__item"><a href="#fxrr" class="header__link">row-reverse</a>
+                                        </li>
+                                        <li class="sub-menu__item"><a href="#fxdc" class="header__link">column</a></li>
+                                        <li class="sub-menu__item"><a href="#fxdcr"
+                                                class="header__link">column-reverse</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__item"><a href="#gap" class="header__link">Gap</a>
+                                    <ul class="menu__sub-menu sub-menu">
+                                        <li class="sub-menu__item"><a href="#rg" class="header__link">column-gap</a>
+                                        </li>
+                                        <li class="sub-menu__item"><a href="#cg" class="header__link">row-gap</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="general-menu__item"><a href="#fx-elements" class="header__link">To flex-elements</a>
+                            <ul class="header__menu menu">
+                                <li class="menu__item"><a href="#as" class="header__link">align-self</a>
+                                    <ul class="menu__sub-menu sub-menu">
+                                        <li class="sub-menu__item"><a href="#asfs" class="header__link">flex-start</a>
+                                        </li>
+                                        <li class="sub-menu__item"><a href="#asfe" class="header__link">flex-end</a>
+                                        </li>
+                                        <li class="sub-menu__item"><a href="#asb" class="header__link">baseline</a></li>
+                                        <li class="sub-menu__item"><a href="#asc" class="header__link">center</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__item"><a href="#fxb" class="header__link">flex-basis</a></li>
+                                <li class="menu__item"><a href="#fxg" class="header__link">flex-grow</a></li>
+                                <li class="menu__item"><a href="#fxs" class="header__link">flex-shrink</a></li>
+                                <li class="menu__item"><a href="#ord" class="header__link">order</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__container">
+                <div class="main__title">
+                    <h1><span>Тема : </span>Flex-модуль</h1>
+                </div>
+                <!--! Display: flex -->
+                <div class="main__display-flex" id="df">
+                    <div class="main__block-title">
+                        <h2>Display: flex</h2>
+                    </div>
+                    <div class="main__block-flex-body block-flex-body">
+                        <div class="block-flex-body__item">1</div>
+                        <div class="block-flex-body__item">2</div>
+                        <div class="block-flex-body__item">3</div>
+                        <div class="block-flex-body__item">4</div>
+                    </div>
+                </div>
+                <!-- ==================== -->
+                <!--! Display: inline-flex -->
+                <div class="main__display-inline-flex" id="dif">
+                    <div class="main__block-title">
+                        <h2>Display: inline-flex</h2>
+                    </div>
+                    <div class="main__block-flex-body block-flex-body">
+                        <div class="block-flex-body__item">1</div>
+                        <div class="block-flex-body__item">2</div>
+                        <div class="block-flex-body__item">3</div>
+                        <div class="block-flex-body__item">4</div>
+                    </div>
+                </div>
+                <!-- ==================== -->
+                <!-- Flex-wrap -->
+                <div class="main__flex-wrap flw" id="flw">
+                    <div class="main__block-title">
+                        <h2>Flex-wrap</h2>
+                    </div>
+                    <!-- +++ -->
+                    <!-- -> wrap -->
+                    <div class="flw__w" id="flww">
+                        <div class="main__block-title">
+                            <h3>wrap</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                    <!-- -> no-wrap -->
+                    <div class="flw__n" id="flwn">
+                        <div class="main__block-title">
+                            <h3>no-wrap</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                    <!-- -> wrap-reverse -->
+                    <div class="flw__wr" id="flwwr">
+                        <div class="main__block-title">
+                            <h3>wrap-reverse</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ==================== -->
+                <!--! Justify-content -->
+                <div class="main__justyf-content jc" id="jc">
+                    <div class="main__block-title">
+                        <h2>Justify-content</h2>
+                    </div>
+                    <!-- +++ -->
+                    <!-- -> flex-start -->
+                    <div class="jc__s" id="jcs">
+                        <div class="main__block-title">
+                            <h3>flex-start</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                    <!-- -> flex-end -->
+                    <div class="jc__e" id="jce">
+                        <div class="main__block-title">
+                            <h3>flex-end</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                    <!-- -> center -->
+                    <div class="jc__c" id="jcc">
+                        <div class="main__block-title">
+                            <h3>center</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                    <!-- -> space-between -->
+                    <div class="jc__sb" id="jcsb">
+                        <div class="main__block-title">
+                            <h3>space-between</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                    <!-- -> space-around -->
+                    <div class="jc__saro" id="jcsaro">
+                        <div class="main__block-title">
+                            <h3>space-around</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                    <!-- -> space-evenly -->
+                    <div class="jc__sev" id="jcsev">
+                        <div class="main__block-title">
+                            <h3>space-evenly</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ==================== -->
+                <!--! Align-items -->
+                <div class="main__align-items ai" id="ai">
+                    <div class="main__block-title">
+                        <h2>Align-items</h2>
+                    </div>
+                    <!-- +++ -->
+                    <!-- -> streetch -->
+                    <div class="ai__sh" id="aish">
+                        <div class="main__block-title">
+                            <h3>streetch</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                    <!-- -> flex-start -->
+                    <div class="ai__s" id="ais">
+                        <div class="main__block-title">
+                            <h3>flex-start</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                    <!-- -> flex-end -->
+                    <div class="ai__e" id="aie">
+                        <div class="main__block-title">
+                            <h3>flex-end</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                    <!-- -> center -->
+                    <div class="ai__c" id="aic">
+                        <div class="main__block-title">
+                            <h3>center</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                    <!-- -> baseline -->
+                    <div class="ai__b" id="aib">
+                        <div class="main__block-title">
+                            <h3>baseline</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ==================== -->
+                <!--! Flex-direction -->
+                <div class="main__flex-direction fx" id="fx">
+                    <div class="main__block-title">
+                        <h2>Flex-direction</h2>
+                    </div>
+                    <!-- +++ -->
+                    <!-- -> row -->
+
+                    <div class="fx__dr" id="fxdr">
+                        <div class="main__block-title">
+                            <h3>row</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                    <!-- -> row-reverse -->
+                    <div class="fx__rr" id="fxrr">
+                        <div class="main__block-title">
+                            <h3>row-reverse</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                    <!-- -> column -->
+                    <div class="fx__dc" id="fxdc">
+                        <div class="main__block-title">
+                            <h3>column</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                    <!-- -> column-reverse -->
+                    <div class="fx__dcr" id="fxdcr">
+                        <div class="main__block-title">
+                            <h3>column-reverse</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ==================== -->
+                <!--! Gap -->
+                <div class="main__gap gap" id="gap">
+                    <div class="gap__r" id="rg">
+                        <!-- +++ -->
+                        <!-- ->row-gap -->
+                        <div class="main__block-title">
+                            <h3>row-gap</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                    <!-- ->column-gap -->
+                    <div class="gap__c" id="cg">
+                        <div class="main__block-title">
+                            <h3>column-gap</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ==================== -->
+                <!--! To Flex-elements -->
+                <div class="main__flex-elements fx-elements" id="fx-elements">
+                    <div class="main__block-title">
+                        <h2>To Flex-elements</h2>
+                    </div>
+                    <!-- +++ -->
+                    <!-- align-self -->
+                    <div class="fx-elements__align-self align-self" id="align-self">
+                        <div class="main__block-title">
+                            <h2>Align-self</h2>
+                        </div>
+                        <div class="align-self__items">
+                            <div class="align-self__asfs" id="asfs">
+                                <div class="main__block-title">
+                                    <h3>align-self: flex-start</h3>
+                                </div>
+                                <div class="main__block-flex-body block-flex-body">
+                                    <div class="block-flex-body__item">1</div>
+                                    <div class="block-flex-body__item">2</div>
+                                    <div class="block-flex-body__item">3</div>
+                                    <div class="block-flex-body__item">4</div>
+                                </div>
+                            </div>
+                            <div class="align-items__asfe" id="asfe">
+                                <div class="main__block-title">
+                                    <h3>align-self: flex-end</h3>
+                                </div>
+                                <div class="main__block-flex-body block-flex-body">
+                                    <div class="block-flex-body__item">1</div>
+                                    <div class="block-flex-body__item">2</div>
+                                    <div class="block-flex-body__item">3</div>
+                                    <div class="block-flex-body__item">4</div>
+                                </div>
+                            </div>
+                            <div class="align-items__asb" id="asb">
+                                <div class="main__block-title">
+                                    <h3>align-self: baseline</h3>
+                                </div>
+                                <div class="main__block-flex-body block-flex-body">
+                                    <div class="block-flex-body__item">1</div>
+                                    <div class="block-flex-body__item">2</div>
+                                    <div class="block-flex-body__item">3</div>
+                                    <div class="block-flex-body__item">4</div>
+                                </div>
+                            </div>
+                            <div class="align-items__asc" id="asc">
+                                <div class="main__block-title">
+                                    <h3>align-self: center</h3>
+                                </div>
+                                <div class="main__block-flex-body block-flex-body">
+                                    <div class="block-flex-body__item">1</div>
+                                    <div class="block-flex-body__item">2</div>
+                                    <div class="block-flex-body__item">3</div>
+                                    <div class="block-flex-body__item">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- flex-basis -->
+                    <div class="main__fxb" id="fxb">
+                        <div class="main__block-title">
+                            <h3>flex-basis</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                    <!-- flex-grow -->
+                    <div class="main__fxg" id="fxg">
+                        <div class="main__block-title">
+                            <h3>flex-grow</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                    <!-- flex-shrink -->
+                    <div class="main__fxs" id="fxs">
+                        <div class="main__block-title">
+                            <h3>flex-shrink</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                    <!-- order -->
+                    <div class="main__ord" id="ord">
+                        <div class="main__block-title">
+                            <h3>order</h3>
+                        </div>
+                        <div class="main__block-flex-body block-flex-body">
+                            <div class="block-flex-body__item">1</div>
+                            <div class="block-flex-body__item">2</div>
+                            <div class="block-flex-body__item">3</div>
+                            <div class="block-flex-body__item">4</div>
+                        </div>
+                    </div>
+                    <!-- ==================== -->
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__copy">
+                    <h6>Нагаєвський Роман Сергійович | Осінь 2022</h6>
+                </div>
+            </div>
+        </footer>
+        <!-- close wrraper div below -->
+    </div>
+</body>
+
+</html>
