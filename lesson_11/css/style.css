@@ -259,6 +259,9 @@ body {
 .hood img {
     width: 127%;
 }
+.hood:hover{
+   
+}
 .hood {
     position: absolute;
     top:91px;
