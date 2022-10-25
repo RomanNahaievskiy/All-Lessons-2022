@@ -10,7 +10,7 @@ body {
 
 .main {
     overflow: hidden;
-    height: 1200px;
+    height: 1000px;
 }
 
 
@@ -113,6 +113,8 @@ color: #fdadad54;
 /* car-layout */
 .car-layout {
     /* visibility: hidden; */
+    overflow: hidden;
+    height: 1200px;
     position: relative;
     top: -320px;
     z-index: 7;
@@ -419,18 +421,29 @@ background: linear-gradient(0deg, rgba(147,147,147,1) 0%, rgba(69,69,69,1) 59%);
     color: aliceblue;
     text-align: center;
 }
+.footer__pedals a {
+    display: inline-block;
+}
 .footer__brake {
-
+    padding: 40px;
+    flex: 0 0 700px ;
+    height: 300px;
+    background-color: black;
+    border-radius: 97px;
 }
 .footer__acceleration {
-    
+    padding: 40px;
+    flex: 0 0 300px ;
+    height: 400px;
+    background-color: black;
+    border-radius: 78px;
 }
 .footer__acceleration:hover {
-
-/* animation-play-state: running; */
+   
+animation-play-state: running;
 }
 
 .footer__brake:hover {
     
-    /* animation-play-state: paused; */
+    animation-play-state: paused;
 }
