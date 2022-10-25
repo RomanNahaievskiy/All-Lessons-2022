@@ -1,0 +1,203 @@
+body {
+    width: 100%;
+}
+.wrapper {
+    max-height: 100%;
+    overflow: hidden;
+}
+/* forest */
+.main__forest {
+    width: 100%;
+    height: 450px;
+    background: url("../img/forest/181748-abstrakte-waldlandschaft-kostenlos-vektor.jpg") 0 0 /content no-repeat;
+}
+/* road */
+@keyframes moving-stripes {
+    0%{
+        transform: rotatex(45deg) translateX(0%);
+    }
+    100% {
+        transform: rotatex(45deg) translateX(800px);
+    }
+}
+.main__road {
+    position: relative;
+    top: -200px;
+    z-index: 0;
+    background-color: #232323;
+    width: 100%;
+    height: 230px;
+}
+.road__stripes {
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    /* justify-content: space-evenly; */
+    perspective:200px;
+    margin: 0 -700px;
+    padding-top: 50px;
+    column-gap: 200px;
+}
+.road__stripe {
+    height: 20px;
+    flex: 0 0 200px;
+    background-color: yellow;
+    transform: rotatex(45deg);
+    animation-name: moving-stripes;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+/* car */
+.car {
+    /* display: none; */
+    width: 100%;
+    height: 900px;
+    position: relative;
+    z-index: 1;
+    /* background-color: transparent; */
+}
+.main__block {
+    width: 1200px;
+    max-height: 500px;
+    /* overflow: hidden; */
+    margin: 0 auto;
+}
+
+
+.car__body-top {
+    position: relative;
+}
+.engine-compartment img {
+    width: 160%;
+}
+.engine-compartment {
+    position: absolute;
+    top: 70px;
+    left: 50px;
+}
+.hood img {
+    width: 127%;
+}
+.hood:hover{
+   
+}
+.hood {
+    position: absolute;
+    top: 91px;
+    left: 31px;
+    z-index: 2;
+}
+.roof img {
+    width: 138%;
+}
+.roof {
+    position: absolute;
+    top: 35px;
+    left: 373px;
+}
+.door--front img {
+    width: 140%;
+}
+.door--front {
+    position: absolute;
+    top: 33px;
+    left: 394px;
+    z-ingex: 2;
+}
+.door--rear img {
+    width: 141%;
+}
+.door--rear {
+    position: absolute;
+    top: 61px;
+    left: 669px;
+    z-index: 2;
+}
+
+.backtrunk-lid img {
+    width: 141%;
+}
+.backtrunk-lid {
+    position: absolute;
+    top: 133px;
+    left: 915px;
+}
+
+.backtrunk img {
+    width: 138%;
+}
+.backtrunk {
+    position: absolute;
+    top: 122px;
+    left: 845px;
+    z-index: 1;
+}
+
+.frame img {
+    width: 140%;
+}
+.frame {
+    position: absolute;
+    top: 205px;
+    left: 350px;
+    z-index: 0;
+}
+
+.car__suspension {
+    position: relative;
+}
+.car__weel {
+    animation-name: spin-tires;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: 77.8% 49.5% ;
+}
+@keyframes spin-tires {
+    0% {
+        rotate: 0;
+    }
+    100% {
+        rotate: -360deg;
+    }
+}
+.car__brake img {
+    width: 155%;
+}
+.car__brake {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+}
+.car__brake--front {
+    top: 264px;
+    left: 212px;
+}
+.car__brake--rear {
+    top: 278px;
+    transform: rotate(-120deg);
+    left: 942px;
+}
+.car__wheel--front img {
+    width: 155%;
+}
+.car__wheel--front {
+    border-radius: 50%;
+    position: absolute;
+    top: 223px;
+    left: 170px;
+    z-index: 3;
+}
+.car__wheel--rear img {
+    width: 155%;
+}
+.car__wheel--rear {
+    border-radius: 50%;
+    position: absolute;
+    top: 223px;
+    left: 875px;
+    z-index: 3;
+}
