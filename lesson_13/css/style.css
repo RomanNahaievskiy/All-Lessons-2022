@@ -5,37 +5,113 @@ body {
     max-height: 100%;
     overflow: hidden;
 }
+
+
+
+
+
 /* forest */
+.main__forest-bg {
+    height: 900px;
+    background: url("../img/forest/nature-landscape-with-winding-river-mountains-and-forest-vector.jpg") 0 -20px  / 100% auto no-repeat;
+}
 .main__forest {
-    width: 100%;
-    height: 450px;
-    background: url("../img/forest/181748-abstrakte-waldlandschaft-kostenlos-vektor.jpg") 0 0 /content no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    top: -900px;
+    z-index: 1;
+    height: 900px;
+    /* background: url("../img/forest/181748-abstrakte-waldlandschaft-kostenlos-vektor.jpg") 0 -20px  / 100% auto no-repeat; */
+    /* background: url("../img/forest/nature-landscape-with-winding-river-mountains-and-forest-vector.jpg") 0 -20px  / 100% auto no-repeat; */
+}
+
+h1 {
+text-align: center;
+font-size: 400px;
+color: #fdadad54;
+}
+/* car-layout */
+.car-layout {
+    position: relative;
+    top: -1200px;
+    z-index: 2;
 }
 /* road */
 @keyframes moving-stripes {
     0%{
-        transform: rotatex(45deg) translateX(0%);
+        transform: rotatex(45deg) translateX(-800px);
     }
     100% {
-        transform: rotatex(45deg) translateX(800px);
+        transform: rotatex(45deg) translateX(0px);
+    }
+}
+@keyframes spin-tires {
+    0% {
+        rotate: 0;
+    }
+    100% {
+        rotate: -360deg;
     }
 }
 .main__road {
     position: relative;
     top: -200px;
-    z-index: 0;
-    background-color: #232323;
     width: 100%;
     height: 230px;
+}
+.road::before, .road::after {
+    content: "";
+    display: block;
+    height: 12px;
+    background-color: darkgoldenrod;
+}
+.road::after {
+    position: relative;
+    top: -100px;
+}
+.road {
+    z-index: 2;
+    background: rgb(147,147,147);
+background: linear-gradient(0deg, rgba(147,147,147,1) 0%, rgba(69,69,69,1) 59%);
+}
+.road__columns {
+    overflow: hidden;
+    position: relative;
+    z-index: 4;
+    top: -70px;
+    display: flex;
+    /* justify-content: space-evenly; */
+    column-gap: 180px;
+    /* perspective:200px; */
+    
+}
+.road__column::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    border-top: 5px solid red;
+    border-bottom: 5px solid red;
+}
+.road__column {
+    flex: 0 0 20px;
+    height: 80px;
+    background: rgb(188,188,188);
+    background: linear-gradient(90deg, rgba(188,188,188,1) 52%, rgba(69,69,69,1) 100%);
+    animation-name: moving-stripes;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 .road__stripes {
     overflow: hidden;
     height: 100%;
     display: flex;
-    /* justify-content: space-evenly; */
-    perspective:200px;
-    margin: 0 -700px;
-    padding-top: 50px;
+    justify-content: flex-start;
+    perspective:300px;
     column-gap: 200px;
 }
 .road__stripe {
@@ -44,20 +120,44 @@ body {
     background-color: yellow;
     transform: rotatex(45deg);
     animation-name: moving-stripes;
-    animation-duration: 3s;
+    animation-duration: 2.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     
 }
 
 /* car */
+.car::before {
+    content: "";
+    display: block;
+    width: 600px;
+    height: 150px;
+    border-radius: 37px 324px 293px 36px / 28px 21px 130px 43px;
+    border-radius: 37px 307px 400px 0px / 28px 0px 150px 52px;
+    background-color: #fbff0054;
+    position: absolute;
+    z-index: 6;
+    top: 223px;
+    left: -438px;
+    transform: rotate(-3deg);
+}
+.car::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: 360px;
+    left: 54px;
+    height: 45px;
+    width: 1100px;
+    background-color: #23232399;
+    border-radius: 89px 89px /89px 30px;
+}
 .car {
-    /* display: none; */
+    /* visibility: hidden; */
     width: 100%;
     height: 900px;
     position: relative;
-    z-index: 1;
-    /* background-color: transparent; */
+    z-index: 3;
 }
 .main__block {
     width: 1200px;
@@ -154,16 +254,10 @@ body {
     animation-duration: 1.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    transform-origin: 77.8% 49.5% ;
+    /* transform-origin: 77.8% 49.5% ; */
+    transform-origin: 70% 49% ;
 }
-@keyframes spin-tires {
-    0% {
-        rotate: 0;
-    }
-    100% {
-        rotate: -360deg;
-    }
-}
+
 .car__brake img {
     width: 155%;
 }
@@ -182,7 +276,7 @@ body {
     left: 942px;
 }
 .car__wheel--front img {
-    width: 155%;
+    width: 140%;
 }
 .car__wheel--front {
     border-radius: 50%;
@@ -192,7 +286,7 @@ body {
     z-index: 3;
 }
 .car__wheel--rear img {
-    width: 155%;
+    width: 140%;
 }
 .car__wheel--rear {
     border-radius: 50%;
