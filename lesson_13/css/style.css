@@ -12,19 +12,90 @@ body {
 
 /* forest */
 .main__forest-bg {
-    height: 900px;
-    background: url("../img/forest/nature-landscape-with-winding-river-mountains-and-forest-vector.jpg") 0 -20px  / 100% auto no-repeat;
-}
-.main__forest {
     overflow: hidden;
-    display: flex;
-    justify-content: flex-start;
+    max-width: 100%;
+    
     position: relative;
-    top: -900px;
+}
+[class*="forest-bg__"] img {
+    width: 100%;
+}
+.forest-bg {
+}
+.forest-bg__1 {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.forest-bg__2 {
+    width: 104%;
+    position: absolute;
+    top: -4px;
+    left: 0;
     z-index: 1;
-    height: 900px;
-    /* background: url("../img/forest/181748-abstrakte-waldlandschaft-kostenlos-vektor.jpg") 0 -20px  / 100% auto no-repeat; */
-    /* background: url("../img/forest/nature-landscape-with-winding-river-mountains-and-forest-vector.jpg") 0 -20px  / 100% auto no-repeat; */
+    animation-name: back-2;
+    animation-duration: 10s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.forest-bg__3 {
+    width: 104%;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    z-index: 2;
+    animation-name: back-3;
+    animation-duration: 6s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.forest-bg__4 {
+    width: 108%;
+    position: relative;
+    top: -115px;
+    left: -30;
+    z-index: 3;
+    transform: scale(1);
+    animation-name: back-4;
+    animation-duration: 4s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+.forest-bg__5 {
+    width: 108%;
+    position: relative;
+    top: -130px;
+    left: -20px;
+    z-index: 4;
+    transform: scale(1.01);
+    animation-name: back-5;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes back-2 {
+    0% {position: absolute;left: 0px;}
+    100% {position: absolute;left: 8px;}
+}
+@keyframes back-3 {
+    0% {position: absolute;left: -4px;}
+    100% {position: absolute;left: 0px;}
+}
+@keyframes back-4 {
+    0% {position: absolute;left: -30px;}
+    100% {position: absolute;left: -2px;}
+}
+@keyframes back-5 {
+    0% {position: absolute;left: -50px; }
+    100% {position: absolute;left: 0px; }
 }
 
 h1 {
@@ -34,9 +105,10 @@ color: #fdadad54;
 }
 /* car-layout */
 .car-layout {
+    /* visibility: hidden; */
     position: relative;
-    top: -1200px;
-    z-index: 2;
+    top: -320px;
+    z-index: 7;
 }
 /* road */
 @keyframes moving-stripes {
