@@ -227,24 +227,31 @@ h1 {
 .fx__dcr .main__block-flex-body {
     flex-direction: column-reverse;
 }
+/* ! To Flex-elements */
 .main__flex-elements {
 }
 .fx-elements {
 }
-.fx-elements__align-self {
+.fx-elements__align-self .main__block-flex-body {
+    display: flex;
 }
 .align-self {
 }
 .align-self__items {
 }
-.align-self__asfs {
+.align-self__asfs .main__block-flex-body {
+    align-self: flex-start;
 }
-.align-items__asfe {
+.align-self__asfe .main__block-flex-body {
+    align-self: flex-end;
 }
-.align-items__asb {
+.align-self__asb .main__block-flex-body {
+    align-self: baseline;
 }
-.align-items__asc {
+.align-self__asc .main__block-flex-body {
+    align-self: center;
 }
+/* !flex basis */
 .main__fxb {
 }
 .main__fxg {
