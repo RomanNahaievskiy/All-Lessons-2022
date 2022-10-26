@@ -1,5 +1,6 @@
 body {
     width: 100%;
+    font-family:Arial, Helvetica, sans-serif;
 }
 .wrapper {
     max-height: 100%;
@@ -9,8 +10,18 @@ body {
 }
 
 .main {
+}
+.main__title {
+    font-size: 45px;
+    text-align: center;
+    color: #f3f3f3;
+}
+.main__container {
+    background-color: #23232399;
     overflow: hidden;
-    height: 1200px;
+    min-height: 700px;
+    max-height: 1500px;
+    margin: 0 auto;
 }
 
 
@@ -106,15 +117,21 @@ body {
 
 
 h1 {
-text-align: center;
-font-size: 400px;
-color: #fdadad54;
+    width: 100%;
+    padding: 0 300px;
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    text-align: center;
+    font-size: 400px;
+    color: #fdadad54;
 }
 /* car-layout */
 .car-layout {
     /* visibility: hidden; */
     position: relative;
-    top: -320px;
+    /* top: -320px; */
+    transform: translateY(-320px);
     z-index: 7;
 }
 /* road */
@@ -136,7 +153,9 @@ color: #fdadad54;
 }
 .main__road {
     position: relative;
-    top: -200px;
+    margin-top: -750px;
+    /* top: -200px; */
+    /* transform: translateY(-200px); */
     width: 100%;
     height: 230px;
 }
@@ -210,8 +229,9 @@ background: linear-gradient(0deg, rgba(147,147,147,1) 0%, rgba(69,69,69,1) 59%);
     display: flex;
     align-items: flex-end;
     position: relative;
-    top: -140px;
-    margin-top: -550px;
+    top: -120px;
+    /* margin-top: -550px; */
+    transform: translateY(-550px);
     z-index: 2;
     flex-direction: row;
     column-gap: 40px;
@@ -322,7 +342,7 @@ background: linear-gradient(0deg, rgba(147,147,147,1) 0%, rgba(69,69,69,1) 59%);
     position: absolute;
     top: 33px;
     left: 394px;
-    z-ingex: 2;
+    z-index: 2;
 }
 .door--rear img {
     width: 141%;
@@ -412,25 +432,24 @@ background: linear-gradient(0deg, rgba(147,147,147,1) 0%, rgba(69,69,69,1) 59%);
     left: 875px;
     z-index: 3;
 }
+.front-layout {
+    width: 100%;
+    height: 500px;
+    background-color: green;
+    background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    transform: translateY(-500px);
+}
 
-.footer__pedals {
-    display: flex;
-    justify-content: space-around;
-    color: aliceblue;
+.footer {
+    height: 250px;
+    padding-top: 120px;
+    background: rgb(238,174,202);
+background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.footer__container {
+}
+.footer__copy {
     text-align: center;
-}
-.footer__brake {
-
-}
-.footer__acceleration {
-    
-}
-.footer__acceleration:hover {
-
-/* animation-play-state: running; */
-}
-
-.footer__brake:hover {
-    
-    /* animation-play-state: paused; */
+    color: black;
 }
