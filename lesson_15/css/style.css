@@ -10,6 +10,7 @@ body {
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 .wrraper > main {
     flex-grow: 1;
@@ -22,6 +23,9 @@ body {
 
 /* HEADER */
 .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     padding: 20px 0;
     color:#424551;
     font-weight: 700;
@@ -64,6 +68,7 @@ body {
     padding: 10px 0px 10px 28px;
     line-height: 1.5;
 }
+/* TODO make font  */
 .header__log-and-reg::before {
     content: "";
     display: inline-block;
@@ -80,6 +85,8 @@ body {
 .page {
 }
 .page__block {
+    padding-top: 90px;
+    background: linear-gradient(45deg, rgba(247,94,5,0.2) 0%, rgba(247,94,5,0.2) 100%);
 }
 .page__container {
 }
