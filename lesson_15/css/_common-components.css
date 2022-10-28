@@ -1,3 +1,4 @@
+/* кнопки */
 .button {
     display: inline-block;
     background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
@@ -5,44 +6,42 @@
     padding: 17.25px 40px;
     font-weight: 700;
     line-height: 1.25;
-
-    /* text-align: center; */
     letter-spacing: 0.5px;
     color: #ffffff;
-}
-.button--border {
-    background: transparent;
-    border-left: 1px solid #ff3f3a;
-    border-right: 1px solid #f75e05;
-    border-radius: 4px;
-    padding: 16.25px 39px;
-    color: #f75e05;
     position: relative;
+    z-index: 1;
+}
+.button > span {
+    position: relative;
+    z-index: 2;
 }
 
-.button--border::before {
+.button::before {
     content: "";
-    display: block;
-    /* background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%); */
-    box-shadow: inset 0px 1px #ff3f3a;
+    display: inline-block;
     width: 100%;
-    height: 1px;
+    height: 100%;
     border-radius: 4px;
+    background: linear-gradient(55.95deg, #a0312d 0%, #f75e05 100%);
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 1;
 }
-.button--border::after {
-    /* content: "";
-    width: 1px;
+.button:hover::before {
+    opacity: 1;
+    z-index: 1;
+    transition-duration: 0.3s;
+}
+/* альтернативні кнопки  */
+.button--border {
+    background: transparent;
+    border: 1px solid #ff3f3a;
     border-radius: 4px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    background-color: #f75e05; */
+    padding: 16.25px 39px;
+    color: #f75e05;
 }
-.button--border span::before {
-}
-.button--border span::after {
+.button--border:hover{
+    color: #ffffff;
 }
