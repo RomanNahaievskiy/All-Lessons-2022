@@ -253,8 +253,6 @@ body {
 .about__list li {
     position: relative;
     padding-left: 32px;
-    font-family: "Lato";
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
