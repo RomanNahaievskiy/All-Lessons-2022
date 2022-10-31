@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
-@import "_common-components.css";
+
 body {
     /* default styles */
     font-family: "Lato";
@@ -20,7 +20,53 @@ body {
     padding: 0 15px;
     margin: 0 auto;
 }
+/* buttons from common-componets */
+.button {
+    display: inline-block;
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+    border-radius: 4px;
+    padding: 17.25px 40px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+.button > span {
+    position: relative;
+    z-index: 2;
+}
 
+.button::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background: linear-gradient(55.95deg, #a0312d 0%, #f75e05 100%);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.button:hover::before {
+    opacity: 1;
+    z-index: 1;
+    transition-duration: 0.3s;
+}
+/* альтернативні кнопки  */
+.button--border {
+    background: transparent;
+    border: 1px solid #ff3f3a;
+    border-radius: 4px;
+    padding: 16.25px 39px;
+    color: #f75e05;
+}
+.button--border:hover {
+    color: #ffffff;
+}
 /* HEADER */
 .header {
     position: fixed;
