@@ -76,6 +76,8 @@ body {
     color: #424551;
     font-weight: 700;
     z-index: 50;
+    /* шапка мала б бути прозорою , але це експеремент з background */
+    /* background-color: #fddecd77; */
     /* background: linear-gradient(45deg, rgba(247, 94, 5, 1) 0%, rgba(247, 94, 5, 1) 100%); */
 }
 .header__container {
@@ -254,6 +256,13 @@ body {
 }
 /* ============================= */
 /* DECOR */
+.page__main-decor-block {
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .decor-block-main__item--shapes-01 {
     background: url("../img/main/decor/shapes01.svg") no-repeat;
     width: 96px;
@@ -303,13 +312,7 @@ body {
     left: -112px;
     top: 896px;
 }
-.page__main-decor-block {
-    width: 100%;
-    z-index: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+
 .decor-block-main {
 }
 .decor-block-main__item {
