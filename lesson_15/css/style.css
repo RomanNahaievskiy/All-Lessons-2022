@@ -129,6 +129,7 @@ body {
 /* PAGE */
 /* MAIN-BLOCK */
 .page {
+    overflow: hidden;
 }
 .page__block.main {
     padding-top: 200px;
@@ -252,7 +253,7 @@ body {
 .achievement-main__text {
 }
 /* ============================= */
-
+/* DECOR */
 .decor-block-main__item--shapes-01 {
     background: url("../img/main/decor/shapes01.svg") no-repeat;
     width: 96px;
@@ -291,7 +292,7 @@ body {
     position: absolute;
     width: 187px;
     height: 137px;
-    right: -30px;
+    right: 0px;
     top: 749px;
 }
 .decor-block-main__item--circles-06 {
@@ -305,11 +306,11 @@ body {
 .page__main-decor-block {
     width: 100%;
     z-index: 0;
-}
-.decor-block-main {
     position: absolute;
     top: 0;
     left: 0;
+}
+.decor-block-main {
 }
 .decor-block-main__item {
 }
@@ -317,6 +318,7 @@ body {
 .page__block {
 }
 .about {
+    position: relative;
 }
 .page__container {
 }
@@ -383,15 +385,34 @@ body {
 }
 .button {
 }
+/* DECOR 2 */
 .page__about-decor-block {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    top: 0;
+    left: 0;
 }
 .decor-block-about {
 }
 .decor-block-about__item {
 }
 .decor-block-about__item--1 {
+    background: url("../img/about-us/decor/dots.svg") no-repeat;
+    width: 133px;
+    height: 182px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -70px;
+    top: 240.24px;
 }
 .decor-block-about__item--2 {
+    background: url("../img/about-us/decor/circles.svg") no-repeat;
+    width: 287px;
+    height: 287px;
+    position: absolute;
+    right: -165px;
+    top: 437px;
 }
 
 /* FOTER */
