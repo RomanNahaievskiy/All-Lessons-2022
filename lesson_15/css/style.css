@@ -77,7 +77,7 @@ body {
     top: 6px;
     left: -20px;
 }
-
+/* =================================== */
 /* PAGE */
 /* MAIN-BLOCK */
 .page {
@@ -199,13 +199,57 @@ body {
 }
 .achievement-main__text {
 }
+/* ============================= */
+
+.decor-block-main__item--shapes-01 {
+    background: url("../img/main/decor/shapes01.svg") no-repeat;
+    width: 95px;
+    height: 95px;
+    position: absolute;
+    left: 82px;
+    top: 133px;
+}
+.decor-block-main__item--shapes-02 {
+    background: url("../img/main/decor/shapes02.svg") no-repeat;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    left: 1688px;
+    top: -45px;
+}
+.decor-block-main__item--shapes-03 {
+    background: url("../img/main/decor/shapes03.svg") no-repeat;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    left: 782px;
+    top: 487px;
+}
+.decor-block-main__item--vector-04 {
+    background: url("../img/main/decor/Vector04.svg") no-repeat;
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    left: 782px;
+    top: 487px;
+}
+.decor-block-main__item--dots-05 {
+    background: url("../img/main/decor/dots05.svg") no-repeat;
+}
+.decor-block-main__item--circles-06 {
+    background: url("../img/main/decor/circles06.svg") no-repeat;
+}
 .page__main-decor-block {
+    z-index: 1;
 }
 .decor-block-main {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .decor-block-main__item {
 }
-/* ABOUT */
+/* ABOUT US */
 .page__block {
 }
 .about {
