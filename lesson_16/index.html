@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Homework 16 Forms</title>
 </head>
 
@@ -16,8 +17,41 @@
             </div>
         </header>
         <main class="page">
-            <section class="page__section">
-                <div class="page__container"></div>
+            <section class="page__register register">
+                <div class="page__container">
+                    <div class="register__columns">
+                        <div class="register__image"><img src="img/register/illustration.svg" alt=""></div>
+                        <form class="register__content content-register form">
+                            <div class="content-register__caption">
+                                <h6 class="content-register__subtitle">Leave a request now and get 20% off!</h6>
+                                <h2 class="content-register__title">Register for the course</h2>
+                            </div>
+                            <div class="content-register__user-input">
+                                <div class="form__line">
+                                    <label for="userName" class="form__label">Full name</label>
+                                    <input id="userName" type="text" required name="nameUser" value=""
+                                        placeholder="Your full name">
+                                </div>
+                                <div class="form__line">
+                                    <label for="userEmail" class="form__label">Email</label>
+                                    <input id="userEmail" type="email" required name="email" value=""
+                                        placeholder="Your working email">
+                                </div>
+                                <div class="form__line">
+                                    <label for="userPhone" class="form__label">Phone</label>
+                                    <input id="userPhone" type="tel" required name="telephone" value=""
+                                        placeholder="Your telephone number">
+                                </div>
+                            </div>
+                            <button class="content-register__button button" type="submit" disabled><span>Join the
+                                    course</span></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="page__decor-register decor-register">
+                    <div class="decor-register__item decor-register__item--1"></div>
+                    <div class="decor-register__item decor-register__item--2"></div>
+                </div>
             </section>
         </main>
         <footer class="footer">
