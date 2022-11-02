@@ -284,6 +284,7 @@ button {
 }
 .form-contact__column {
     flex: 1 1 50%;
+    position: relative;
 }
 .form-contact__line {
 }
@@ -292,6 +293,7 @@ button {
 .form-contact__columns {
     display: flex;
     flex-direction: row;
+    column-gap: 24px;
 }
 .form-contact__textarea {
 }
@@ -303,9 +305,43 @@ button {
     resize: none;
 }
 .form-contact__user-agreement {
-    display: inline-block;
-    padding: 0 28px;
-    cursor: pointer;
 }
+/* custom chekbox */
+.form-contact__checkbox-input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.form-contact__checkbox-input:focus + .form-contact__checkbox-label {
+    outline: 1px dotted #a0312d;
+}
+.form-contact__checkbox-input:checked + .form-contact__checkbox-label:before {
+    content: "";
+    background: #f75e05 url("../img/contact-form/icon.svg") center no-repeat;
+}
+.form-contact__checkbox-label {
+    display: inline-flex;
+    padding-right: 28px;
+    cursor: pointer;
+    column-gap: 12px;
+    font-size: 16px;
+    line-height: 25.6px;
+}
+.form-contact__checkbox-label:before {
+    content: "";
+    flex: 0 0 16px;
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
+    border: 1px solid #d7dadd;
+    border-radius: 4px;
+    background-color: #f4f5f7;
+}
+.form-contact__checkbox-text {
+    align-self: center;
+}
+
 .form-contact__button {
 }
