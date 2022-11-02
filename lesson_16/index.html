@@ -13,7 +13,20 @@
     <div class="wrraper">
         <header class="header">
             <div class="header__container">
-                <nav class="header__nav"></nav>
+                <a href="#" class="header__logo"><img src="img/header/logo.svg" alt="logo CrateX"></a>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"> <a href="#" class="header__link">About us</a></li>
+                        <li class="menu__item"> <a href="#" class="header__link">Courses</a></li>
+                        <li class="menu__item"> <a href="#" class="header__link">Events</a></li>
+                        <li class="menu__item"> <a href="#" class="header__link">Blog</a></li>
+                        <li class="menu__item"> <a href="#" class="header__link">Contats</a></li>
+                    </ul>
+                </nav>
+                <div class="header__actions">
+                    <a href="#" class="header__button button"><span>Get consultation</span></a>
+                    <a href="#" class="header__log-and-reg"><span>Log in / Register</span></a>
+                </div>
             </div>
         </header>
         <main class="page">
@@ -21,7 +34,8 @@
                 <div class="page__container">
                     <div class="register__columns">
                         <div class="register__image"><img src="img/register/illustration.svg" alt=""></div>
-                        <form class="register__content content-register form">
+                        <form action="https://jsonplaceholder.typicode.com/posts" method="post"
+                            class="register__content content-register form">
                             <div class="content-register__caption">
                                 <h6 class="content-register__subtitle form__subtitle">Leave a request now and get 20%
                                     off!</h6>
@@ -29,22 +43,22 @@
                             </div>
                             <div class="content-register__user-input">
                                 <div class="form__line">
-                                    <label for="userName" class="form__label">Full name</label>
-                                    <input id="userName" type="text" required name="nameUser" value=""
+                                    <label for="username" class="form__label">Full name</label>
+                                    <input id="username" type="text" required name="nameUser" value=""
                                         placeholder="Your full name">
                                 </div>
                                 <div class="form__line">
-                                    <label for="userEmail" class="form__label">Email</label>
-                                    <input id="userEmail" type="email" required name="email" value=""
+                                    <label for="useremail" class="form__label">Email</label>
+                                    <input id="useremail" type="email" required name="email" value=""
                                         placeholder="Your working email">
                                 </div>
                                 <div class="form__line">
-                                    <label for="userPhone" class="form__label">Phone</label>
-                                    <input id="userPhone" type="tel" required name="telephone" value=""
+                                    <label for="userphone" class="form__label">Phone</label>
+                                    <input id="userphone" type="tel" required name="telephone" value=""
                                         placeholder="Your telephone number">
                                 </div>
                             </div>
-                            <button class="content-register__button button" type="submit" disabled><span>Join the
+                            <button class="content-register__button button" type="submit"><span>Join the
                                     course</span></button>
                         </form>
                     </div>
@@ -60,49 +74,56 @@
                         <div class="contact-form__image"><img src="img/contact-form/illustration.svg"
                                 alt="girl make comit">
                         </div>
-                        <form class="contact-form__form form-contact form">
+                        <form action="https://jsonplaceholder.typicode.com/posts" method="post"
+                            class="contact-form__form form-contact form">
                             <div class="form-contact__caption">
                                 <h6 class="form-contact__subtitle form__subtitle">Any questions?</h6>
                                 <h2 class="form-contact__title form__title">Drop us a line</h2>
                             </div>
-                            <div class="form-contact__iput-colums">
-                                <div class="form-contact__column">
-                                    <div class="form__line">
-                                        <label class="form__label" for="userFirstName">First Name*</label>
-                                        <input id="userFirstName" type="text" required placeholder="Your first name">
+                            <div class="form__lines">
+                                <div class="form-contact__iput-colums">
+                                    <div class="form-contact__column">
+                                        <div class="form__line">
+                                            <label class="form__label" for="userFirstName">First Name*</label>
+                                            <input id="userFirstName" type="text" name="userFirstName" required
+                                                placeholder="Your first name">
+                                        </div>
+                                        <div class="form__line">
+                                            <label class="form__label" for="userEmail">Email*</label>
+                                            <input id="userEmail" type="email" name="userEmail" required
+                                                placeholder="Your working email">
+                                        </div>
                                     </div>
-                                    <div class="form__line">
-                                        <label class="form__label" for="userEmail">Email*</label>
-                                        <input id="userEmail" type="email" required placeholder="Your working email">
+                                    <div class="form-contact__column">
+                                        <div class="form__line">
+                                            <label class="form__label" for="userLastName">Last Name*</label>
+                                            <input id="userLastName" type="text" name="userLastName" required
+                                                placeholder="Your first name">
+                                        </div>
+                                        <div class="form__line">
+                                            <label class="form__label" for="telUser">Phone</label>
+                                            <input id="telUser" type="tel" name="telUser" placeholder="Your phone">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-contact__column">
-                                    <div class="form__line">
-                                        <label class="form__label" for="name">Last Name*</label>
-                                        <input id="name" type="text" required placeholder="Your first name">
-                                    </div>
-                                    <div class="form__line">
-                                        <label class="form__label" for="email">Phone</label>
-                                        <input id="email" type="email" placeholder="Your working email">
-                                    </div>
+                                <div class="form-contact__line">
+                                    <label class="form__label" for="userMassege"
+                                        class="form-contact__message">Message</label>
+                                    <textarea class="form-contact__textarea form__textarea" name="userMassege"
+                                        id="userMassege" cols="30" rows="10" placeholder="Your message"></textarea>
                                 </div>
-                            </div>
-                            <div class="form-contact__line">
-                                <label class="form__label" for="userMassege"
-                                    class="form-contact__message">Message</label>
-                                <textarea name="userMassege" id="userMassege" cols="30" rows="10"
-                                    placeholder="Your message"></textarea>
                             </div>
                             <div class="form-contact__line form-actions">
                                 <div class="form-contact__columns">
                                     <div class="form-contact__column">
-                                        <input id="userAgreement" type="checkbox" required>
+                                        <input id="userAgreement" type="checkbox" name="userAgreement" required>
                                         <label for="userAgreement" class="form-contact__user-agreement">I agree to
                                             receive
                                             communications from Createx Online School</label>
                                     </div>
                                     <div class="form-contact__column">
-                                        <button class="form-contact__button button" type="submit">Send message</button>
+                                        <button class="form-contact__button button" type="submit"><span>Send
+                                                messages</span></button>
                                     </div>
                                 </div>
                             </div>
