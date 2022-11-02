@@ -23,8 +23,9 @@
                         <div class="register__image"><img src="img/register/illustration.svg" alt=""></div>
                         <form class="register__content content-register form">
                             <div class="content-register__caption">
-                                <h6 class="content-register__subtitle">Leave a request now and get 20% off!</h6>
-                                <h2 class="content-register__title">Register for the course</h2>
+                                <h6 class="content-register__subtitle form__subtitle">Leave a request now and get 20%
+                                    off!</h6>
+                                <h2 class="content-register__title form__title">Register for the course</h2>
                             </div>
                             <div class="content-register__user-input">
                                 <div class="form__line">
@@ -55,52 +56,58 @@
             </section>
             <section class="page__contact-form contact-form">
                 <div class="page__container">
-                    <div class="contact-form__image"><img src="img/contact-form/illustration.svg" alt=""></div>
-                    <form class="contact-form__form form-contact form">
-                        <div class="form-contact__caption">
-                            <h6 class="form-contact__subtitle">Any questions?</h6>
-                            <h2 class="form-contact__title">Drop us a line</h2>
+                    <div class="contact-form__columns">
+                        <div class="contact-form__image"><img src="img/contact-form/illustration.svg"
+                                alt="girl make comit">
                         </div>
-                        <div class="form-contact__iput-colums">
-                            <div class="form-contact__column">
-                                <div class="form__line">
-                                    <label for="userFirstName">First Name*</label>
-                                    <input id="userFirstName" type="text" required placeholder="Your first name">
-                                </div>
-                                <div class="form__line">
-                                    <label for="userEmail">Email*</label>
-                                    <input id="userEmail" type="email" required placeholder="Your working email">
-                                </div>
+                        <form class="contact-form__form form-contact form">
+                            <div class="form-contact__caption">
+                                <h6 class="form-contact__subtitle form__subtitle">Any questions?</h6>
+                                <h2 class="form-contact__title form__title">Drop us a line</h2>
                             </div>
-                            <div class="form-contact__column">
-                                <div class="form__line">
-                                    <label for="name">Last Name*</label>
-                                    <input id="name" type="text" required placeholder="Your first name">
-                                </div>
-                                <div class="form__line">
-                                    <label for="email">Phone</label>
-                                    <input id="email" type="email" placeholder="Your working email">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-contact__line">
-                            <label for="userMassege" class="form-contact__message">Message</label>
-                            <textarea name="userMassege" id="userMassege" cols="30" rows="10"
-                                placeholder="Your message"></textarea>
-                        </div>
-                        <div class="form-contact__line form-actions">
-                            <div class="form-contact__columns">
+                            <div class="form-contact__iput-colums">
                                 <div class="form-contact__column">
-                                    <input id="userAgreement" type="checkbox" required>
-                                    <label for="userAgreement" class="form-contact__user-agreement">I agree to receive
-                                        communications from Createx Online School</label>
+                                    <div class="form__line">
+                                        <label class="form__label" for="userFirstName">First Name*</label>
+                                        <input id="userFirstName" type="text" required placeholder="Your first name">
+                                    </div>
+                                    <div class="form__line">
+                                        <label class="form__label" for="userEmail">Email*</label>
+                                        <input id="userEmail" type="email" required placeholder="Your working email">
+                                    </div>
                                 </div>
                                 <div class="form-contact__column">
-                                    <button class="form-contact__button button" type="submit">Send message</button>
+                                    <div class="form__line">
+                                        <label class="form__label" for="name">Last Name*</label>
+                                        <input id="name" type="text" required placeholder="Your first name">
+                                    </div>
+                                    <div class="form__line">
+                                        <label class="form__label" for="email">Phone</label>
+                                        <input id="email" type="email" placeholder="Your working email">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </form>
+                            <div class="form-contact__line">
+                                <label class="form__label" for="userMassege"
+                                    class="form-contact__message">Message</label>
+                                <textarea name="userMassege" id="userMassege" cols="30" rows="10"
+                                    placeholder="Your message"></textarea>
+                            </div>
+                            <div class="form-contact__line form-actions">
+                                <div class="form-contact__columns">
+                                    <div class="form-contact__column">
+                                        <input id="userAgreement" type="checkbox" required>
+                                        <label for="userAgreement" class="form-contact__user-agreement">I agree to
+                                            receive
+                                            communications from Createx Online School</label>
+                                    </div>
+                                    <div class="form-contact__column">
+                                        <button class="form-contact__button button" type="submit">Send message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </section>
         </main>

@@ -45,12 +45,26 @@ body {
 }
 .content-register {
 }
+.form__subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1e212c;
+}
 .content-register__subtitle {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 1px;
     text-transform: uppercase;
+    color: #1e212c;
+}
+.form__title {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.3;
     color: #1e212c;
 }
 .content-register__title {
@@ -164,4 +178,52 @@ button {
     opacity: 1;
     z-index: 1;
     transition-duration: 0.3s;
+}
+/* =================================== */
+/* contact-form */
+.page__contact-form {
+}
+.contact-form {
+}
+.contact-form__columns {
+    display: flex;
+    flex-direction: row;
+}
+.contact-form__image img {
+    max-width: 100%;
+}
+.contact-form__image {
+}
+.contact-form__form {
+}
+.form-contact {
+}
+.form-contact__caption {
+}
+.form-contact__subtitle {
+}
+.form__subtitle {
+}
+.form-contact__title {
+}
+.form__title {
+}
+.form-contact__iput-colums {
+    display: flex;
+    flex-direction: row;
+}
+.form-contact__column {
+    flex: 1 1 50%;
+}
+.form-contact__line {
+}
+.form-actions {
+}
+.form-contact__columns {
+display: flex;
+flex-direction: row;
+}
+.form-contact__user-agreement {
+}
+.form-contact__button {
 }
