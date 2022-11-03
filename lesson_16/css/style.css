@@ -29,7 +29,9 @@ body {
     /* background-color: #fddecd77; */
     /* background: linear-gradient(45deg, rgba(247, 94, 5, 1) 0%, rgba(247, 94, 5, 1) 100%); */
 }
+
 .header__container {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 60px;
