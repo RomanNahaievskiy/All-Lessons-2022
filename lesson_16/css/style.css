@@ -182,19 +182,23 @@ button {
 /* =================================== */
 /* contact-form */
 .page__contact-form {
+    padding: 180px 0;
 }
 .contact-form {
 }
 .contact-form__columns {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 .contact-form__image img {
     max-width: 100%;
 }
 .contact-form__image {
+    flex: 0 1 35.3%
 }
 .contact-form__form {
+    flex: 0 1 57.3%;
 }
 .form-contact {
 }
