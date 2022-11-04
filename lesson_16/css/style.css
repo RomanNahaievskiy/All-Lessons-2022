@@ -253,7 +253,6 @@ button {
 /* =================================== */
 /* contact-form */
 .page__contact-form {
-    padding: 180px 0;
 }
 .contact-form {
 }
@@ -266,9 +265,6 @@ button {
     max-width: 100%;
 }
 .contact-form__image {
-    padding-right: 15px;
-    display: flex;
-    align-content: center;
 }
 .contact-form__form {
     flex: 0 1 57.3%;

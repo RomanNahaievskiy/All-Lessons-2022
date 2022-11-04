@@ -1,3 +1,4 @@
+
 body {
     font-family: "Courier New", serif;
     font-size: 16px;
@@ -27,6 +28,7 @@ body {
     padding: 10px 0;
     color: #fff;
     font-size: 32px;
+    z-index: 50;
 }
 .header__container {
 }
@@ -123,78 +125,14 @@ body {
 }
 .columns {
 }
+
+.column {
+}
 .form {
-    padding-left: 15px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: space-between;
-}
-.form__column {
-    flex: 0 1 50%;
-    padding: 0 12px;
-    display: flex;
-    flex-direction: column;
-}
-.form__line input::placeholder {
 }
 .form__line input {
-    background-color: #e88e0e;
     width: 100%;
-    height: 45px;
-    border-radius: 10px / 34px;
-}
-.form__line {
-    position: relative;
-    width: 100%;
-}
-.form__line:not(:last-child) {
-    margin-bottom: 24px;
-}
-.form__label {
-}
-.form__input {
-    padding: 0 24px;
-}
-.form__line-title {
-}
-.form__radio-input,
-.form__line input.input-checkbox {
-    position: absolute;
-    opacity: 0;
-    height: 0;
-    width: 0;
-}
-.form__label-radio,
-.form__line label.label-checkbox {
-    display: block;
-    cursor: pointer;
-}
-
-.form__row {
-    flex: 1 0 100%;
-}
-.form__t-area {
-    padding: 34px;
-    background-color: #e88e0e;
-    resize: none;
-    width: 100%;
-    border-radius: 34px;
-}
-button:not(:last-child) {
-    margin-bottom: 24px;
-}
-button {
-    height: 45px;
-    padding: 12px 24px;
-    width: 100%;
-    border-radius: 4px;
-    background-color: darkred;
-    color: #f3f3f3;
-    font-weight: 900;
-}
-.footer {
-}
-.footer__container {
+    height: 26px;
+    padding: 0 12px;
+    border-radius: 10px;
 }

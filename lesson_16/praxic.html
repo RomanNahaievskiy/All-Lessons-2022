@@ -28,102 +28,37 @@
                     <div class="page__column column">
                         <div class="column__image"><img
                                 src="https://m.polit.ru/media/photolib/2014/12/08/11_1418058028.png"
-                                alt="question mark"></div>
+                                alt="eye of Sauron"></div>
                     </div>
-                    <div class="page__columns columns">
-                        <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post">
-                            <div class="form__column">
-                                <div class="form__line">
-                                    <label class="form__label" for="nameUser">Who are You? *</label>
-                                    <input class="form__input" id="nameUser" type="text" name="nameUser" required
-                                        autocomplete="on" placeholder="Your Name" tabindex="1">
-                                </div>
-                                <div class="form__line">
-                                    <label class="form__label" for="userTel">Have any phone number?</label>
-                                    <input class="form__input" id="userTel" type="tel" name="nameTel" autocomplete="on"
-                                        placeholder="Your Phone" tabindex="2">
-                                </div>
-                                <div class="form__line">
-                                    <label class="form__label" for="userEmail">E-mail?</label>
-                                    <input class="form__input" id="userEmail" type="email" name="userEmail"
-                                        autocomplete="on" placeholder="Your Phone" tabindex="3">
-                                </div>
-                                <div class="form__line">
-                                    <label class="form__label" for="userPass">TOP secret psss?</label>
-                                    <input class="form__input" id="userPass" type="password" name="userPass"
-                                        autocomplete="on" placeholder="Password" tabindex="4">
-                                </div>
-                            </div>
-                            <div class="form__column">
-                                <div class="form__line">
-                                    <div class="form__line-title">What are You?</div>
-                                    <label class="form__label-radio" for="sexUserU">Undecidet</label>
-                                    <input class="form__radio-input" id="sexUserU" type="radio" checked
-                                        value="Undecidet" name="sexUser" tabindex="5">
-                                    <label class="form__label-radio" for="sexUserM">Male</label>
-                                    <input class="form__radio-input" id="sexUserM" type="radio" value="Male"
-                                        name="sexUser" tabindex="6">
-                                    <label class="form__label-radio" for="sexUserF">Female</label>
-                                    <input class="form__radio-input" id="sexUserF" type="radio" value="Female"
-                                        name="sexUser" tabindex="7">
-                                </div>
-                                <div class="form__line">
-                                    <label class="form__label label-checkbox" for="merried">Merried ?</label>
-                                    <input class="form__input input-checkbox" id="merried" type="checkbox" value="yes"
-                                        name="merrige" tabindex="8">
-                                </div>
-                                <div class="form__line">
-                                    <label class="form__label label-checkbox" for="pet">Any pet ?</label>
-                                    <input class="form__input input-checkbox" id="pet" type="checkbox" value="yes"
-                                        name="pet" tabindex="9">
-                                </div>
-                                <div class="form__line">
-                                    <!-- no tabindex -->
-                                    <label for="petUser">Choose Your pet</label>
-                                    <select name="petUser" id="petUser">
-                                        <option value="Cat">Cat</option>
-                                        <option value="Dog">Dog</option>
-                                        <option value="Parrot">Parrot</option>
-                                        <option value="Rabit">Rabit</option>
-                                        <option value="chinchilla">Сhinchilla</option>
-                                        <option value="Aligator">Aligator</option>
-                                        <option value="Snake">Snake</option>
-                                        <option value="Pig">Pig</option>
-                                        <option value="Cow">Cow</option>
-                                        <option value="Chiсken">Chiсken</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form__row">
-                                <div class="form__line">
-                                    <label class="form__label" for="color">Favorite colour ?</label>
-                                    <input class="form__input" id="color" type="color" value="#77ff77" name="colorUser"
-                                        tabindex="10">
-                                </div>
-                                <div class="form__line">
-                                    <label class="form__label" for="userPic">Youre Photo ?</label>
-                                    <input class="form__input" id="userPic" multiple type="file"
-                                        accept="image/png, image/jpeg, image/bmp" name="file" tabindex="11">
-                                </div>
-                                <label for="message">Type any thing</label>
-                                <textarea class="form__t-area" name="message" id="messageFromUser" cols="30"
-                                    rows="10"></textarea>
-                                <div class="form__line">
-                                    <!-- Тип hidden - Приховане поле. Використовується разом з value таб індкекс ???-->
-                                    <input class="form__input" name="token"
-                                        value="putin is indescribably fucked up scum" type="hidden" tabindex="0">
-                                </div>
-                                <div class="form__line">
-                                    <label class="form__label" for="curentTem">What is the temperature out the bort?
-                                        (C)</label>
-                                    <input class="form__input" id="curentTem" type="number" name="curentTem"
-                                        autocomplete="off" tabindex="12">
-                                </div>
-                                <button type="reset">To hell everything this</button>
-                                <button type="submit">Send all data to FBI to CIA to Darknet and youre exwife</button>
-                            </div>
-                        </form>
-                    </div>
+                    <form class="page__column column form">
+                        <div class="form__title">
+                            <h2>Who you ?</h2>
+                        </div>
+                        <div class="form__line">
+                            <label for="nameUser"> Your Name
+                                <input id="nameUser" type="text" name="nameUser" placeholder="Enter your name"
+                                    tabindex="1">
+                            </label>
+                        </div>
+                        <div class="form__line">
+                            <label for="userTel">Your Phone <input id="userTel" type="tel" name="tel"
+                                    placeholder="Enter your phone" tabindex="2"></label>
+                        </div>
+                        <div class="form__line">
+                            <label for="userEmail">Your Email <input id="userEmail" type="email" name="email"
+                                    placeholder="Enter your Email" tabindex="3"></label>
+                        </div>
+                        <div class="form__title">
+                            <h2>Sex ?</h2>
+                        </div>
+                        <div class="form__radio">
+                            <label for="sexM">Male <input name="sexUser" type="radio" value="Mele"></label>
+                            <label for="sexF">Female <input name="sexUser" type="radio" value="Female"></label>
+                        </div>
+                        <div class="form__checkbox">
+                            <label for="">checkbox<input type="checkbox"></label>
+                        </div>
+                    </form>
                 </div>
             </div>
         </main>
