@@ -101,12 +101,33 @@ body {
     top: -15px;
     left: -40px;
     max-width: 150%;
+    transform: scale(1.1);
     transform-origin: 200px 300px;
-    animation: ise 3s ease-in-out infinite 4s alternate;
+    animation: ise 3s linear infinite 4s alternate;
 }
 @keyframes ise {
     0% {
         rotate: 0 deg;
+    }
+    25% {
+        rotate: 10deg;
+        translate: -100px;
+        scale: 1.02;
+    }
+    30% {
+        rotate: 0deg;
+        translate: 0px;
+    }
+    40% {
+        rotate: 10deg;
+        translate: -150px;
+    }
+    75% {
+        rotate: 5deg;
+        translate: -50px;
+    }
+    80% {
+        scale: 0.9;
     }
     100% {
         rotate: 10deg;
@@ -167,4 +188,41 @@ body {
     background: #fb5800
         url("https://toppng.com/uploads/preview/fire-eyes-png-orange-cat-eye-necklace-11562897113kew4faiu7y.png") 100% /
         100% no-repeat;
+}
+
+/* checkbox */
+
+.form__checkbox {
+}
+.checkbox {
+    position: relative;
+}
+.checkbox__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.checkbox__label {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    cursor: pointer;
+}
+.checkbox__label::before {
+    content: "";
+    flex: 0 0 20px;
+    height: 20px;
+    border: 1px solid #fb5800;
+    border-radius: 4px;
+    background-color: #f3f3f3;
+}
+.checkbox__label span {
+    align-self: center;
+    /* white-space: nowrap; */
+    /* flex: 0 0 auto; */
+}
+.checkbox__input:checked + .checkbox__label::before {
+    content: "";
+    background-color: #fb5800;
 }
