@@ -1,10 +1,11 @@
-
 body {
     font-family: "Courier New", serif;
     font-size: 16px;
     line-height: 1.5;
     color: #f3f3f3;
-    background: #232323;
+    background: #232323
+        url("https://naked-science.ru/wp-content/uploads/2016/04/article_mordor_by_annap_artwork-d70c1s1.jpg") 100%/100%
+        no-repeat;
 }
 
 .wrraper > main {
@@ -135,4 +136,35 @@ body {
     height: 26px;
     padding: 0 12px;
     border-radius: 10px;
+}
+.form__radio {
+    display: inline-flex;
+}
+.radio__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.radio__label {
+    display: inline-flex;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.radio__label::before {
+    content: "";
+    flex: 0 0 20px;
+    height: 20px;
+    width: 20px;
+    background: #f3f3f3;
+    border-radius: 50%;
+}
+
+.radio__input:checked + .radio__label::before {
+    content: "";
+    box-shadow: 0 0 30px 3px #fb5800;
+    background: #fb5800
+        url("https://toppng.com/uploads/preview/fire-eyes-png-orange-cat-eye-necklace-11562897113kew4faiu7y.png") 100% /
+        100% no-repeat;
 }
