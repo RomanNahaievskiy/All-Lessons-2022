@@ -1,11 +1,14 @@
 body {
     font-family: "Courier New", serif;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
     color: #f3f3f3;
     background: #232323
         url("https://naked-science.ru/wp-content/uploads/2016/04/article_mordor_by_annap_artwork-d70c1s1.jpg") 100%/100%
         repeat-y;
+}
+h2 {
+    text-align: center;
 }
 .wrraper {
     overflow: hidden;
@@ -22,7 +25,14 @@ body {
     margin: 0 auto;
 }
 .header {
-    background-color: darkred;
+    background: rgb(251, 88, 0);
+    background: linear-gradient(
+        13deg,
+        rgba(251, 88, 0, 0.1) 0%,
+        rgba(110, 33, 33, 0.5) 46%,
+        rgba(43, 6, 66, 1) 77%,
+        rgba(0, 0, 0, 1) 100%
+    );
     width: 100%;
     height: 80px;
     position: fixed;
@@ -95,7 +105,7 @@ body {
 }
 .column {
 }
-.column__image img {
+/*.column__image img {
     position: relative;
     top: -15px;
     left: -40px;
@@ -103,7 +113,7 @@ body {
     transform: scale(1.1);
     transform-origin: 200px 300px;
     animation: ise 3s linear infinite 4s alternate;
-}
+}*/
 @keyframes ise {
     0% {
         rotate: 0 deg;
@@ -134,7 +144,7 @@ body {
         scale: 1.02;
     }
 }
-.column__image {
+/*.column__image {
     display: block;
     width: 400px;
     height: 400px;
@@ -143,7 +153,7 @@ body {
     overflow: hidden;
     border-radius: 50%;
     box-shadow: 0px 20px 114px 0px rgba(171, 46, 24, 0.98), inset 0px 0px 115px 100px rgba(0, 0, 0, 1);
-}
+}*/
 .columns {
 }
 
@@ -154,12 +164,27 @@ body {
 .form__line:not(:last-child) {
     margin-bottom: 50px;
 }
-.form__line {
-    position: relative;
+.form__line input {
+    outline: 3px solid #fb580077;
+    background: rgb(251, 88, 0);
+    background: linear-gradient(
+        246deg,
+        rgba(251, 88, 0, 0.4) 0%,
+        rgba(110, 33, 33, 0.5) 46%,
+        rgba(43, 6, 66, 1) 77%,
+        rgba(0, 0, 0, 1) 100%
+    );
+    color: #fb5800;
+    letter-spacing: 1.4px;
+    font-size: 20px;
+}
+
+.form__line input:focus {
+    outline: 3px solid #fb5800;
 }
 .form__line input {
     width: 100%;
-    height: 26px;
+    height: 35px;
     padding: 0 12px;
     border-radius: 10px;
 }
@@ -247,4 +272,54 @@ body {
     height: 4px;
     border-radius: 2px;
     background-color: #232323;
+}
+/* Button */
+.form__button {
+    display: block;
+    background-color: transparent;
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: inset 0 0 34px 4px #232323;
+    transition: all 0.4s ease-in-out;
+}
+.eye {
+    display: block;
+    width: 400px;
+    height: 400px;
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0px 20px 114px 0px rgba(171, 46, 24, 0.98), inset 0px 0px 115px 100px rgba(0, 0, 0, 1);
+}
+.eye img {
+    position: relative;
+    top: -15px;
+    left: -40px;
+    max-width: 150%;
+    transform: scale(1.1);
+    transform-origin: 200px 300px;
+    animation: ise 3s linear infinite 4s alternate;
+}
+
+.form__button span {
+    opacity: 0;
+    font-size: 40px;
+    font-weight: 900;
+    color: #fb5800;
+    text-shadow: 0px 0px 40px #000;
+}
+.form__button:hover {
+    background-color: #fb580033;
+    transition: all 0.4s ease-in-out;
+}
+.form__button:hover span {
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
 }
