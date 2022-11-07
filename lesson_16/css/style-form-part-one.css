@@ -161,6 +161,7 @@ h2 {
 }
 .form {
 }
+
 .form__line:not(:last-child) {
     margin-bottom: 50px;
 }
@@ -322,4 +323,16 @@ h2 {
 .form__button:hover span {
     opacity: 1;
     transition: all 0.4s ease-in-out;
+}
+.footer {
+    background: rgb(251, 88, 0);
+    background: linear-gradient(
+        180deg,
+        rgba(251, 88, 0, 0.1) 0%,
+        rgba(110, 33, 33, 0.7679446778711485) 46%,
+        rgba(43, 6, 66, 0.896796218487395) 77%,
+        rgba(0, 0, 0, 1) 100%
+    );
+    text-align: center;
+    padding: 200px;
 }
