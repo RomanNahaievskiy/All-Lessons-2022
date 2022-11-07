@@ -30,46 +30,91 @@
                                 src="https://m.polit.ru/media/photolib/2014/12/08/11_1418058028.png"
                                 alt="eye of Sauron"></div>
                     </div>
-                    <form class="page__column column form">
+                    <form action="#" class="page__column column form">
                         <div class="form__title">
-                            <h2>Who you ?</h2>
+                            <h2>Who are you ?</h2>
+                        </div>
+
+                        <div class="form__line">
+                            <label for="nameUser">Your Name</label>
+                            <input id="nameUser" type="text" name="nameUser" placeholder="Enter your name" tabindex="1">
                         </div>
                         <div class="form__line">
-                            <label for="nameUser"> Your Name
-                                <input id="nameUser" type="text" name="nameUser" placeholder="Enter your name"
-                                    tabindex="1">
-                            </label>
+                            <label for="userTel">Your Phone</label>
+                            <input id="userTel" type="tel" name="tel" placeholder="Enter your phone" tabindex="2">
                         </div>
                         <div class="form__line">
-                            <label for="userTel">Your Phone <input id="userTel" type="tel" name="tel"
-                                    placeholder="Enter your phone" tabindex="2"></label>
+                            <label for="userEmail">Your Email</label>
+                            <input id="userEmail" type="email" name="email" placeholder="Enter your Email" tabindex="3">
                         </div>
-                        <div class="form__line">
-                            <label for="userEmail">Your Email <input id="userEmail" type="email" name="email"
-                                    placeholder="Enter your Email" tabindex="3"></label>
-                        </div>
+
+
+
                         <div class="form__title">
-                            <h2>Sex ?</h2>
+                            <h2>Sex / Gender ?</h2>
                         </div>
                         <div class="form__line">
                             <div class="form__radio radio">
-                                <input class="radio__input" id="sexM" name="sexUser" type="radio" value="Mele">
-                                <label class="radio__label" for="sexM">Male</label>
+                                <label class="radio__input" for="sexM">
+                                    <input id="sexM" name="sexUser" type="radio" value="Male" tabindex="4">
+                                    <span></span>
+                                </label>
+                                <label for="sexM" class="radio__label">Male</label>
 
                             </div>
                             <div class="form__radio radio">
-                                <input class="radio__input" id="sexF" name="sexUser" type="radio" value="Female">
-                                <label class="radio__label" for="sexF">Female</label>
-
+                                <label for="sexF" class="radio__input"><input id="sexF" name="sexUser" type="radio"
+                                        value="Female" tabindex="5"><span></span></label>
+                                <label for="sexF" class="radio__label">Female</label>
                             </div>
                         </div>
                         <div class="form__line">
+                            <!-- ================================================= -->
                             <div class="form__checkbox checkbox">
-                                <input class="checkbox__input" id="mar" type="checkbox" value="yes" name="merrige">
-                                <label class="checkbox__label" for="mar"><span>Are you married?</span></label>
+                                <label for="mar" class="checkbox__input">
+                                    <input id="mar" type="checkbox" name="marrige" tabindex="5">
+                                    <span></span>
+                                </label>
+                                <label for="mar" class="checkbox__text">Are you married?</label>
                             </div>
+                            <!-- ================================================= -->
                         </div>
-
+                        <!-- ============================================================ -->
+                        <div class="form__line">
+                            <!-- Тип password - поле вводу паролю  -->
+                            <label for="pas">Do you have secret Password? I will know this...</label>
+                            <input id="pas" class="form__input" autocomplete="off" placeholder="Enter confidential data"
+                                name="passUser" type="password" tabindex="6">
+                        </div>
+                        <div class="form__line">
+                            <!-- Тип number - поле вводу числа -->
+                            <label for="temp">Are you freeze ?</label>
+                            <input id="temp" class="form__input" autocomplete="off"
+                                placeholder="Enter themperature in C gradus" name="digi" type="number" tabindex="7">
+                        </div>
+                        <div class="form__line">
+                            <!-- Тип color - поле вибору кольору -->
+                            <label for="colour">Сhoose the color of your soul</label>
+                            <input id="colour" class="form__input" autocomplete="off" name="color" value="#fb5800"
+                                type="color" tabindex="8">
+                        </div>
+                        <div class="form__line">
+                            <!-- Тип search - поле пошуку-->
+                            <label for="search">Looking for something?</label>
+                            <input id="search" class="form__input" autocomplete="off" name="search"
+                                placeholder="I search for treasures" type="search" tabindex="9">
+                        </div>
+                        <div class="form__line">
+                            <!-- Тип search - поле вибору дати -->
+                            <label for="bdayUser">I will know when you were born...</label>
+                            <input class="form__input" autocomplete="off" name="date" type="date" tabindex="10">
+                        </div>
+                        <div class="form__line">
+                            <!-- Тип range - поле вибору значення -->
+                            <label for="lev">How obsessed you are with my treasure</label>
+                            <input class="form__input" autocomplete="off" name="range" type="range">
+                        </div>
+                        <button class="form__button" type="submit"><span>Send to Sauron</span></button>
                     </form>
                 </div>
             </div>

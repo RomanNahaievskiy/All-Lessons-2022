@@ -5,17 +5,17 @@ body {
     color: #f3f3f3;
     background: #232323
         url("https://naked-science.ru/wp-content/uploads/2016/04/article_mordor_by_annap_artwork-d70c1s1.jpg") 100%/100%
-        no-repeat;
-}
-
-.wrraper > main {
-    flex-grow: 1;
+        repeat-y;
 }
 .wrraper {
     overflow: hidden;
     display: flex;
     flex-direction: column;
 }
+.wrraper > main {
+    flex-grow: 1;
+}
+
 [class*="__container"] {
     max-width: 1230px;
     padding: 0 15px;
@@ -85,8 +85,7 @@ body {
 .page {
     padding-top: 85px;
 }
-.page__container {
-}
+
 .page__columns {
     display: flex;
     justify-content: space-between;
@@ -152,77 +151,100 @@ body {
 }
 .form {
 }
+.form__line:not(:last-child) {
+    margin-bottom: 50px;
+}
+.form__line {
+    position: relative;
+}
 .form__line input {
     width: 100%;
     height: 26px;
     padding: 0 12px;
     border-radius: 10px;
 }
+/* radio-button */
 .form__radio {
-    display: inline-flex;
+    display: flex;
+    gap: 15px;
+}
+.radio {
 }
 .radio__input {
-    position: absolute;
-    width: 0;
-    height: 0;
-    opacity: 0;
-}
-.radio__label {
-    display: inline-flex;
-    cursor: pointer;
-    gap: 10px;
-}
-
-.radio__label::before {
-    content: "";
     flex: 0 0 20px;
     height: 20px;
-    width: 20px;
-    background: #f3f3f3;
+    position: relative;
+}
+.radio__input input {
+    opacity: 0;
+    pointer-events: none;
+}
+.radio__input span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #f4f4f4;
     border-radius: 50%;
 }
-
-.radio__input:checked + .radio__label::before {
-    content: "";
-    box-shadow: 0 0 30px 3px #fb5800;
-    background: #fb5800
-        url("https://toppng.com/uploads/preview/fire-eyes-png-orange-cat-eye-necklace-11562897113kew4faiu7y.png") 100% /
-        100% no-repeat;
+.radio__input input:checked ~ span {
+    background-color: #fb5800;
+    box-shadow: 0 0 34px 3px #fb5800;
 }
 
+.radio__label {
+    cursor: pointer;
+}
 /* checkbox */
 
 .form__checkbox {
 }
+/* Контейнер для чекбокса */
 .checkbox {
-    position: relative;
+    display: flex;
+    column-gap: 15px;
 }
 .checkbox__input {
-    position: absolute;
-    width: 0;
-    height: 0;
-    opacity: 0;
-}
-.checkbox__label {
-    display: inline-flex;
-    flex-wrap: nowrap;
-    gap: 10px;
+    position: relative;
     cursor: pointer;
-}
-.checkbox__label::before {
-    content: "";
-    flex: 0 0 20px;
+    width: 20px;
     height: 20px;
-    border: 1px solid #fb5800;
-    border-radius: 4px;
-    background-color: #f3f3f3;
+    flex: 0 0 20px;
 }
-.checkbox__label span {
-    align-self: center;
-    /* white-space: nowrap; */
-    /* flex: 0 0 auto; */
+.checkbox__text {
+    cursor: pointer;
+    user-select: none;
 }
-.checkbox__input:checked + .checkbox__label::before {
-    content: "";
+/* Приховування дефолтного інпута */
+.checkbox__input input {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Створення кастомного інпута */
+.checkbox__input span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #f4f4f4;
+    border-radius: 6px;
+}
+/* Зміна бекграунда при статусі чекед */
+.checkbox__input input:checked ~ span {
     background-color: #fb5800;
+}
+/* Додавання точки (індикатора) */
+.checkbox__input input:checked ~ span::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 8px;
+    left: 8px;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #232323;
 }

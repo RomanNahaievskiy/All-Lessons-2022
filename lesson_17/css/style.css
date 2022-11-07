@@ -1,0 +1,74 @@
+@import "nullstyle.css";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+
+body {
+    font-family: "Lato";
+    font-size: 16px;
+}
+[class*="__container"] {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.wrraper {
+    overflow: hidden;
+}
+.wrraper > main {
+    flex-grow: 1;
+}
+/* HEADER */
+/* PAGE */
+/* grid container */
+.grid {
+    display: grid;
+    background: #000;
+    margin-bottom: 100px;
+
+    gap: 20px;
+    /* grid-template-columns: 100px 200px 300px; */
+    /*grid-template-rows: 100px 200px 300px; */
+    /* grid-template: 100px 200px 300px / 100px 200px 300px; */
+    /* відносні 3 колонки */
+    grid-template-columns: repeat(3, 134px);
+    /* автомтична ннеявна сітка розміщення елементів (зайві об'єкти починають новий стовпець)*/
+    grid-auto-flow: column;
+    /* автомтична ннеявна сітка розміщення елементів (зайві об'єкти заповнюють пустоти)*/
+    grid-auto-flow: dense;
+    /* автомтична ннеявна сітка розміщення елементів (зайві об'єкти починають новий рядок) */
+    grid-auto-flow: row;
+    /* автоматична висота рядків неявної сітки */
+    grid-auto-rows: 100px;
+    /* автоматична ширина стовпців неявної сітки*/
+    grid-auto-columns: 100px;
+    /* ВИРІВНЮВАННЯ сітки можливе лише при умові вільного простору stretch ----------- space-around space-between spase-evently */
+    justify-content: center;
+    align-content: center;
+    /* ВИРІВНЮВАННЯ контенту  всередині сітки */
+    /* вздовж горизонтальної осі  start center end*/
+    justify-items: stretch;
+    /* вздовж вертикальної осі start center end */
+    align-items: center;
+}
+/* grid element content in */
+.grid__item {
+    padding: 12px 16px;
+    background-color: #4f4f4f;
+}
+.grid__item:nth-child(2) {
+    grid-area: block-area-1;
+    grid-column: 3/4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+/* flex */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #000;
+}
+.flex__item {
+    background-color: #4f4f4f;
+    padding: 20px;
+}
+/* FOOTER */
