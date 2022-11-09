@@ -39,7 +39,7 @@
 
                             <div class="form__line">
                                 <label for="nameUser">Your Name</label>
-                                <input id="nameUser" type="text" name="nameUser" autocomplete="off"
+                                <input id="nameUser" type="text" name="nameUser" required autocomplete="off"
                                     placeholder="Enter your name" tabindex="1">
                             </div>
                             <div class="form__line">
@@ -120,6 +120,30 @@
                                 <!-- Тип range - поле вибору значення -->
                                 <label for="lev">How obsessed you are with my treasure</label>
                                 <input class="form__input" autocomplete="off" name="range" type="range">
+                            </div>
+                            <div class="form__line">
+                                <!-- Тип hidden - приховане значення -->
+                                <label for="lev">How obsessed you are with my treasure</label>
+                                <input class="form__input" value="Now i know who are YOU!" name="sauronText"
+                                    type="hidden">
+                            </div>
+                            <div class="form__line">
+                                <label for="pet">What your pet ?
+
+                                </label>
+                                <select name="list" id="pet">
+                                    <option value="Cat">Cat</option>
+                                    <option value="Dog">Dog</option>
+                                    <option value="CatDog">CatDog</option>
+                                    <option value="Hotdog">Hotdog</option>
+                                </select>
+                            </div>
+                            <div class="form__line">
+                                <label for="userFile">
+                                    Give me your pfoto...
+                                </label>
+                                <input type="file" multiple accept="image/png, image/jpeg" name="userPhoto"
+                                    id="userFile">
                             </div>
                             <div class="form__line">
                                 <div class="eye"><img
