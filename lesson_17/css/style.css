@@ -400,7 +400,7 @@ body {
         text-align: center;
     }
 }
-@media (max-width: 426px) {
+@media (max-width: 480px) {
     .header__menu {
         display: none;
     }
@@ -413,8 +413,8 @@ body {
         justify-content: space-between;
         align-items: center;
     }
-    .achievement-main__item::after,
-    .achievement-main__item::before {
+    .achievement-main__item::after
+    /* .achievement-main__item::before*/ {
         content: "";
         display: inline-block;
         width: 8px;
@@ -424,9 +424,7 @@ body {
         border-radius: 50%;
         flex-grow: 0;
     }
-    .achievement-main__item::after {
-        order: 2;
-    }
+
     .achievement-main__item-dec {
         display: none;
     }
