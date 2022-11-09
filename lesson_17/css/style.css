@@ -146,6 +146,7 @@ body {
 }
 .main__contents {
     display: flex;
+    margin-bottom: 110px;
 }
 .main__content {
     padding-right: 58px;
@@ -307,6 +308,12 @@ body {
     right: -30px;
 }
 .decor-block-main__item--circles-06 {
+    background: url("../img/main/decor/circles06.svg") no-repeat;
+    width: 284px;
+    height: 284px;
+    position: absolute;
+    left: -112px;
+    top: 896px;
 }
 .about {
 }
