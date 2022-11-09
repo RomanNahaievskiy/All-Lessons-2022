@@ -364,7 +364,11 @@ button {
 .practice {
     padding: 100px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.practice h2 {
+    padding-bottom: 50px;
 }
 .practice .button {
     width: 320px;
