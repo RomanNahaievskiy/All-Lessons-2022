@@ -1,74 +1,344 @@
-@import "nullstyle.css";
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
-
+@import "nullstyle.css";
 body {
+    /* default styles */
     font-family: "Lato";
-    font-size: 16px;
-}
-[class*="__container"] {
-    max-width: 1260px;
-    margin: 0 auto;
-    padding: 0 15px;
+    color: #424551;
 }
 .wrraper {
     overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 .wrraper > main {
     flex-grow: 1;
 }
-/* HEADER */
-/* PAGE */
-/* grid container */
-.grid {
-    display: grid;
-    background: #000;
-    margin-bottom: 100px;
+[class*="__container"] {
+    max-width: 1260px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+/* buttons from common-componets */
+.button {
+    display: inline-block;
+    background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+    border-radius: 4px;
+    padding: 17.25px 40px;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+.button > span {
+    position: relative;
+    z-index: 2;
+}
 
-    gap: 20px;
-    /* grid-template-columns: 100px 200px 300px; */
-    /*grid-template-rows: 100px 200px 300px; */
-    /* grid-template: 100px 200px 300px / 100px 200px 300px; */
-    /* відносні 3 колонки */
-    grid-template-columns: repeat(3, 134px);
-    /* автомтична ннеявна сітка розміщення елементів (зайві об'єкти починають новий стовпець)*/
-    grid-auto-flow: column;
-    /* автомтична ннеявна сітка розміщення елементів (зайві об'єкти заповнюють пустоти)*/
-    grid-auto-flow: dense;
-    /* автомтична ннеявна сітка розміщення елементів (зайві об'єкти починають новий рядок) */
-    grid-auto-flow: row;
-    /* автоматична висота рядків неявної сітки */
-    grid-auto-rows: 100px;
-    /* автоматична ширина стовпців неявної сітки*/
-    grid-auto-columns: 100px;
-    /* ВИРІВНЮВАННЯ сітки можливе лише при умові вільного простору stretch ----------- space-around space-between spase-evently */
-    justify-content: center;
-    align-content: center;
-    /* ВИРІВНЮВАННЯ контенту  всередині сітки */
-    /* вздовж горизонтальної осі  start center end*/
-    justify-items: stretch;
-    /* вздовж вертикальної осі start center end */
+.button::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background: linear-gradient(55.95deg, #a0312d 0%, #f75e05 100%);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.button:hover::before {
+    opacity: 1;
+    z-index: 1;
+    transition-duration: 0.3s;
+}
+/* альтернативні кнопки  */
+.button--border {
+    background: transparent;
+    border: 1px solid #ff3f3a;
+    border-radius: 4px;
+    padding: 16.25px 39px;
+    color: #f75e05;
+}
+.button--border:hover {
+    color: #ffffff;
+}
+/* HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    color: #424551;
+    font-weight: 700;
+    z-index: 50;
+    /* шапка мала б бути прозорою , але це експеремент з background */
+    /* background-color: #fddecd77; */
+    /* background: linear-gradient(45deg, rgba(247, 94, 5, 1) 0%, rgba(247, 94, 5, 1) 100%); */
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.header__logo {
+}
+.header__menu {
+    flex-grow: 1;
+}
+.menu {
+}
+.menu__list {
+    display: flex;
+    column-gap: 40px;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+.menu__item {
+}
+.header__link {
+}
+.header__actions {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 36px;
+}
+.header__button {
+    flex-shrink: 0;
+}
+.header__log-and-reg {
+    flex-shrink: 0;
+    display: inline-block;
+    padding: 10px 0px 10px 28px;
+    line-height: 1.5;
+}
+/* TODO make font  */
+.header__log-and-reg::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/header/Profile.png") 0 0 / auto no-repeat;
+    position: relative;
+    top: 6px;
+    left: -20px;
+}
+/* =================================== */
+/* PAGE */
+/* MAIN-BLOCK */
+.page {
+    overflow: hidden;
+}
+.page__block {
+}
+.main {
+    position: relative;
+    background: linear-gradient(55.95deg, #ff3f3a20 0%, #f75e0520 100%);
+    padding-top: 200px;
+}
+.page__container {
+}
+.main__contents {
+    display: flex;
+}
+.main__content {
+    padding-right: 58px;
+    flex: 0 0 50%;
+}
+.content-main {
+}
+.content-main__play-button {
+    padding: 12px 0;
+    height: 108px;
+    display: flex;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 69px;
+    position: relative;
+}
+.content-main__link {
+    display: flex;
     align-items: center;
 }
-/* grid element content in */
-.grid__item {
-    padding: 12px 16px;
-    background-color: #4f4f4f;
+
+.content-main__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 52px;
+    height: 52px;
+    background: #ff3f3a;
+    opacity: 0.12;
+    border-radius: 50%;
+    transition-duration: 0.3s;
+    z-index: 0;
 }
-.grid__item:nth-child(2) {
-    grid-area: block-area-1;
-    grid-column: 3/4;
-    grid-column-start: 3;
-    grid-column-end: 4;
+.content-main__link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 52px;
+    height: 52px;
+    background: #ff3f3a url("../img/icons/Polygon.svg") 22px no-repeat;
+    border-radius: 50%;
+    z-index: 1;
 }
-/* flex */
-.flex {
+.content-main__link:hover::after {
+    transform: scale(1.65);
+}
+
+.content-main__caption {
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    color: #1e212c;
+    margin-bottom: 60px;
+}
+.content-main__actions {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    background-color: #000;
+    gap: 24px;
 }
-.flex__item {
-    background-color: #4f4f4f;
-    padding: 20px;
+.actions-main-content {
 }
-/* FOOTER */
+.actions-main-content__button {
+}
+.button {
+}
+.button--border {
+}
+.main__image img {
+    max-width: 107.8%;
+}
+.main__image {
+    padding-left: 56px;
+}
+.main__achievement {
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.achievement-main {
+}
+.achievement-main__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.achievement-main__item > span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 15px;
+    background: #ff3f3a;
+    border-radius: 50%;
+    flex-grow: 0;
+}
+.achievement-main__value {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 1.3; /* 59.8/46 */
+    color: #1e212c;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.achievement-main__text {
+    font-size: 16px;
+    line-height: 1.6; /* 25.6/16 */
+    color: #1e212c;
+}
+.achievement-main__item-dec {
+}
+.page__main-decor-block {
+}
+.decor-block-main {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+.decor-block-main__item {
+}
+.decor-block-main__item--shapes-01 {
+    background: url("../img/main/decor/shapes01.svg") no-repeat;
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    top: 133px;
+    left: 82px;
+}
+.decor-block-main__item--shapes-02 {
+    background: url("../img/main/decor/shapes02.svg") no-repeat;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: -45px;
+    right: 96.44px;
+}
+.decor-block-main__item--shapes-03 {
+    background: url("../img/main/decor/shapes03.svg") no-repeat;
+    width: 88px;
+    height: 47px;
+    position: absolute;
+    top: 487px;
+    left: 40.7%;
+}
+.decor-block-main__item--vector-04 {
+    background: url("../img/main/decor/Vector04.svg") no-repeat;
+    width: 61px;
+    height: 61px;
+    position: absolute;
+    top: 758px;
+    /* left: 733px; */
+    left: 38.1%;
+}
+.decor-block-main__item--dots-05 {
+    background: url("../img/main/decor/dots05.svg") no-repeat;
+    width: 187px;
+    height: 137px;
+    position: absolute;
+    top: 749px;
+    right: -30px;
+}
+.decor-block-main__item--circles-06 {
+}
+.about {
+}
+.about__columns {
+}
+.about__image {
+}
+.about__content {
+}
+.about__subtitle {
+}
+.about__title {
+}
+.about__list {
+}
+.about__button {
+}
+.page__about-decor-block {
+}
+.decor-block-about {
+}
+.decor-block-about__item {
+}
+.decor-block-about__item--1 {
+}
+.decor-block-about__item--2 {
+}
+/* FOTER */
+.footer {
+}
+.footer__container {
+}
+/* BODY-BUTTON-BACK-TO-HOME */
+.backtohome {
+}
