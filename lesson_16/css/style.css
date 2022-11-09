@@ -255,6 +255,7 @@ button {
 .page__contact-form {
 }
 .contact-form {
+    padding: 180px 0;
 }
 .contact-form__columns {
     display: flex;
@@ -358,4 +359,14 @@ button {
 }
 
 .form-contact__button {
+}
+
+.practice {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+.practice .button {
+    width: 320px;
+    text-align: center;
 }
