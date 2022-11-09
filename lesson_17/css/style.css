@@ -91,6 +91,7 @@ body {
 }
 .header__menu {
     flex-grow: 1;
+    flex-basis: 635px;
 }
 .menu {
 }
@@ -106,8 +107,8 @@ body {
 }
 .header__actions {
     display: flex;
-    flex-wrap: nowrap;
-    column-gap: 36px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .header__button {
     flex-shrink: 0;
@@ -220,6 +221,8 @@ body {
 }
 .main__image {
     padding-left: 56px;
+    display: flex;
+    align-items: center;
 }
 .main__achievement {
     padding: 80px 0;
@@ -348,4 +351,66 @@ body {
 }
 /* BODY-BUTTON-BACK-TO-HOME */
 .backtohome {
+}
+
+/* ADAPTIVE CONTAINER */
+/* Нижче приведено 3 медіазапити , які обмежують контейнер із контентом*/
+/*Перший брейкпойнт, якщо екран менше 1200 пікс - контент обмежиться шириною в 970 пікс*/
+@media (max-width: 1200px) {
+    [class*="__container"] {
+        max-width: 970px;
+    }
+}
+/*Другий брейкпойнт, якщо екран менше 992 пікс - контент обмежиться шириною в 750 пікс*/
+@media (max-width: 992px) {
+    [class*="__container"] {
+        max-width: 750px;
+    }
+    .main__content {
+        padding: 0 4px;
+    }
+    .main__image {
+        padding: 0 4px;
+    }
+}
+/*Третій брейкпойнт, якщо екран менше 767 пікс - контент не обмежиться шириною (він займе увесь екран) , а вказаний внутрішній відступ контейнера (padding) буде присутнім, як  ів попередніх брейкпойнтах*/
+@media (max-width: 767px) {
+    [class*="__container"] {
+        max-width: none;
+    }
+    .main__contents {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__content {
+        padding: 0;
+    }
+    .actions-main-content {
+        justify-content: space-between;
+    }
+    .achievement-main__item {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .achievement-main__item-dec {
+        align-items: center;
+    }
+    .achievement-main__text {
+        text-align: center;
+    }
+}
+@media (max-width: 426px) {
+    .achievement-main {
+        flex-direction: column;
+        display: block;
+        padding: 0;
+    }
+    .achievement-main__item {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .achievement-main__item-dec {
+        display: none;
+    }
 }
