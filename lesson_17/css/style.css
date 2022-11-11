@@ -414,6 +414,51 @@ h1 {
     top: 179px;
     right: -165px;
 }
+/* COURSES */
+
+.courses {
+}
+.page__container {
+}
+.courses__row {
+}
+.courses__title {
+}
+.courses__subtitle {
+}
+.courses__btn {
+}
+.courses__columns {
+}
+.courses__column {
+}
+.courses__card {
+}
+.card {
+}
+.card__pic {
+}
+.card__link {
+}
+.card__content {
+}
+.card__badge-of-dept {
+}
+.card__badge-of-dept--green {
+}
+.card__title {
+}
+.card__info {
+}
+.card__price {
+}
+.card__badge-of-dept--orange {
+}
+.card__badge-of-dept--blue {
+}
+.card__badge-of-dept--pink {
+}
+
 /* FOTER */
 .footer {
 }
@@ -436,12 +481,14 @@ h1 {
     [class*="__container"] {
         max-width: 750px;
     }
+    .about__content,
     .main__content {
-        padding: 0 4px;
+        padding: 0 10px;
         flex: 0 0 66.6%;
     }
+    .about__image,
     .main__image {
-        padding: 0 4px;
+        padding: 0 10px;
         flex: 0 1 auto;
     }
 }
@@ -455,8 +502,8 @@ h1 {
         flex-direction: column;
         align-items: center;
     }
-    .about__columns .main__content {
-        padding: 0;
+    .about__columns > div:not(:last-child) {
+        margin-bottom: 50px;
     }
     .actions-main-content {
         justify-content: space-between;
@@ -478,7 +525,7 @@ h1 {
     .header__menu {
         display: none;
     }
-    .main__contents div:not(:last-child) {
+    .main__contents > div:not(:last-child) {
         margin-bottom: 50px;
     }
     .main__contents {
@@ -488,7 +535,7 @@ h1 {
         flex-direction: column;
         text-align: center;
     }
-    .about__columns div:not(:last-child) {
+    .about__columns > div:not(:last-child) {
         margin-bottom: 50px;
     }
     .achievement-main {
