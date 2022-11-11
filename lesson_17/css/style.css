@@ -478,12 +478,18 @@ h1 {
     .header__menu {
         display: none;
     }
+    .main__contents div:not(:last-child) {
+        margin-bottom: 50px;
+    }
     .main__contents {
         margin-bottom: 50px;
     }
     .actions-main-content {
         flex-direction: column;
         text-align: center;
+    }
+    .about__columns div:not(:last-child) {
+        margin-bottom: 50px;
     }
     .achievement-main {
         flex-direction: column;
