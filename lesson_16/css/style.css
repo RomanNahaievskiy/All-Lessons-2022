@@ -255,6 +255,7 @@ button {
 .page__contact-form {
 }
 .contact-form {
+    padding: 180px 0;
 }
 .contact-form__columns {
     display: flex;
@@ -265,6 +266,7 @@ button {
     max-width: 100%;
 }
 .contact-form__image {
+    padding-right: 10px;
 }
 .contact-form__form {
     flex: 0 1 57.3%;
@@ -358,4 +360,18 @@ button {
 }
 
 .form-contact__button {
+}
+
+.practice {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.practice h2 {
+    padding-bottom: 50px;
+}
+.practice .button {
+    width: 320px;
+    text-align: center;
 }
