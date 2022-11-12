@@ -136,3 +136,38 @@ body {
     padding: 0 12px;
     border-radius: 10px;
 }
+.form__title {
+}
+.form__radio {
+}
+.radio{
+    position: relative;
+    
+}
+.radio__label {
+    cursor: pointer;
+    user-select: none;
+    display: inline-flex;
+    gap: 10px;
+    vertical-align: center;
+}
+.radio__label::before {
+    content: "";
+    flex: 0 0 20px;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+}
+.radio__input:checked + .radio__label::before {
+    content: "";
+    background-color: rgb(237, 12, 12);
+}
+.radio__checkmark {
+
+}
+input.radio__input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
