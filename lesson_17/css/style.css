@@ -344,16 +344,28 @@ h1 {
     display: flex;
     justify-content: space-between;
 }
-.about__image img {
-    max-width: 100%;
-    border-radius: 4px;
-}
+
 .about__image {
     padding-right: 15px;
     margin-right: -15px;
     flex: 0 0 57.31%;
-    display: flex;
-    align-items: center;
+    position: relative;
+}
+
+.about__pic img {
+    /* max-width: 100%; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about__pic {
+    overflow: hidden;
+    border-radius: 4px;
+    position: relative;
+    padding-bottom: 79%;
 }
 .about__content {
     flex: 0 0 31.7%;
@@ -488,8 +500,12 @@ h1 {
     }
     .about__image,
     .main__image {
-        padding: 0 10px;
-        flex: 0 1 auto;
+        flex: 1 1 auto;
+    }
+    .about__pic {
+        padding-bottom: 210%;
+    }
+    .about__pic {
     }
 }
 /*Третій брейкпойнт, якщо екран менше 767 пікс - контент не обмежиться шириною (він займе увесь екран) , а вказаний внутрішній відступ контейнера (padding) буде присутнім, як  ів попередніх брейкпойнтах*/
@@ -497,6 +513,10 @@ h1 {
     [class*="__container"] {
         max-width: none;
     }
+    .about {
+        padding: 0 0 50px 0;
+    }
+
     .about__columns,
     .main__contents {
         flex-direction: column;
@@ -519,7 +539,17 @@ h1 {
     .achievement-main__text {
         text-align: center;
     }
+    .about__image,
+    .main__image {
+        flex: 0 0 auto;
+        width: 100%;
+        padding: 0;
+    }
+    .about__pic {
+        padding-bottom: 80%;
+    }
 }
+/* *Четвертий медіазапит */
 @media (max-width: 490px) {
     /* TODO Зробити масштабування тексту!!!  макс 3 рядки h2 */
     .header__menu {
@@ -568,5 +598,15 @@ h1 {
     .about__button {
         width: 100%;
         text-align: center;
+    }
+    .about__image {
+        padding: 0;
+    }
+    .about__pic img {
+        max-width: 100%;
+        position: static;
+    }
+    .about__pic {
+        padding-bottom: 0;
     }
 }
