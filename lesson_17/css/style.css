@@ -1,5 +1,8 @@
+/* IMPORT */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 @import "nullstyle.css";
+
+/* GLOBAL STYLES */
 body {
     /* default styles */
     font-family: "Lato";
@@ -69,7 +72,10 @@ body {
 .button--border:hover {
     color: #ffffff;
 }
-/* HEADER */
+/* =========================================================================================================================== */
+/*! =---------------------------------------------------- HEADER -------------------------------------------------------------= */
+/* =========================================================================================================================== */
+
 .header {
     position: fixed;
     top: 0;
@@ -103,6 +109,10 @@ body {
 }
 .menu__item {
 }
+.header__link:hover {
+    color: #f75e05;
+    transition: all 0.2s;
+}
 .header__link {
 }
 .header__actions {
@@ -130,11 +140,11 @@ body {
     top: 6px;
     left: -20px;
 }
-/* =================================== */
-/* PAGE */
-
-/* Undependet blocks */
-h1 {
+/* =========================================================================================================================== */
+/*! =---------------------------------------------------- PAGE-- -------------------------------------------------------------= */
+/* =========================================================================================================================== */
+/* PAGE GLOBAL STYLES */
+h1.title {
     font-weight: 900;
     font-size: 64px;
     line-height: 1.3;
@@ -152,6 +162,7 @@ h1 {
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 /* MAIN-BLOCK */
 
@@ -172,7 +183,7 @@ h1 {
     margin-bottom: 110px;
 }
 .main__content {
-    padding-right: 58px;
+    padding-right: 25px;
     flex: 0 0 50%;
 }
 .content-main {
@@ -429,49 +440,145 @@ h1 {
 /* COURSES */
 
 .courses {
+    padding-bottom: 180px;
 }
 .page__container {
 }
-.courses__row {
+.courses__header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
 }
 .courses__title {
 }
 .courses__subtitle {
+    margin-bottom: 8px;
 }
 .courses__btn {
+    align-self: end;
+}
+.courses__row:not(:last-child) {
+    margin-bottom: 30px;
 }
 .courses__columns {
+    display: flex;
+    margin:  0 -15px;
+
 }
 .courses__column {
+    padding: 0 15px;
+    flex: 1 1 50%;
+    min-height: 215px;
+    /* row-gap: 30px; */
+    /*? column-gap: 30px; */
 }
+
 .courses__card {
+    /* background-color: #230064; */
+    
+
+}
+.card:not(:last-child) {
+    margin-bottom: 30px;
+}
+.card:hover {
+    box-shadow: 0px 4px 4px -4px #1E212C0D,
+    0px 12px 10px -6px #9A9CA514,
+    0px 30px 24px -10px #9A9CA51A,
+    0px 80px 80px -20px #9A9CA529;
+
 }
 .card {
+    display: flex;
+    height: 100%;
+    /* width: 100%; */
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 
+    0px 4px 4px -4px #1E212C08, 
+    0px 12px 10px -6px #9A9CA50A,
+    0px 30px 24px -10px #9A9CA50D,
+    0px 80px 80px -20px #9A9CA514;
 }
 .card__pic {
+    flex:0 0 35.666%;
+    background-color: yellow;
+    padding-bottom: 35.666%;
+    position: relative;
+    overflow: hidden;
+}
+.card__pic img {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
 .card__link {
 }
 .card__content {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    /* justify-content: space-between; */
 }
 .card__badge-of-dept {
-}
-.card__badge-of-dept--green {
-}
-.card__title {
-}
-.card__info {
-}
-.card__price {
-}
-.card__badge-of-dept--orange {
-}
-.card__badge-of-dept--blue {
-}
-.card__badge-of-dept--pink {
+    font-size:14px;
+    line-height: 1.5;
+    color: #ffffff;
+    border-radius: 4px;
+    display: inline-block;
+    align-self: start;
+    padding: 0 8px;
+    background-color: #000;
 }
 
-/* FOTER */
+.card__title {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+.card__info {
+    color: #787A80;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.card__price::after {
+content: " | ";
+color: #787A80;
+font-size: 18px;
+line-height: 1.5;
+font-weight: 400;
+position: relative;
+top: -1px;
+
+}
+.card__price {
+    color: #FF4242;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+.card__badge-of-dept--green {
+    background-color: #03CEA4;
+}
+.card__badge-of-dept--orange {
+    background-color: #F89828;
+}
+.card__badge-of-dept--blue {
+    background-color: #5A87FC;
+}
+.card__badge-of-dept--pink {
+    background-color: #F52F6E;
+}
+
+
+/* ===={}====================================================================================================================== */
+/*! =-<{}>------------------------------------------------ FOTER --------------------------------------------------------------= */
+/* ====^^====================================================================================================================== */
+
 .footer {
 }
 .footer__container {
@@ -492,24 +599,26 @@ h1 {
     }
 }
 /*Другий брейкпойнт, якщо екран менше 992 пікс - контент обмежиться шириною в 750 пікс*/
+
 @media (max-width: 992px) {
     [class*="__container"] {
         max-width: 750px;
     }
+    /* Перебудовою ширину колонок флекс контейнера на 1:2 */
     .about__content,
     .main__content {
         padding: 0 10px;
         flex: 0 0 66.6%;
     }
+    /* Перебудовою ширину колонок флекс контейнера на 1:2 */
     .about__image,
     .main__image {
         flex: 1 1 auto;
         
     }
+    /* адаптація зображення IBG для Планшетної версії */
     .about__pic {
         padding-bottom: 210%;
-    }
-    .about__pic {
     }
 }
 /*Третій брейкпойнт, якщо екран менше 767 пікс - контент не обмежиться шириною (він займе увесь екран) , а вказаний внутрішній відступ контейнера (padding) буде присутнім, як  ів попередніх брейкпойнтах*/
@@ -517,15 +626,23 @@ h1 {
     [class*="__container"] {
         max-width: none;
     }
+    h1.title{
+        font-size: 48px;
+    }
+    .title {
+        font-size: 36px;
+    }
+
     .about {
         padding: 0 0 50px 0;
     }
-
+/* Перебудовую в одну колонку контент флекс контейнера */
     .about__columns,
     .main__contents {
         flex-direction: column;
         align-items: center;
     }
+    /* Додаю зменшений відступ  */
     .about__columns > div:not(:last-child) {
         margin-bottom: 50px;
     }
@@ -548,15 +665,42 @@ h1 {
         flex: 0 0 auto;
         width: 100%;
         padding: 0;
-       
     }
     .about__pic {
         padding-bottom: 80%;
+    }
+    .courses__header {
+        flex-direction: column;
+        row-gap: 30px;
+        
+    }
+    
+    .courses__columns {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+   
+    .card {
+        flex-shrink: 0;
+        flex-grow: 1;
+        height: 100%;
     }
 }
 /* *Четвертий медіазапит */
 @media (max-width: 490px) {
     /* TODO Зробити масштабування тексту!!!  макс 3 рядки h2 */
+    h1.title{
+        font-size: 36px;
+    }
+    .title {
+        font-size: 22px;
+    }
+    .achievement-main__value {
+        font-size: 36px;
+    }
+    .achievement-main__text {
+    }
+
     .header__menu {
         display: none;
     }
@@ -614,4 +758,10 @@ h1 {
     .about__pic {
         padding-bottom: 0;
     }
+
+    .courses__btn {
+        align-self: stretch;
+        text-align: center;
+    }
+
 }
