@@ -3,7 +3,6 @@
 @import "nullstyle.css";
 @import "fonts.css";
 
-
 /* GLOBAL STYLES */
 body {
     /* default styles */
@@ -87,28 +86,16 @@ body {
     font-weight: 700;
     z-index: 50;
     background-color: #ffffff87;
-    box-shadow: 
-    0px 4px 4px -4px #1E212C08, 
-    0px 12px 10px -6px #9A9CA50A,
-    0px 30px 24px -10px #9A9CA50D,
-    0px 80px 80px -20px #9A9CA514;
+    box-shadow: 0px 4px 4px -4px #1e212c08, 0px 12px 10px -6px #9a9ca50a, 0px 30px 24px -10px #9a9ca50d,
+        0px 80px 80px -20px #9a9ca514;
     transition: all 0.6s;
     /* шапка мала б бути прозорою , але це експеремент з background */
     /* background-color: #fddecd77; */
     /* background: linear-gradient(45deg, rgba(247, 94, 5, 1) 0%, rgba(247, 94, 5, 1) 100%); */
 }
-.header::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    z-index: 0;
-}
+
 .header:hover {
-    background-color:#ffffff;
+    background-color: #ffffff;
     transition: all 0.6s;
 }
 .header__container {
@@ -118,15 +105,21 @@ body {
     align-items: center;
     justify-content: stretch;
     column-gap: 60px;
+    position: relative;
 }
 .header__burger {
     display: none;
+    z-index: 3;
 }
 .header__logo {
+    position: relative;
+    z-index: 3;
 }
 .header__menu {
     flex-grow: 1;
-    flex-basis:600px;
+    flex-basis: 600px;
+    position: relative;
+    z-index: 1;
 }
 .menu {
 }
@@ -149,6 +142,8 @@ body {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
+    position: relative;
+    z-index: 3;
 }
 .header__button {
     flex-shrink: 0;
@@ -474,7 +469,7 @@ h1.title {
 }
 .page__container {
 }
-.courses__header{
+.courses__header {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -495,8 +490,7 @@ h1.title {
 }
 .courses__columns {
     display: flex;
-    margin:  0 -15px;
-
+    margin: 0 -15px;
 }
 .courses__column {
     padding: 0 15px;
@@ -508,18 +502,13 @@ h1.title {
 
 .courses__card {
     /* background-color: #230064; */
-    
-
 }
 .card:not(:last-child) {
     margin-bottom: 30px;
 }
 .card:hover {
-    box-shadow: 0px 4px 4px -4px #1E212C0D,
-    0px 12px 10px -6px #9A9CA514,
-    0px 30px 24px -10px #9A9CA51A,
-    0px 80px 80px -20px #9A9CA529;
-
+    box-shadow: 0px 4px 4px -4px #1e212c0d, 0px 12px 10px -6px #9a9ca514, 0px 30px 24px -10px #9a9ca51a,
+        0px 80px 80px -20px #9a9ca529;
 }
 .card {
     display: flex;
@@ -527,26 +516,23 @@ h1.title {
     /* width: 100%; */
     border-radius: 4px;
     overflow: hidden;
-    box-shadow: 
-    0px 4px 4px -4px #1E212C08, 
-    0px 12px 10px -6px #9A9CA50A,
-    0px 30px 24px -10px #9A9CA50D,
-    0px 80px 80px -20px #9A9CA514;
+    box-shadow: 0px 4px 4px -4px #1e212c08, 0px 12px 10px -6px #9a9ca50a, 0px 30px 24px -10px #9a9ca50d,
+        0px 80px 80px -20px #9a9ca514;
 }
 .card__pic {
-    flex:0 0 35.666%;
+    flex: 0 0 35.666%;
     background-color: yellow;
     padding-bottom: 35.666%;
     position: relative;
     overflow: hidden;
 }
 .card__pic img {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .card__link {
 }
@@ -558,7 +544,7 @@ object-fit: cover;
     /* justify-content: space-between; */
 }
 .card__badge-of-dept {
-    font-size:14px;
+    font-size: 14px;
     line-height: 1.5;
     color: #ffffff;
     border-radius: 4px;
@@ -574,39 +560,37 @@ object-fit: cover;
     font-weight: 700;
 }
 .card__info {
-    color: #787A80;
+    color: #787a80;
     font-size: 18px;
     line-height: 1.5;
 }
 .card__price::after {
-content: " | ";
-color: #787A80;
-font-size: 18px;
-line-height: 1.5;
-font-weight: 400;
-position: relative;
-top: -1px;
-
+    content: " | ";
+    color: #787a80;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    position: relative;
+    top: -1px;
 }
 .card__price {
-    color: #FF4242;
+    color: #ff4242;
     font-size: 18px;
     line-height: 1.5;
     font-weight: 700;
 }
 .card__badge-of-dept--green {
-    background-color: #03CEA4;
+    background-color: #03cea4;
 }
 .card__badge-of-dept--orange {
-    background-color: #F89828;
+    background-color: #f89828;
 }
 .card__badge-of-dept--blue {
-    background-color: #5A87FC;
+    background-color: #5a87fc;
 }
 .card__badge-of-dept--pink {
-    background-color: #F52F6E;
+    background-color: #f52f6e;
 }
-
 
 /* ===={}====================================================================================================================== */
 /*! =-<{}>------------------------------------------------ FOTER --------------------------------------------------------------= */
@@ -639,7 +623,7 @@ top: -1px;
     .header__log-and-reg::before {
         background-color: #f75e0566;
         border-radius: 50%;
-        transform:translateX(5px) scale(1.8);
+        transform: translateX(5px) scale(1.8);
     }
 }
 /*Другий брейкпойнт, якщо екран менше 992 пікс - контент обмежиться шириною в 750 пікс*/
@@ -658,7 +642,6 @@ top: -1px;
     .about__image,
     .main__image {
         flex: 1 1 auto;
-        
     }
     /* адаптація зображення IBG для Планшетної версії */
     .about__pic {
@@ -670,7 +653,7 @@ top: -1px;
     [class*="__container"] {
         max-width: none;
     }
-    h1.title{
+    h1.title {
         font-size: 48px;
     }
     .title {
@@ -679,27 +662,29 @@ top: -1px;
     .subtitle {
         font-size: 10px;
     }
-
+    /* ВМИКАЮ Меню Бургер до 767px */
     .header {
         height: 80px;
         padding: 15px 0;
     }
+    /* HEDER BURDER */
     .header__burger {
         display: block;
     }
     .header__burger {
         position: relative;
-        width: 50px;
-        height: 50px;
+
         /* background-color: red; */
         flex: 0 0 auto;
+        width: 50px;
+        height: 50px;
         align-self: center;
         margin-right: 20px;
     }
-    .header__burger span,
-    .header__burger span::before, 
-    .header__burger span::after {
-        content:'';
+
+    .header__burger::before,
+    .header__burger::after {
+        content: "";
         position: absolute;
         left: 0;
         display: block;
@@ -710,36 +695,70 @@ top: -1px;
         border: 1px solid wheat;
     }
     .header__burger span {
+        position: absolute;
+        left: 0;
+        width: 50px;
+        height: 4.4px;
+        border-radius: 3px;
+        background-color: #f75e05;
+        border: 1px solid wheat;
         height: 4.4px;
         top: 22px;
+        transform: scale(1);
+        transition: all 0.3s;
     }
-    .header__burger span::before {
-        top: 14px;
-    
+    .header__burger::before {
+        top: 7px;
+        transition: all 0.3s;
     }
-    .header__burger span::after {
-        bottom: 14px;
+    .header__burger::after {
+        bottom: 7px;
+        transition: all 0.3s;
     }
-   
+    /* HEDER BURDER ACTIVE */
+    .header__burger.active span {
+        transform: scale(0);
+        transition: all 0.3s;
+    }
+    .header__burger.active::before {
+        transform: rotate(225deg);
+        top: 20px;
+        background-color: #fff;
+        transition: all 0.3s;
+    }
+    .header__burger.active::after {
+        transform: rotate(135deg);
+        top: 20px;
+        background-color: #fff;
+        transition: all 0.3s;
+    }
+    body.lock {
+        overflow: hidden;
+    }
     .header__menu {
         display: block;
         position: fixed;
         top: 0;
-        left: 0;
+        left: -100%;
         width: 100%;
         height: 100%;
-        background-color: #f75e059f;
+        background-color: #f75e05bf;
         color: wheat;
         text-align: center;
         font-size: 42px;
         line-height: 1.5;
         padding: 100px 20px 0 10px;
         z-index: -1;
+        transition: all 0.4s;
     }
-    .menu__list  {
+    .header__menu.active {
+        left: 0;
+        transition: all 0.4s;
+    }
+    .menu__list {
         display: block;
     }
-    
+
     .header__actions {
         flex-grow: 1;
         flex-wrap: nowrap;
@@ -747,7 +766,7 @@ top: -1px;
     .about {
         padding: 0 0 50px 0;
     }
-/* Перебудовую в одну колонку контент флекс контейнера */
+    /* Перебудовую в одну колонку контент флекс контейнера */
     .about__columns,
     .main__contents {
         flex-direction: column;
@@ -783,14 +802,13 @@ top: -1px;
     .courses__header {
         /* flex-direction: column; */
         row-gap: 30px;
-        
     }
-    
+
     .courses__columns {
         flex-direction: column;
         row-gap: 30px;
     }
-   
+
     .card {
         flex-shrink: 0;
         flex-grow: 1;
@@ -807,6 +825,9 @@ top: -1px;
     .header__container {
         justify-content: space-between;
     }
+    .header__body::before {
+        height: 80px;
+    }
     .header__button {
         display: none;
     }
@@ -817,7 +838,7 @@ top: -1px;
         justify-content: end;
     }
 
-    h1.title{
+    h1.title {
         font-size: 36px;
     }
     .title {
@@ -889,7 +910,6 @@ top: -1px;
     .courses__header {
         flex-direction: column;
         row-gap: 30px;
-        
     }
     .courses__btn {
         align-self: stretch;
@@ -901,5 +921,4 @@ top: -1px;
     .card__pic {
         padding-bottom: 100%;
     }
-
 }
