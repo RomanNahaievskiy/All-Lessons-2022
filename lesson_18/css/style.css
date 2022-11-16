@@ -183,9 +183,10 @@ body {
     left: 0;
     margin-right: 10px;
 }
-/* PAGE */
+/* =========================================================================================================================== */
+/*! =---------------------------------------------------- PAGE -------------------------------------------------------------= */
+/* =========================================================================================================================== */
 .page {
-    /* display: none; */
 }
 /* PAGE GLOBAL STYLES */
 h1.title {
@@ -208,12 +209,117 @@ h1.title {
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-/* ===================================================================================== */
+/*===================================== ABOUT US =================================== */
+.about {
+    position: relative;
+    padding: 180px 0;
+}
+.about__columns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr 80px;
+}
+
+.about__image {
+    position: relative;
+    grid-column: 1/3;
+    grid-row: 1/4;
+    padding-right: 16.7%; /* 135/560 */
+}
+
+.about__pic img {
+    /* max-width: 100%; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about__pic {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 4px;
+    position: relative;
+    padding-bottom: 79%;
+}
+.about__text {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    align-self: start;
+    justify-self: start;
+}
+.about__content {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.about__subtitle {
+    margin-bottom: 8px;
+}
+.about__title {
+    margin-bottom: 40px;
+}
+.about__list {
+    padding-left: 32px;
+    padding-bottom: 22px;
+    color: #424551;
+    font-size: 16px;
+    line-height: 1.6; /* 25.6/16 */
+    position: relative;
+}
+
+.about__list li::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    background: url("../img/icons/check.svg") 0 4px no-repeat;
+}
+.about__list li:not(:last-child) {
+    margin-bottom: 12px;
+}
+.about__button {
+    align-self: start;
+    justify-self: start;
+
+    grid-row: 3/4;
+}
+.page__about-decor-block {
+}
+.decor-block-about {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+.decor-block-about__item {
+}
+.decor-block-about__item--1 {
+    position: absolute;
+    background: url("../img/about-us/decor/dots.svg") center no-repeat;
+    width: 190px;
+    height: 150px;
+    transform: rotate(52.46deg);
+    top: 0;
+    top: 240.24px;
+    left: -110.79px;
+}
+.decor-block-about__item--2 {
+    background: url("../img/about-us/decor/circles.svg") no-repeat;
+    width: 290px;
+    height: 290px;
+    position: absolute;
+    top: 179px;
+    right: -165px;
+}
+/* =====================================COURSES================================================ */
 .page__courses {
     padding: 0 0 180px 0;
 }
 .courses {
-    background-color: #e5e5e5;
+    /* background-color: #e5e8ed; */
 }
 .courses__header {
     display: grid;
@@ -257,6 +363,7 @@ h1.title {
     grid-template-columns: repeat(3, 1fr);
     overflow: hidden;
     background-color: #fff;
+    background: linear-gradient(0deg, #e5e8ed, #e5e8ed), linear-gradient(0deg, #ffffff, #ffffff);
     border: 1px solid #e5e8ed;
     box-shadow: 0px 4px 4px -4px #1e212c08, 0px 12px 10px -6px #9a9ca50a, 0px 30px 24px -10px #9a9ca50d,
         0px 80px 80px -20px #9a9ca514;
@@ -278,7 +385,7 @@ h1.title {
 .card__link {
 }
 .card__content {
-    background-color: #f4f4f4;
+    background-color: #fff;
     padding: 30px;
     grid-column: 2/4;
     display: grid;
@@ -328,7 +435,7 @@ h1.title {
 }
 
 /* FOOTER */
-/* MEDIAQUESTS */
+/* MEDIAREQUESTS */
 @media (max-width: 1251px) {
     .header__reg {
         display: none;
@@ -429,6 +536,26 @@ h1.title {
         height: 100%;
         margin: 0 0 0 20px;
     }
+    /* ABOUT US */
+    .about__image {
+        grid-column: 1/2;
+    }
+    .about__text {
+        grid-column: 2/4;
+        grid-row: 1/2;
+        align-self: start;
+        justify-self: start;
+    }
+    .about__content {
+        grid-column: 2/4;
+    }
+    .about__button {
+        align-self: start;
+        justify-self: end;
+
+        grid-row: 3/4;
+        grid-column: 3/4;
+    }
 }
 @media (max-width: 596px) {
     .header__logo {
@@ -445,7 +572,63 @@ h1.title {
     .header__button {
         display: none;
     }
+    /* ABOUT US */
+    .about__image {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    .about__content {
+        grid-column: 2/4;
+    }
+    .about__button {
+        align-self: end;
+        justify-self: stretch;
+        text-align: center;
+        grid-row: 3/4;
+        grid-column: 1/4;
+    }
 }
+@media (max-width: 425px) {
+    .about__image ::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgb(255, 63, 58);
+        background: linear-gradient(
+            90deg,
+            rgba(255, 63, 58, 0.7025641025641025) 0%,
+            rgba(247, 94, 5, 0.3615384615384616) 32%,
+            rgba(255, 255, 255, 1) 49%
+        );
+        z-index: 2;
+    }
+    .about__image {
+        position: relative;
+        grid-row: 2/3;
+        grid-column: 1/4;
+    }
+    .about__text {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        align-self: start;
+        justify-self: start;
+    }
+    .about__content {
+        position: relative;
+        z-index: 3;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(229, 232, 237, 0.5) 24%,
+            rgba(255, 255, 255, 0.6) 77%
+        );
+    }
+}
+
 @media (max-width: 376px) {
     .header__logo {
         grid-column: 2/6;
@@ -460,6 +643,36 @@ h1.title {
     }
     .header__log-and-reg::before {
         font-size: 36px;
+    }
+    /* ABOUT US */
+    .about {
+        padding: 50px 0;
+        margin: 0;
+    }
+    .about__columns {
+        grid-template-rows: repeat(4, auto);
+    }
+    .about__image ::before {
+        display: none;
+    }
+    .about__image {
+        padding: 0;
+        margin-bottom: 25px;
+        grid-row: 2/3;
+        grid-column: 1/4;
+    }
+    .about__text {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        align-self: start;
+        justify-self: start;
+    }
+    .about__content {
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+    .about__button {
+        grid-row: 4/5;
     }
 }
 /* THEORY */
