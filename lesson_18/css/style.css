@@ -305,6 +305,8 @@ h1.title {
     grid-column: 2/3;
 }
 .main__achievement {
+    position: relative;
+    z-index: 1;
     padding: 80px 0;
     display: grid;
     /* grid-template-columns: 1fr 0.3fr 1fr 0.3fr 1fr 0.3fr 1fr; */
@@ -670,6 +672,12 @@ h1.title {
     .main__image {
         grid-column: 3/4;
     }
+    .courses__title {
+        grid-column: 1/5;
+    }
+    .courses__btn {
+        grid-column: 5/7;
+    }
 }
 /* BURGER ON */
 @media (max-width: 767px) {
@@ -818,6 +826,9 @@ h1.title {
     /* MAIN BLOCK */
 
     /* ----------------- */
+    .main__image {
+        display: none;
+    }
     .main__content {
         grid-column: 1/4;
     }
@@ -926,13 +937,14 @@ h1.title {
     }
     .achievement-main__item {
         display: grid;
-        grid-auto-flow: row;
+        grid-auto-flow: column;
         align-items: center;
-        justify-items: center;
+        justify-items: start;
         gap: 12px;
     }
     .achievement-main__text {
         text-align: center;
+        justify-self: end;
     }
     /* ABOUT US */
     .about__image ::before {
@@ -974,16 +986,31 @@ h1.title {
         );
     }
     /* COURSES */
+    .courses__text {
+        grid-template-rows: repeat(3, auto);
+    }
+    .courses__title {
+        grid-column: 1/7;
+    }
+    .courses__btn {
+        grid-row: 3/4;
+        grid-column: 1/7;
+    }
     .courses__cards {
         display: grid;
         gap: 30px;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
         grid-auto-rows: 1fr;
+    }
+    .card {
+        grid-template-rows: 2fr 1fr;
     }
     .card__pic {
     }
     .card__content {
+        grid-template-rows: 0.25fr 1fr 1.75fr;
+    }
+    .card__title {
     }
 }
 
