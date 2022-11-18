@@ -611,7 +611,6 @@ h1.title {
 }
 /* ?=============OR============================ */
 .card__badge-of-dept-experement {
-    display: inline-block;
     color: #f4f4f4;
     justify-self: start;
     padding: 1px 8px;
@@ -619,7 +618,9 @@ h1.title {
     font-size: 14px;
     line-height: 1.6;
     /*? + */
+    display: inline-block;
     white-space: no-wrap;
+    /*? + */
 }
 
 .card__badge-of-dept-experement--green {
