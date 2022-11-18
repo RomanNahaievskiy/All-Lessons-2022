@@ -876,6 +876,21 @@ h1.title {
         grid-row: 3/4;
         grid-column: 3/4;
     }
+    /* COURSES */
+    /* COURSES */
+    /* COURSES */
+    .card {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .card__pic {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .card__content {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
 }
 @media (max-width: 596px) {
     .header__logo {
@@ -955,24 +970,31 @@ h1.title {
         grid-column: 1/4;
     }
     /* COURSES */
+    .courses__text {
+        grid-template-rows: repeat(3, auto);
+    }
+    .courses__title {
+        grid-column: 1/7;
+    }
+    .courses__btn {
+        grid-row: 3/4;
+        grid-column: 1/7;
+    }
     .courses__cards {
         display: grid;
         gap: 30px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
         grid-auto-rows: 1fr;
     }
     .card {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
     }
     .card__pic {
-        grid-column: 1/3;
-        grid-row: 1/2;
     }
     .card__content {
-        grid-column: 1/3;
-        grid-row: 2/3;
+        grid-template-rows: 0.25fr 1fr 1.75fr;
+    }
+    .card__title {
     }
 }
 @media (max-width: 425px) {
@@ -1053,35 +1075,7 @@ h1.title {
             rgba(255, 255, 255, 0.6) 77%
         );
     }
-    /* COURSES */
-    .courses__text {
-        grid-template-rows: repeat(3, auto);
-    }
-    .courses__title {
-        grid-column: 1/7;
-    }
-    .courses__btn {
-        grid-row: 3/4;
-        grid-column: 1/7;
-    }
-    .courses__cards {
-        display: grid;
-        gap: 30px;
-        grid-template-columns: 1fr;
-        grid-auto-rows: 1fr;
-    }
-    .card {
-        grid-template-rows: 2fr 1fr;
-    }
-    .card__pic {
-    }
-    .card__content {
-        grid-template-rows: 0.25fr 1fr 1.75fr;
-    }
-    .card__title {
-    }
 }
-
 @media (max-width: 376px) {
     .header__logo {
         grid-column: 2/6;
