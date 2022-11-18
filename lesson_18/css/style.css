@@ -599,6 +599,8 @@ h1.title {
     display: grid;
     grid-template-rows: 24px 2fr 1fr;
     gap: 20px;
+    /*? + */
+    font-size: 0;
 }
 /* !==================================================== */
 .card__badge-of-dept {
