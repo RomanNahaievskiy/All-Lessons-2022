@@ -134,6 +134,7 @@ body {
     grid-column: 2/5;
     position: relative;
     z-index: 1;
+    overflow: auto;
 }
 .menu {
 }
@@ -815,7 +816,7 @@ h1.title {
     body.lock {
         overflow: hidden;
     }
-    .header__menu {
+    .header__menu.active {
         left: 0;
         transition: all 0.3s;
     }
@@ -960,7 +961,6 @@ h1.title {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         grid-auto-rows: 1fr;
-        /* ! */
     }
     .card {
         grid-template-columns: 1fr 1fr;
