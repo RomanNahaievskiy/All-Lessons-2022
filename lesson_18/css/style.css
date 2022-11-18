@@ -482,7 +482,6 @@ h1.title {
 .about__button {
     align-self: start;
     justify-self: start;
-
     grid-row: 3/4;
 }
 .page__about-decor-block {
