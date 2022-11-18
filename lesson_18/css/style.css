@@ -134,7 +134,7 @@ body {
     grid-column: 2/5;
     position: relative;
     z-index: 1;
-    overflow: auto;
+    transition: all 0.3s;
 }
 .menu {
 }
@@ -154,9 +154,11 @@ body {
 }
 .header__actions {
     grid-column: 5/7;
-    text-align: right;
+    /* text-align: right; */
     position: relative;
     z-index: 3;
+    display: grid;
+    justify-self: end;
 }
 .header__button {
     flex-shrink: 0;
@@ -790,11 +792,15 @@ h1.title {
         grid-column: 2/4;
     }
     .header__actions {
-        white-space: nowrap;
         grid-column: 4/7;
+        grid-template-columns: 2fr;
+        justify-self: stretch;
+        grid-auto-flow: column;
+        /* !!!! */
     }
 
     .header__button {
+        /* grid-column: 1/2; */
     }
     .header__log-and-reg {
     }
@@ -810,10 +816,10 @@ h1.title {
         padding: 0;
     }
     .header__log-and-reg::before {
-        padding: 0px;
+        padding-top: 15%;
         font-size: 28px;
         height: 100%;
-        margin: 0 0 0 20px;
+        margin: 0 20px;
     }
     /* BURGER ACTIVE */
     .header__burger.active span {
@@ -834,6 +840,7 @@ h1.title {
         overflow: hidden;
     }
     .header__menu.active {
+        overflow: auto;
         left: 0;
         transition: all 0.3s;
     }
@@ -920,6 +927,9 @@ h1.title {
         grid-column: 5/7;
         text-align: right;
     }
+    .header__log-and-reg::before {
+        padding-top: 0;
+    }
     .header__reg {
         display: none;
     }
@@ -1001,7 +1011,7 @@ h1.title {
         grid-row: 3/4;
         grid-column: 1/7;
     }
-    /* !!!! */
+
     .courses__cards {
         display: grid;
         gap: 30px;
