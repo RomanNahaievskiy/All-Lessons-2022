@@ -609,8 +609,31 @@ h1.title {
     border-radius: 4px;
     font-size: 14px;
     line-height: 1.6;
+}
+.card__badge-of-dept-experement {
+    color: #f4f4f4;
+    /* justify-self: start; */
+    padding: 1px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.6;
+    /*? + */
     white-space: no-wrap;
 }
+
+.card__badge-of-dept-experement--green {
+    background-color: #03cea4;
+}
+.card__badge-of-dept-experement--blue {
+    background-color: #5a87fc;
+}
+.card__badge-of-dept-experement--orange {
+    background-color: #f89828;
+}
+.card__badge-of-dept-experement--pink {
+    background-color: #f52f6e;
+}
+/* !===================================================== */
 .card__badge-of-dept--green {
     background-color: #03cea4;
 }
