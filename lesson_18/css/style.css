@@ -593,7 +593,7 @@ h1.title {
 }
 /* ?=============OR============================ */
 .card__content-experement {
-    background-color: #f75e05;
+    background-color: #fd56c6;
     padding: 30px;
     grid-column: 2/4;
     display: grid;
@@ -601,6 +601,7 @@ h1.title {
     gap: 20px;
     /*? + */
     font-size: 0;
+    /* no change */
 }
 /* !==================================================== */
 .card__badge-of-dept {
@@ -614,14 +615,16 @@ h1.title {
 /* ?=============OR============================ */
 .card__badge-of-dept-experement {
     color: #f4f4f4;
-    justify-self: start;
+    justify-self: self-start;
     padding: 1px 8px;
     border-radius: 4px;
     font-size: 14px;
-    line-height: 1.6;
+    line-height: 1.5;
     /*? + */
-    display: inline-block;
+    display: inline;
+    /* no change */
     white-space: no-wrap;
+    /* no change */
     /*? + */
 }
 
