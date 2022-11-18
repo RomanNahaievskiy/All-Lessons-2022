@@ -593,7 +593,7 @@ h1.title {
 }
 /* ?=============OR============================ */
 .card__content-experement {
-    background-color: #fff;
+    background-color: #f75e05;
     padding: 30px;
     grid-column: 2/4;
     display: grid;
