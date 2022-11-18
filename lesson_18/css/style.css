@@ -611,6 +611,7 @@ h1.title {
 }
 /* ?=============OR============================ */
 .card__badge-of-dept-experement {
+    display: inline-block;
     color: #f4f4f4;
     justify-self: start;
     padding: 1px 8px;
