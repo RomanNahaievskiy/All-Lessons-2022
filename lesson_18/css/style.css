@@ -609,6 +609,7 @@ h1.title {
     border-radius: 4px;
     font-size: 14px;
     line-height: 1.6;
+    white-space: no-wrap;
 }
 .card__badge-of-dept--green {
     background-color: #03cea4;
