@@ -598,7 +598,7 @@ h1.title {
     padding: 30px;
     grid-column: 2/4;
     display: grid;
-    /* grid-template-rows: 24px 2fr 1fr; */
+    grid-template-rows: 24px 2fr 1fr;
     gap: 20px;
 }
 /* !==================================================== */
