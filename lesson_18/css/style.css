@@ -679,6 +679,23 @@ h1.title {
     .courses__btn {
         grid-column: 5/7;
     }
+    /* COURSES */
+    .courses__cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .card__pic {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .card__content {
+        gap: 5px;
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
 }
 /* BURGER ON */
 @media (max-width: 767px) {
@@ -879,17 +896,20 @@ h1.title {
     /* COURSES */
     /* COURSES */
     /* COURSES */
+    .courses__cards {
+        grid-template-columns: 1fr 1fr;
+    }
     .card {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
     }
     .card__pic {
         grid-column: 1/3;
-        grid-row: 1/2;
+        grid-row: 1/3;
     }
     .card__content {
         grid-column: 1/3;
-        grid-row: 2/3;
+        grid-row: 3/4;
     }
 }
 @media (max-width: 596px) {
@@ -987,12 +1007,11 @@ h1.title {
         grid-auto-rows: 1fr;
     }
     .card {
-        grid-template-rows: 2fr 1fr;
+        grid-template-rows: 1fr;
     }
     .card__pic {
     }
     .card__content {
-        grid-template-rows: 0.25fr 1fr 1.75fr;
     }
     .card__title {
     }
@@ -1120,19 +1139,6 @@ h1.title {
     }
     .about__button {
         grid-row: 4/5;
-    }
-    /* COURSES */
-    .card {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-    .card__pic {
-        grid-column: 1/3;
-        grid-row: 1/2;
-    }
-    .card__content {
-        grid-column: 1/3;
-        grid-row: 2/3;
     }
 }
 /* THEORY */
