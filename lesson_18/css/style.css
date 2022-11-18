@@ -1111,14 +1111,15 @@ h1.title {
     }
     .achievement-main__item {
         display: grid;
-        grid-auto-flow: column;
-        align-items: center;
-        justify-items: start;
+        grid-template-columns: auto auto;
+        /* align-items: center; */
+        /* justify-items: start; */
+        justify-content: space-between;
         gap: 12px;
     }
     .achievement-main__text {
-        text-align: center;
-        justify-self: end;
+        text-align: right;
+        /* justify-self: end; */
     }
     /* ABOUT US */
     .about__image::before {
