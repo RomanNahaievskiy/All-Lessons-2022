@@ -1156,7 +1156,7 @@ h1.title {
     }
     .card {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
     .card__pic {
         grid-column: 1/3;
