@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>hw 22</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1>Вчимо Джава Скрипт <span class="js">JS</span></h1>
+            <h2>Частина 1</h2>
+            <hr>
+        </div>
+    </header>
+    <main class="page">
+        <div class="page__container">
+            <article>
+                <h3>JS - що це таке ?</h3>
+                <a
+                    href="https://uk.wikipedia.org/wiki/JavaScript#:~:text=JavaScript%20(JS,%D0%BF%D0%B5%D1%80%D1%88%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%BB%D0%B0%D1%81%D1%83.">
+                    Що каже Вікіпедія ?</a>
+            </article>
+            <p>Підключення файлу <span>script.js</span></p>
+            <p>Змінні <span>script-var.js</span> </p>
+            <h3>Виконання Завдання із відео <a
+                    href="https://www.youtube.com/watch?v=5V8IeATHr4w&ab_channel=%D0%A4%D1%80%D1%96%D0%BB%D0%B0%D0%BD%D1%81%D0%B5%D1%80%D0%BF%D0%BE%D0%B6%D0%B8%D1%82%D1%82%D1%8E">Переменные
+                    в JAVASCRIPT. Константы. Ключевые слова LET CONST VAR. Уроки JAVASCRIPT с нуля 2020</a>
+            </h3>
+            <ol>
+                <li><mark>Варіант 1</mark>let user = 'Вася' let age= 36
+                    <ul>
+                        <li>! Пропущено символ закінченої інструкції (стейтменту)";"</li>
+                    </ul>
+                </li>
+                <li><mark>Варіант 2</mark>let myage =36;
+                    <ul>
+                        <li>! Написано без використання lowerCamelCase</li>
+                    </ul>
+                </li>
+                <li><span class="ok">Варіант 3</span>const BLOCK_SIZE = 14 + 50;</li>
+                <li><span class="ok">Варіант 4</span>const BLOCK_HEIGHT = 100;</li>
+                <li><span class="ok">Варіант 5</span>if (true) {<br><span class="tab">var size =
+                        15;<br>}<br>console.log(size);</span></li>
+            </ol>
+            <p>Типи даних <span>script-typedata.js</span></p>
+            <h3>Типи даних JS</h3>
+            <ol>
+                <li>Undefinate - невизначено</li>
+                <li>Null - немає значення тобто 0</li>
+                <li>Boolean - 1 (TRUE)> 0(FALSE) </li>
+                <li>Number - число</li>
+                <li>BigInt - велике число (виділяється більше ОЗП)</li>
+                <li>String - рядок</li>
+                <li>Object - об'єкт, що містить різні властивості , а отже включає в себе різні типи </li>
+                <li>Symbol - унікальний ID об'єкта</li>
+                <li>Function - об'єкт (що приймає та повертає дані, значення різних типів)</li>
+                <li>NaN</li>
+            </ol>
+            <h3>Функції перетворення типів даних</h3>
+            <p>Існують варіанти автоматичного перетворення типу даних у JS (наприклад під час ділення рядково типу на
+                числовий , де рядковий буде перетворено в числовий тип. Але у випадках неможливості обчислення "тип"
+                буде
+                NaN)</p>
+            <ol>
+                <li>... = String(); </li>
+                <li>... = Number(); </li>
+                <li>... = Boolean(NaN, 0 , undefinate)=> FALSE; </li>
+            </ol>
+            <h3>Виконання завданя до відео <a
+                    href=https://www.youtube.com/watch?v=g7jDucodUzQ&ab_channel=%D0%A4%D1%80%D1%96%D0%BB%D0%B0%D0%BD%D1%81%D0%B5%D1%80%D0%BF%D0%BE%D0%B6%D0%B8%D1%82%D1%82%D1%8E">Типы
+                    данных JAVASCRIPT. Null String Undefined Boolean Number и другие. Уроки JAVASCRIPT с нуля 2020</a>
+            </h3>
+            <ol>
+                <li><mark>Варіант 1</mark> ! використані подвійні лапки не дають змоги імплементувати/ включити/ змінну
+                    в рядковий тип. Потрібні обернені лапки!</li>
+                <li><mark>Варіант 2</mark>! Повернеться значення : Infinty / у відео цей варіаннт був коментований
+                    "Повернеться тип NaN", що є помилкою!
+                </li>
+                <li><mark>Варіант 3</mark> Тип даних: Undefinate / у відео цей варіаннт був коментований "Повернеться
+                    тип даних Null", що є помилкою!</li>
+                <li><span class="ok">Варіант 4</span> ОК</li>
+            </ol>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <hr>
+            <h4>Нагаєвський Роман Сергійович | Осіннь 2022</h4>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/script-var.js"></script>
+    <script src="js/script-typedata.js"></script>
+</body>
+
+</html>
