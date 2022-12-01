@@ -116,6 +116,7 @@ p:not(:last-child) {
 ul,
 ol {
     padding-left: 2rem;
+    margin-bottom: 2rem;
 }
 li:not(:last-child) {
     line-height: 1.5rem;
