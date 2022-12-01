@@ -118,8 +118,10 @@ ol {
     padding-left: 2rem;
     margin-bottom: 2rem;
 }
-li:not(:last-child) {
+li {
     line-height: 1.5rem;
+}
+li:not(:last-child) {
     margin-bottom: 1rem;
 }
 
