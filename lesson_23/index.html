@@ -23,10 +23,10 @@
             <section class="page__section">
                 <div class="page__video-cnt">
                     <div class="page__video">
-                        <!-- <iframe src="https://www.youtube.com/embed/6OGDOFEi4aw" -->
-                        <!-- title="Урок №23 // Осінь 2022 // Фрілансер по життю" frameborder="0" -->
-                        <!-- allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" -->
-                        <!-- allowfullscreen></iframe> -->
+                        <iframe src="https://www.youtube.com/embed/6OGDOFEi4aw"
+                            title="Урок №23 // Осінь 2022 // Фрілансер по життю" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
             </section>
@@ -38,26 +38,65 @@
                     2020</a>
                 <div class="page__video-cnt">
                     <div class="page__video">
-                        <!-- <iframe src="https://www.youtube.com/embed/oSO_StIWaXM" title="Операторы JAVASCRIPT. " 2"+2=22. -->
-                        <!-- Уроки JAVASCRIPT с нуля 2020" frameborder="0" -->
-                        <!-- allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" -->
-                        <!-- allowfullscreen></iframe> -->
+                        <iframe src="https://www.youtube.com/embed/oSO_StIWaXM" title="Операторы JAVASCRIPT. " 2"+2=22.
+                            Уроки JAVASCRIPT с нуля 2020" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
-                <article class="page__exersice-solution solution">
+                <article class="page__exersice-solution task">
                     <h2>Завдання "Оператори" - Вирішення </h2>
-                    <ul class="solution__list">
-                        <li class="solution__item"><span class="ok">Варіант № 1</span></li>
-                        <li class="solution__item"><span class="ok">Варіант № 2</span></li>
-                        <li class="solution__item"><mark>Варіант № 3</mark></li>
-                        <li class="solution__item"><mark>Варіант № 4</mark></li>
-                        <li class="solution__item"><span class="ok">Варіант № 5</span></li>
-                        <li class="solution__item"><span class="ok">Варіант № 6</span></li>
+                    <div class="task__image-ibg"><img src="img/operator/Task1.jpg" alt="Task Operators"></div>
+                    <ul class="task__list">
+                        <li class="task__item"><mark>Варіант № 1</mark>
+                            <span class="task__code">
+                                console.log('35' + -"22");
+                            </span>
+                            <span class="task__coments"> // МОЖЛИВА Логічна помилка. Відбудеться конкатенація -
+                                очікується рядок
+                                "35-22" тому, що
+                                бінарний оператор [ + ] не конвертує дані у інший тип. Якби був використаний лише
+                                оператор [ - ], який конвертує тип даних, очікувалося б число 13.
 
+                            </span>
+                        </li>
+                        <li class="task__item"><span class="ok">Варіант № 2</span>
+                            <span class="task__code">console.log('35' * "22");</span>
+                            <span class="task__coments">// Відбудеться обчислення , так як оператору множення вдасться
+                                конвертувати дані в числовий тип.</span>
+                        </li>
+                        <li class="task__item"><mark>Варіант № 3</mark>
+                            <span class="task__code">console.log('558' > 22++);</span>
+                            <span class="task__coments">// Помилка, так як унарний оператор Інкремент використаний у
+                                виразі із числом 22 , але Інкремент та Декремент працюють ЛИШЕ З ЗМІННИМИ</span>
+                        </li>
+                        <li class="task__item"><mark>Варіант № 4</mark>
+                            <span class="task__code">let userCounter = 0; let newUsers = userCounter++ ;
+                                console.log(newUsers); </span>
+                            <span class="task__coments">// МОЖЛИВА Логічна помилка (якщо це спеціально не задумано - так
+                                як приклад вирваний з контексту). Результат не зміниться через використання суфіксного
+                                типу запису інкремента , тому для випадку миттєвого збільшення операнда на одиницю варто
+                                використати інкремент префіксного типу запису.</span>
+                        </li>
+                        <li class="task__item"><span class="ok">Варіант № 5</span>
+                            <span class="task__code">
+                                console.log(!false && 11 || 18 && !'');</span>
+                            <span class="task__coments">// Відповідно до пріорітетності операторів вираз можна прочитати
+                                так: ((NOT FALSE) AND 11) OR (18 AND (NOT ' ')). Знаючи , що числа > 0 в булевому
+                                значенні будуть TRUE , а також що NOT FALSE === TRUE, а ще , що під час виконання
+                                Конюнкції буде повернено останнє значення, що повертає TRUE - Вираз матиме вигляд: (TRUE
+                                AND TRUEnum) OR (TRUEnum AND TRUE). В результаті ми отримаємо (TRUE AND [ TRUEnum ]) OR
+                                (TRUEnum AND TRUE) під час виконання логічног виразу: variantFive = !false && 11 || 18
+                                && !'';</span>
+                        </li>
+                        <li class="task__item"><span class="ok">Варіант № 6</span>
+                            <span class="task__code">let name = 0; console.log(name ?? "Без імені");</span>
+                            <span class="task__coments">// Змінній name присвоєно значення 0 , тобто число нуль , що не
+                                є null/undefinate , тому у виразі : console.log(name ?? "Без імені"); очікується
+                                значення 0, тобто число нуль. </span>
+                        </li>
                     </ul>
-
                 </article>
-
             </section>
 
             <!-- 2 ========================= -->
@@ -69,14 +108,58 @@
                     JAVASCRIPT с нуля 2020</a>
                 <div class="page__video-cnt">
                     <div class="page__video">
-                        <!-- <iframe src="https://www.youtube.com/embed/tFyRhDZgHaU" -->
-                        <!-- title="IF ELSE в JAVASCRIPT. Условный оператор " ?". Примеры IF ELSE. Уроки JAVASCRIPT с -->
-                        <!-- нуля 2020" frameborder="0" -->
-                        <!-- allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" -->
-                        <!-- allowfullscreen> -->
-                        <!-- </iframe> -->
+                        <iframe src="https://www.youtube.com/embed/tFyRhDZgHaU"
+                            title="IF ELSE в JAVASCRIPT. Условный оператор " ?". Примеры IF ELSE. Уроки JAVASCRIPT с
+                            нуля 2020" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
                     </div>
                 </div>
+                <article class="page__exersice-solution task">
+                    <h2>Завдання "Умовне розгалуження" - Вирішення </h2>
+                    <div class="task__image-ibg"><img src="img/branching/task2.jpg" alt="Task Operators"></div>
+                    <ul class="task__list">
+                        <li class="task__item"><span class="ok">Варіант № 1</span>
+                            <span class="task__code">if (1 === "1") {
+                                console.log('TRUE');
+                                } else {
+                                console.log('FALSE');
+                                }
+                            </span>
+                            <span class="task__coments">
+                                // очікуємо FALSE , тому, що "строгий" оператор [ === ] визначає , що типи даних не
+                                дорівнюють.
+                            </span>
+                        </li>
+                        <li class="task__item"><span class="ok">Варіант № 2</span>
+                            <span class="task__code">if (5 == '5') {
+                                console.log('TRUE');
+                                } else {
+                                console.log('FALSE');
+                                }</span>
+                            <span class="task__coments">// очікуємо TRUE , тому , "не строгий" оператор [ == ] конвертує
+                                типи даних , після чого перевіряє рівність.</span>
+                        </li>
+                        <li class="task__item"><span class="ok">Варіант № 3</span>
+                            <span class="task__code">let message = (92 > '11' && 58 < 100) ? 'TRUE' : 'FALSE' ; </span>
+                                    <span class="task__coments">//
+                                        очікуємо TRUE, тому що в умові (92> '11' && 58 < 100), яка виконається першою
+                                            завдяки круглим дужкам - ми отримаємо TRUE. В результаті виконання
+                                            трійничного оператора [ ? ] буде повернено перше значення після оператора,
+                                            тобто "TRUE" в цьому випадку. console.log(message);</span>
+                        </li>
+                        <li class="task__item"><span class="ok">Варіант № 4</span>
+                            <span class="task__code">if (0) {
+                                console.log('FALSE');
+                                } else if (" ") {
+                                console.log('TRUE'); </span>
+                            <span class="task__coments">// Очікується 'TRUE' як результат виконання 2 блоку команд,
+                                після виконання 2 умови else if ("_"), де символ пробілу надасть рядку значення TRUE.
+                                Втой же час у першій умові числове нуль в булевому значені еквівалентне FALSE</span>
+                        </li>
+                    </ul>
+                </article>
             </section>
 
             <!-- 3 ========================= -->
@@ -95,6 +178,7 @@
                         <!-- allowfullscreen></iframe> -->
                     </div>
                 </div>
+
             </section>
 
 
@@ -143,9 +227,10 @@
         </div>
     </footer>
     <!-- <script src="js/script.js"></script> -->
-    <script src="js/script-operator.js"></script>
+    <!-- <script src="js/script-operator.js"></script> -->
     <!-- <script src="js/script-branching.js"></script> -->
     <!-- <script src="js/script-strings.js"></script> -->
+    <script src="js/script-loops.js"></script>
 </body>
 
 </html>

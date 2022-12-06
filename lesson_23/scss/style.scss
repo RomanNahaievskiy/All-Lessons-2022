@@ -56,7 +56,7 @@ mark {
     color: darkred;
     background-color: #f70;
     border-radius: 0.4rem;
-    padding: 2px;
+    padding: 3px;
 }
 .ok {
     color: rgb(168, 168, 168);
@@ -79,22 +79,104 @@ hr {
 a:link {
     text-decoration: underline dotted 1px #000;
 }
-.page__video-cnt {
-    padding: 2rem 0;
+.page {
+
+    // .page__section
+
+    &__section {
+    }
+
+    // .page__video-cnt
+
+    &__video-cnt {
+        padding: 2rem 0;
+    }
+
+    // .page__video
+
+    &__video {
+        position: relative;
+        padding-bottom: 56.25%; /* 9/16 */
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 0.4rem;
+        box-shadow: 0rem 2rem 1rem #430;
+        iframe {
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // .page__exersice-solution
+
+    &__exersice-solution {
+    }
 }
-.page__video {
-    position: relative;
-    padding-bottom: 56.25%; /* 9/16 */
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 0.4rem;
-    box-shadow: 0rem 2rem 1rem #430;
+.task {
+    margin: 0 -15px;
+    padding: 15px 30px;
+    border-radius: 4px;
+    background-color: #010;
+    color: #fef;
+    // .task__image-ibg
+
+    &__image-ibg {
+        position: relative;
+        padding-bottom: 56.25%; /* 9/16 */
+        overflow:auto ;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    // .task__list
+
+    &__list {
+        
+    }
+
+    // .task__item
+
+    &__item {
+        
+    }
+    &__code{
+        color: #f70;
+    }
+    &__coments {
+        color: #270;
+    }
 }
-.page__video iframe {
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.ok {
 }
+
+
+// .page__video-cnt {
+//     padding: 2rem 0;
+// }
+// .page__video {
+//     position: relative;
+//     padding-bottom: 56.25%; /* 9/16 */
+//     margin: 0 auto;
+//     overflow: hidden;
+//     border-radius: 0.4rem;
+//     box-shadow: 0rem 2rem 1rem #430;
+// }
+// .page__video iframe {
+//     object-fit: cover;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+// }
+

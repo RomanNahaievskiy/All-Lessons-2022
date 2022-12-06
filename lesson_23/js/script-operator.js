@@ -3,14 +3,14 @@ console.log('====     JS оператори     ====');
 // Домашка №1
 
 // Варіант № 1
-let variantOne = '35' + -"22";
+let variantOne = '35' + - "22"; // конкатенація
 console.log(typeof variantOne);
 console.log(variantOne);
 // Варіант № 2
-let variantTwo = '35' + "22"; // конкатенація
+let variantTwo = '35' * "22";
 console.log(typeof variantTwo);
 console.log(variantTwo);
-//! Варіант № 3    Помилка,  так як унарний оператор Інкременція використаний у виразі із числом 22 , але Інкремент та декремент працюють ЛИШЕ  З ЗМІННИМИ.
+//! Варіант № 3    Помилка,  так як унарний оператор Інкременція використаний у виразі із числом 22 , але Інкремент та Декремент працюють ЛИШЕ  З ЗМІННИМИ.
 let a = 22
 let varianThree = '558' > a++;
 // console.log(typeof varianThree);
@@ -28,7 +28,7 @@ let firstPart = !false && 11;
 console.log(firstPart);
 let secondPart = 18 && !'';
 console.log(secondPart);
-// Відповідно до пріорітетності операторів вираз можна прочитати так: ((NOT FALSE) AND 11) OR (18=>TRUE AND (NOT '')), 
+// Відповідно до пріорітетності операторів вираз можна прочитати так: ((NOT FALSE) AND 11) OR (18 AND (NOT '')), 
 // Знаючи , що числа > 0 в булевому значенні будуть TRUE , а також що  NOT FALSE === TRUE, а ще , що під час виконання Конюнкції буде повернено останнє значення, що повертає TRUE - Вираз матиме вигляд: (TRUE AND TRUEnum) OR (TRUEnum AND TRUE)
 // В результаті  ми отримаємо  (TRUE AND [ TRUEnum ]) OR (TRUEnum AND TRUE) під час виконання логічног виразу: variantFive = !false && 11 || 18 && !'';
 let variantFive = !false && 11 || 18 && !'';
