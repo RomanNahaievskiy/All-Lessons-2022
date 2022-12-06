@@ -117,8 +117,9 @@ a:link {
     }
 }
 .task {
-    margin: 0 -15px;
-    padding: 15px 30px;
+    h2 {
+        padding-left: 2rem;
+    }
     border-radius: 4px;
     background-color: #010;
     color: #fef;
@@ -144,6 +145,12 @@ a:link {
         
     }
 
+    &__list--solution {
+        padding-left: 0;
+        .task__image-ibg {
+            padding-bottom: 37.5%; /* 6/16 */
+        }
+    }
     // .task__item
 
     &__item {
