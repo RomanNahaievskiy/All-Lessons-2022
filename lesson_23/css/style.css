@@ -140,8 +140,8 @@ mark {
 }
 
 .ok {
-  color: darkgreen;
-  background-color: #0f7;
+  color: rgb(168, 168, 168);
+  background-color: rgb(79, 155, 114);
   border-radius: 0.4rem;
   padding: 2px;
 }
@@ -164,11 +164,11 @@ a:link {
           text-decoration: underline dotted 1px #000;
 }
 
-.video {
+.page__video-cnt {
   padding: 2rem 0;
 }
 
-.vid {
+.page__video {
   position: relative;
   padding-bottom: 56.25%; /* 9/16 */
   margin: 0 auto;
@@ -177,7 +177,7 @@ a:link {
   box-shadow: 0rem 2rem 1rem #430;
 }
 
-.vid iframe {
+.page__video iframe {
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
