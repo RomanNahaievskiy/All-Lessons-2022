@@ -67,7 +67,7 @@
                                 конвертувати дані в числовий тип.</span>
                         </li>
                         <li class="task__item"><mark>Варіант № 3</mark>
-                            <span class="task__code">console.log('558' > 22++);</span>
+                            <span class="task__code">console.log('558' &gt; 22++);</span>
                             <span class="task__coments">// Помилка, так як унарний оператор Інкремент використаний у
                                 виразі із числом 22 , але Інкремент та Декремент працюють ЛИШЕ З ЗМІННИМИ</span>
                         </li>
@@ -143,18 +143,19 @@
                                 типи даних , після чого перевіряє рівність.</span>
                         </li>
                         <li class="task__item"><span class="ok">Варіант № 3</span>
-                            <span class="task__code">let message = (92 > '11' && 58 < 100) ? 'TRUE' : 'FALSE' ; </span>
-                                    <span class="task__coments">//
-                                        очікуємо TRUE, тому що в умові (92> '11' && 58 < 100), яка виконається першою
-                                            завдяки круглим дужкам - ми отримаємо TRUE. В результаті виконання
-                                            трійничного оператора [ ? ] буде повернено перше значення після оператора,
-                                            тобто "TRUE" в цьому випадку. console.log(message);</span>
+                            <span class="task__code">let message = (92 &lt; '11' && 58 &gt; 100) ? 'TRUE' : 'FALSE' ;
+                            </span>
+                            <span class="task__coments">//
+                                очікуємо TRUE, тому що в умові (92> '11' && 58 < 100), яка виконається першою завдяки
+                                    круглим дужкам - ми отримаємо TRUE. В результаті виконання трійничного оператора [ ?
+                                    ] буде повернено перше значення після оператора, тобто "TRUE" в цьому випадку.
+                                    console.log(message);</span>
                         </li>
                         <li class="task__item"><span class="ok">Варіант № 4</span>
                             <span class="task__code">if (0) {
                                 console.log('FALSE');
                                 } else if (" ") {
-                                console.log('TRUE'); </span>
+                                console.log('TRUE'); }</span>
                             <span class="task__coments">// Очікується 'TRUE' як результат виконання 2 блоку команд,
                                 після виконання 2 умови else if ("_"), де символ пробілу надасть рядку значення TRUE.
                                 Втой же час у першій умові числове нуль в булевому значені еквівалентне FALSE</span>
