@@ -133,6 +133,59 @@ const lastfChild = bodyElement.lastElementChild; //отримати останн
 
 const childNodes = bodyElement.children; //усі дочірні елементи (колекція) схоже на масив, але не всі методи масивів працюють з колекціями  
 console.log(childNodes);
+console.log(' за допомогою циклу for...of');
 for (let childNode of childNodes) {
     console.log(childNode);
 }
+// або циклом for
+console.log(' за допомогою циклу for');
+for (let i = 0; i < childNodes.length; ++i) {
+    console.log(childNodes[i]);
+}
+
+
+// навігація до батьківських та сусідніх елементів
+// const bodyElement=document.body // перший етап - обов'язковий
+const previusSibiling = bodyElement.previousElementSibling; // отримати <head></head>
+console.log(previusSibiling); // очікуємо <head></>
+const nextSibiling = bodyElement.nextElementSibling;// отримати наступний <tag></tag>
+console.log(nextSibiling); // очікуємо null
+const parentElement = bodyElement.parentElement;// отримати батьківський <tag></tag>
+console.log(parentElement); // очікуємо увесь батьківський <html></html>
+
+//!!! навігація  (Пошук та отримання двільного елементу)
+const someObject = document.querySelector('.js');// Пошук та отримання двільного елементу в document дужках вказуємо css селектор Пошук зупиняється після знайденого першого елементу, змінній присвоюється один результат
+console.log(someObject);
+
+const someObjects = document.querySelectorAll('.ok')// отримати [Статичну колекцію] список всіх знайжених елементів на сторінці
+console.log(someObjects);
+someObjects.forEach(someObject => { console.log(someObject); })
+
+// зміна css властивостей із js
+someObjects.forEach(someObject => {
+    someObject.style.color = 'yellowgreen';
+})
+// Пошук у будь-якому об'єкті
+const list = document.querySelector('.list');// Пошук та отримання двільного елементу (в  дужках вказуємо css селектор) Пошук зупиняється після знайденого першого елементу, змінній присвоюється один результат
+const listItem = list.querySelectorAll('.list__item');//Отримання всіх елементів з класом .list__item
+console.log(listItem);
+
+//Closest
+// Пошук батьківського об'єкту
+// перевірка наявності батьківського об'єкту
+// перевірка й самого об'єкта , чи є селектор у самого об'єкта
+
+const pageSection = document.querySelector('.page__section');
+const isSelectorParent = pageSection.closest('.page');
+
+if (isSelectorParent) {
+    console.log('так є');
+} else {
+    console.log('ні, не має');
+}
+
+
+// Зміна документу
+
+//innerHTML - отримати вміст об'єкту включно з тегами
+//textContent - отримати текст об'єкту  без тегів (ігноруючи теги)
