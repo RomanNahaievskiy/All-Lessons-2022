@@ -189,3 +189,46 @@ if (isSelectorParent) {
 
 //innerHTML - отримати вміст об'єкту включно з тегами
 //textContent - отримати текст об'єкту  без тегів (ігноруючи теги)
+
+const listItems = document.querySelectorAll('.list__item');// отримав колекцію (статичний список) елементів з класом .list__item
+// console.log(listItems); test
+
+listItems.forEach((listItem, index) => { listItem.innerHTML = `<span class='ok' style="color:#fa0">+${index}-${index}=</span>` })// перезапис вмісту об'єкту html
+
+// Створення власних об'єктів createElement('')
+let newObject = document.createElement('div'); // створення . об'єкт ще ніде не застосовано він наче display : nonenewObject.innerHTML = `<span class="mark">Привіт JS !</span>`; // наповнення об'їкту вмістом 
+// ? як створити об'єкт із класом образу
+console.log(newObject); // перевіка
+newObject.innerHTML = `<span class="ok">Цей контент додано за допомогою JS</span>`;
+const practixSection = document.querySelector('.page__praxitce');
+practixSection.before(newObject);// інтеграція елемента в DOM перед .page__praxitce
+practixSection.after(newObject);// інтеграція елемента в DOM після.page__praxitce
+practixSection.prepend(newObject);// інтеграція елемента в DOM всередину на початок .page__praxitce
+practixSection.append(newObject);// інтеграція елемента в DOM всередину (останнім) .page__praxitce
+// ! інтегрувати таким чином можна лише (1 елемент) 1 раз  так як кожен ніби перезаписує попередній
+
+// insertAdjacentHTML  /Text/Element
+
+//"beforebegin" інтеграція елемента в DOM перед .page__praxitce
+//"afterbegin" інтеграція елемента в DOM всередину на початок .page__praxitce
+//"beforeend" інтеграція елемента в DOM всередину (останнім) .page__praxitce
+//"afterend" інтеграція елемента в DOM після.page__praxitce
+practixSection.insertAdjacentHTML('beforeend', `<div> <h2>Робота insertAdjacentHTML </h2>
+<ul class="list">
+<li class="list__item">1</li>
+<li class="list__item">2</li>
+<li class="list__item">3</li>
+<li class="list__item">4</li>
+</ul></div>`);
+
+// insertAdjacentText вставить вміст як текст
+// insertAdjacentElement працює з попередньо отриманим-(переміщує) / cтвореним -(інтегрує) елементом
+let newObjectJs = document.createElement('span');
+newObjectJs.innerHTML = `<style>h3 {color:#45f;}</style><h3 style="text-align:right" class="js">JS</h3>`;
+practixSection.insertAdjacentElement('beforeend', newObjectJs);
+
+// зміна css властивостей із js
+practixSection.style.color = "#fef";
+practixSection.style.backgroundColor = "#010";
+practixSection.style.borderRadius = "4px";
+practixSection.style.paddingLeft = "40px";
