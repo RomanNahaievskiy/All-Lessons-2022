@@ -224,7 +224,7 @@ practixSection.insertAdjacentHTML('beforeend', `<div> <h2>Робота insertAdj
 // insertAdjacentText вставить вміст як текст
 // insertAdjacentElement працює з попередньо отриманим-(переміщує) / cтвореним -(інтегрує) елементом
 let newObjectJs = document.createElement('span');
-newObjectJs.innerHTML = `<style>h3 {color:#45f;}</style><h3 style="text-align:right" class="js">JS</h3>`;
+newObjectJs.innerHTML = `<style>h3{color:#45f;}</style><h3 style="text-align:right" class="js">JS</h3>`;
 practixSection.insertAdjacentElement('beforeend', newObjectJs);
 
 // зміна css властивостей із js
