@@ -33,7 +33,6 @@ p:not(:last-child) {
 
 ul,
 ol {
-    padding-left: 2rem;
 }
 
 ul:not(:last-child),
@@ -84,6 +83,9 @@ a:link {
     // .page__section
 
     &__section {
+        article{
+            padding: 0 2rem 2rem 2rem;
+        }
     }
 
     // .page__video-cnt
@@ -117,9 +119,15 @@ a:link {
     }
 }
 .task {
-    h2 {
-        padding-left: 2rem;
+    a {
+        text-decoration:1px solid #fa0 underline;
+        transition: all 0.4s;
     }
+    a:hover{
+        color: #fa0;
+        transition: all 0.4s;
+    }
+    
     border-radius: 4px;
     background-color: #010;
     color: #fef;
@@ -142,11 +150,10 @@ a:link {
     // .task__list
 
     &__list {
-        
     }
 
     &__list--solution {
-        padding-left: 0;
+        padding: 0;
         .task__image-ibg {
             padding-bottom: 37.5%; /* 6/16 */
         }
@@ -157,10 +164,26 @@ a:link {
         
     }
     &__code{
+        letter-spacing: 1.3px;
+        display: block;
         color: #f70;
+    }
+    &__code--tab{
+        padding-left: 2rem;
+    }
+    &__code--tab-two{
+        padding-left: 4rem;
     }
     &__coments {
         color: #270;
+    }
+    &__solution{
+        padding-top: 2rem;
+        &solution__item{
+            
+            .task__image-ibg {
+                padding-bottom: 37.5%; /* 6/16 */
+            }}
     }
 }
 .ok {
