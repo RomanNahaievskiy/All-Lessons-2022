@@ -38,69 +38,86 @@ numTask(2);
     3.1 перевірити чи має масив елемент із значенням "Микита"
     3.2 отримати індекс шуканого елемента
     3.3 замінити елемент 
-4) Ваш код для пошуку повинен працювати для масивів із будь якою довжиною.//! тепер з будь якими змінними та видаляє усі співпадіння
+4) Ваш код для пошуку повинен працювати для масивів із будь якою довжиною.
 5) Видаліть перший елемент масиву та покажіть його.
 6) Вставте "Стефанія" та "Рома" на початок масиву
 */
-let users = ['Іван', 'Микита', 'Іван', 'Іван', 'Іван', 'Микита', 'Микита'];//1)
+let users = ['Іван', 'Микита',];//1)
 users.push('Оля');//2)
-let removedUser = 'Микита';
-let newInsteadUser = 'Петро';
-let removedUserIndex = users.indexOf(removedUser);
-let startUsersLenght = users.length;// для коректного перебору масиву
-
-
-for (let i = 0; i < users.length; i++) {
-    console.log(users.indexOf(removedUser, i)); // отримати всі співпадіння пошуку за запитом.
-}
+// створення змінних для подальших операцій
+let removeUser = 'Микита'; // значення  елементу , який потрібно замінити
+let newInsteadUser = 'Петро';// значення  елементу , на який потрібно замінити
+let startUsersLenght = users.length;// змінна для коректного перебору масиву
 
 // todo : створити перебір всього масиву ? якщо потрібно видалити та замінити вcіх Микит, скільки б їх не було у масиві.
-// за допомогою for
-
-if (users.includes(removedUser)) {
-    for (let index = 0; index < startUsersLenght; index++) {
-        let element = users[index];
-        let equal = element === removedUser;//чи відповідає  елемент запиту
-        if (equal) { //якщо відповідає
-            delete users[index]; //видалити вміст елементу
-            users[index] = newInsteadUser; //вставити новий вміст елементу
+// 3)&&4) Варіант 1
+console.log(`Знайти ${removeUser}  та замінити на ${newInsteadUser}  в  масиві :  [${users}] варіант 1`);
+if (users.includes(removeUser)) {//3.1)
+    for (let i = 0; i < users.length; i++) {
+        if (users.indexOf(removeUser, i) === 1) {//3.2 отримати всі співпадіння пошуку за запитом. users.indexOf(removedUser, i)якщо так то  отримаємо 1 інакше -1
+            users.splice(i, 1, newInsteadUser);//3.3 замінити елемент
+            console.log(`видаляю користувача ${users[i]} з індексом ${i} та замінюю на ${removeUser}`);
+        } else {
+            console.log(`Немає збігів за вашим запитом :[${removeUser}] по індексу ${i}`);
         }
     }
-    let countElements = 0;// стіорюємо лічильник для перевірки дійсних значень  типу валідація масиву
-    // test(users);
+} else {
+    console.log(`Немає збігів за вашим запитом :[${removeUser}]`);
+}
+
+
+
+// 3)&&4) Варіант 2 
+/*
+console.log(`Знайти ${removeUser}  та замінити на ${newInsteadUser}  в  масиві :  [${users}] - варіант 2`);
+if (users.includes(removeUser)) {
+    for (let index = 0; index < startUsersLenght; index++) {
+        let element = users[index];
+        let equal = element === removeUser;//чи відповідає  елемент запиту
+        if (equal) { //якщо відповідає
+            delete users[index]; //видалити вміст елементу
+            console.log(` Видаляю ім'я користувача ${element} з елементу з індексом ${index}`);
+            users[index] = newInsteadUser; //вставити новий вміст елементу
+            console.log(` Додаю нове ім'я користувача ${newInsteadUser} в елемент з індексом ${index}`);
+        }
+    }
+
+    // якщо лише видаляти таким чином, то потім потрібно привести масив до порядку шляхом сортування та вкорочення значень
+    // Подальший код це реалізовує таким чином:
+    let countElementsAr = 0;// стіорюємо лічильник для перевірки дійсних значень  типу валідація масиву
     for (let index = 0; index < users.length; index++) {
         let element = users[index];
         if (element) {// якщо елемент у масиві присутній додаємо +1 в лічильник
-            countElements++;
+            countElementsAr++;
         }
     }
-    // users.sort();//відсортувати , щоб потім скоротити пусті/ недійсні значення 
+    // users.sort();//відсортувати , щоб потім скоротити пусті/ недійсні значення - зміниться полядок елементів: дійсні значення займуть перші місця.
     // test(countElements);// Довжину списку варто вкоротити до дійсної кількості елементів.
-    // users.length = countElements;
-    test(users);
+    // users.length = countElementsAr;
+    // test(users);
 } else {
     console.log(`Немає збігів за вашим запитом :[${removedUser}]`);
-}
-// за допомогою forEach
-// array.forEach(element => {
-
-// });
-
-// if (users.includes(removedUser)) {   // якщо масив містьть хоч 1 елемент "Микита" , тоді ;
-
-
-//     removedUser = users.splice(removedUserIndex, 1);
-//     test(removedUser);
-
-// } else {
-//     console.log(`Немає збігів за вашим запитом :[${removedUser}]`);
-// }
-// users.includes('Микита')
-
+}*/
+// 5)
+console.log(users.shift());
+// 6)
+users.unshift('Стефанія', "Рома");
+test(users)
 
 
 
 
 
 // Завдання №3
+numTask(3);
+// Видалити елемент "Микита" та вивести його в змінну
+users = ['Іван', 'Микита', 'Оля']
+let removedUser = users.splice(1, 1);
+test(removedUser);
+
 // Завдання №4
+numTask(4);
+// Зробити з рядка Ваня Іштван Оля масив
+let str = "Ваня,Іштван,Оля";
+let newArrFromString = str.split(',');
+test(newArrFromString);
