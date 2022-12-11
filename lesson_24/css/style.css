@@ -128,11 +128,6 @@ p:not(:last-child) {
   margin-bottom: 2rem;
 }
 
-ul,
-ol {
-  padding-left: 2rem;
-}
-
 ul:not(:last-child),
 ol:not(:last-child) {
   margin-bottom: 2rem;
@@ -184,6 +179,9 @@ a:link {
           text-decoration: underline dotted 1px #000;
 }
 
+.page__section article {
+  padding: 0 2rem 2rem 2rem;
+}
 .page__video-cnt {
   padding: 2rem 0;
 }
@@ -209,8 +207,14 @@ a:link {
   background-color: #010;
   color: #fef;
 }
-.task h2 {
-  padding-left: 2rem;
+.task a {
+  -webkit-text-decoration: 1px solid #fa0 underline;
+          text-decoration: 1px solid #fa0 underline;
+  transition: all 0.4s;
+}
+.task a:hover {
+  color: #fa0;
+  transition: all 0.4s;
 }
 .task__image-ibg {
   position: relative;
@@ -226,14 +230,30 @@ a:link {
      object-fit: contain;
 }
 .task__list--solution {
-  padding-left: 0;
+  padding: 0;
 }
 .task__list--solution .task__image-ibg {
   padding-bottom: 37.5%; /* 6/16 */
 }
 .task__code {
+  letter-spacing: 1.3px;
+  display: block;
   color: #f70;
+}
+.task__code--tab {
+  padding-left: 2rem;
+}
+.task__code--tab-two {
+  padding-left: 4rem;
 }
 .task__coments {
   color: #270;
+}
+.task__solution {
+  padding-top: 2rem;
+  margin-left: -1.9rem;
+  margin-right: -1.9rem;
+}
+.task__solutionsolution__item .task__image-ibg {
+  padding-bottom: 37.5%; /* 6/16 */
 }

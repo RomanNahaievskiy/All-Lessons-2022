@@ -25,7 +25,10 @@
                 <section class="page__section">
                     <div class="page__video-cnt">
                         <div class="page__video">
-
+                            <iframe src="https://www.youtube.com/embed/Azy8fXkmtIQ" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                 </section class="page__section">
@@ -41,40 +44,93 @@
 
                 <!-- 1 ========================= -->
                 <section class="page__section">
-                    <h2>1 в JavaScript.</h2>
+                    <h2>Функції в JavaScript.</h2>
 
                     <div class="page__video-cnt">
                         <div class="page__video">
-
+                            <iframe src="https://www.youtube.com/embed/6cKoB5ijaGA" title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                     <article class="page__exersice-solution task">
-                        <h2>Завдання "1" - Вирішення </h2>
+                        <h2>Завдання "Функції" - Вирішення </h2>
                         <div class="task__image-ibg"><img src="" alt=""></div>
                         <ul class="task__list">
-                            <li class="task__item"><mark>Варіант № 1</mark>
-                                <span class="task__code"> </span>
-                                <span class="task__coments"> </span>
+                            <li class="task__item"><mark>Завдання № 1</mark>
+                                <span class="task__code">function showName() {</span>
+                                <span class="task__code task__code--tab">console.log('Василь Стус');</span>
+                                <span class="task__code">}</span>
+                                <span class="task__code">setTimeout(showName, 0);</span>
+                                <span class="task__code">console.log('Микола Лисенко');</span>
+                                <span class="task__coments">/*<a
+                                        href=" https://learn.javascript.ru/settimeout-setinterval#:~:text=%D0%9E%D1%81%D0%BE%D0%B1%D0%BB%D0%B8%D0%B2%D0%B8%D0%B9%20%D0%B2%D0%B0%D1%80%D1%96%D0%B0%D0%BD%D1%82%20%D0%B2%D0%B8%D0%BA%D0%BE%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BD%D0%BD%D1%8F%3A,%D0%BF%D1%96%D1%81%D0%BB%D1%8F%20%D0%B2%D0%B8%D0%BA%D0%BE%D0%BD%D0%B0%D0%BD%D0%BD%D1%8F%20%D0%BF%D0%BE%D1%82%D0%BE%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%BE%D0%B4%D1%83">Особливий
+                                        варіант використання: setTimeout(func, 0)</a>
+                                    або просто setTimeout(func).
+                                    Це планує виклик func настільки швидко, наскільки це можливо.
+                                    Але планувальник викликатиме функцію лише після завершення
+                                    виконання поточного коду. setTimeout(showName, 0) одразу після виконання
+                                    поточного коду, тобто після всього коду виконається тіло функції.*/ </span>
+                                <ul class="task__solution solution">
+                                    <li class="solution__item">
+                                        <h3 class="ok">Вирішення - Завдання № 1</h3>
+                                        <div class="task__image-ibg"><img src="img/func/t1.jpg" alt=""></div>
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="task__item"><span class="ok">Варіант № 2</span>
-                                <span class="task__code"></span>
-                                <span class="task__coments"></span>
+                            <li class="task__item"><span class="ok">Завдання № 2</span>
+                                <span class="task__code">showMessage();</span>
+                                <span class="task__code">function showMessage() {</span>
+                                <span class="task__code task__code--tab">console.log('Повідомлення');</span>
+                                <span class="task__code">}</span>
+                                <span class="task__coments">/*! ми в строгому режимі,
+                                    об'явлену таким чином функцію можна викликати з будь-якого місця в коді.*/</span>
+                                <ul class="task__solution solution">
+                                    <li class="solution__item">
+                                        <h3 class="ok">Вирішення - Завдання № 2</h3>
+                                        <div class="task__image-ibg"><img src="img/func/t2.jpg" alt=""></div>
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="task__item"><mark>Варіант № 3</mark>
-                                <span class="task__code"></span>
-                                <span class="task__coments"></span>
+                            <li class="task__item"><mark>Завдання № 3</mark>
+                                <span class="task__coments">// Чи правильно викликана функція ?</span>
+                                <span class="task__code">showMessageThree();</span>
+                                <span class="task__code">let showMessageThree = function () { </span>
+                                <span class="task__code task__code--tab">console.log('Повідомлення');</span>
+                                <span class="task__code">}</span>
+                                <span class="task__coments">/* ! Ми в строгому режимі.
+                                    При виконанні функціонального виразу; змінній присвоюється функція,
+                                    а це значить що до прочитання компілятором/інтерпритатором це все ще змінна,
+                                    до якої неможливо звернутися до її оголошення (область видимості).
+                                    об'явлену таким чином функцію можна викликати тільки після
+                                    оголошення функціонального виразу.*/</span>
+                                <ul class="task__solution solution">
+                                    <li class="solution__item">
+                                        <h3 class="ok">Вирішення - Завдання № 3</h3>
+                                        <div class="task__image-ibg"><img src="img/func/t3.jpg" alt=""></div>
+                                    </li>
+                                </ul>
                             </li>
-                            <li class="task__item"><mark>Варіант № 4</mark>
-                                <span class="task__code"></span>
-                                <span class="task__coments"></span>
-                            </li>
-                            <li class="task__item"><span class="ok">Варіант № 5</span>
-                                <span class="task__code"></span>
-                                <span class="task__coments"></span>
-                            </li>
-                            <li class="task__item"><span class="ok">Варіант № 6</span>
-                                <span class="task__code"></span>
-                                <span class="task__coments"></span>
+                            <li class="task__item"><mark>Завдання № 4</mark>
+                                <span class="task__code">if (2 > 1) {</span>
+                                <span class="task__code task__code--tab">function showMessageFour() {</span>
+                                <span class="task__code task__code--tab-two">console.log('Повідомлення вкладеної функції
+                                    4 завдання');</span>
+                                <span class="task__code task__code--tab">}</span>
+                                <span class="task__code">}</span>
+                                <span class="task__code">showMessageFour()</span>
+                                <span class="task__coments">/*дана функція (по за зоною досягнення) не в області
+                                    видимості,
+                                    адже розташована всередині JS блоку , де в строгому режимі: по за межами JS блоку
+                                    змінні та функції, що створені всередині цього блоку не існують.*/
+                                </span>
+                                <ul class="task__solution solution">
+                                    <li class="solution__item">
+                                        <h3 class="ok">Вирішення - Завдання № 4</h3>
+                                        <div class="task__image-ibg"><img src="img/func/t4.jpg" alt=""></div>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </article>
@@ -82,32 +138,36 @@
 
                 <!-- 2 ========================= -->
                 <section class="page__section">
-                    <h2>2 в JavaScript.</h2>
+                    <h2>Масиви в JavaScript.</h2>
                     <div class="page__video-cnt">
                         <div class="page__video">
-
+                            <iframe
+                                src="https://www.youtube.com/embed/GULFKAX0nxY?list=PLM6XATa8CAG7DDIBjNVd78Fv5Ueo930IV"
+                                title="Массивы в JAVASCRIPT. Методы массивов.  Редактирование, поиск, сортировка. Уроки JavaScript с нуля"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
                     </div>
                     <article class="page__exersice-solution task">
-                        <h2>Завдання "2" - Вирішення </h2>
+                        <h2>Завдання "Масиви" - Вирішення </h2>
                         <div class="task__image-ibg"><img src="" alt=""></div>
                         <ul class="task__list">
-                            <li class="task__item"><span class="ok">Варіант № 1</span>
+                            <li class="task__item"><span class="ok">Завдання № 1</span>
                                 <span class="task__code">
                                 </span>
                                 <span class="task__coments">
-
                                 </span>
                             </li>
-                            <li class="task__item"><span class="ok">Варіант № 2</span>
+                            <li class="task__item"><span class="ok">Завдання № 2</span>
                                 <span class="task__code"></span>
                                 <span class="task__coments"></span>
                             </li>
-                            <li class="task__item"><span class="ok">Варіант № 3</span>
+                            <li class="task__item"><span class="ok">Завдання № 3</span>
                                 <span class="task__code"></span>
                                 <span class="task__coments"></span>
                             </li>
-                            <li class="task__item"><span class="ok">Варіант № 4</span>
+                            <li class="task__item"><span class="ok">Завдання № 4</span>
                                 <span class="task__code"></span>
                                 <span class="task__coments"></span>
                             </li>
@@ -238,6 +298,9 @@
                 </div>
             </div>
         </footer>
+        <!-- <script src="js/script.js"></script> -->
+        <script src="js/script-function-task.js"></script>
+        <script src="js/script-array-task.js"></script>
         <!-- <script src="js/script.js"></script> -->
         <script src="js/scar.js"></script>
 
