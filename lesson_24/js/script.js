@@ -115,7 +115,7 @@ console.log(location.href);
 // Alert
 // alert('Увага повідомлення');
 // Confirm
-// let confirmAnswer = confirm("Очікування підтвердження") Поверне TRUE або FALSE залежно від вибору клієнта
+// let confirmAnswer = confirm("Очікування підтвердження"); Поверне TRUE або FALSE залежно від вибору клієнта
 // Prompt
 // let promptAnswer=prompt("Запитання"); - поверне рядок, якщо так  або null, якщо ні
 
@@ -197,7 +197,7 @@ listItems.forEach((listItem, index) => { listItem.innerHTML = `<span class='ok' 
 
 // Створення власних об'єктів createElement('')
 let newObject = document.createElement('div'); // створення . об'єкт ще ніде не застосовано він наче display : nonenewObject.innerHTML = `<span class="mark">Привіт JS !</span>`; // наповнення об'їкту вмістом 
-// ? як створити об'єкт із класом образу
+// ? як створити об'єкт із класом одразу
 console.log(newObject); // перевіка
 newObject.innerHTML = `<span class="ok">Цей контент додано за допомогою JS</span>`;
 const practixSection = document.querySelector('.page__praxitce');
@@ -205,7 +205,7 @@ practixSection.before(newObject);// інтеграція елемента в DOM
 practixSection.after(newObject);// інтеграція елемента в DOM після.page__praxitce
 practixSection.prepend(newObject);// інтеграція елемента в DOM всередину на початок .page__praxitce
 practixSection.append(newObject);// інтеграція елемента в DOM всередину (останнім) .page__praxitce
-// ! інтегрувати таким чином можна лише (1 елемент) 1 раз  так як кожен ніби перезаписує попередній
+// ! інтегрувати таким чином можна лише (1 елемент) 1 раз  так як кожен рядок у коді що вище  ніби перезаписує попередній
 
 // insertAdjacentHTML  /Text/Element
 
