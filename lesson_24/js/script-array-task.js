@@ -1,8 +1,6 @@
 "use strict" // строгий режим ВКЛ
 console.log('====    Завданя масиви JS    ====');
-function test(i = 'Немає даних для перевірки') {
-    console.log(`test : ${i} type : ${typeof i} length : ${i.length} `);
-}
+
 
 // МАСИВИ
 // Завдання №1
