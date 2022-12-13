@@ -79,11 +79,21 @@ a:link {
     text-decoration: underline dotted 1px #000;
 }
 .page {
-
     // .page__section
 
     &__section {
-        article{
+        padding-top: 50px;
+        a {
+            color: #000;
+            transition: all 0.4s;
+
+            &:hover {
+                text-shadow: 0px 2px 2px #000;
+                color: #7a0;
+                transition: all 0.4s;
+            }
+        }
+        article {
             padding: 0 2rem 2rem 2rem;
         }
     }
@@ -116,18 +126,20 @@ a:link {
     // .page__exersice-solution
 
     &__exersice-solution {
+        box-shadow: 0rem 2rem 1rem #430;
     }
 }
 .task {
     a {
-        text-decoration:1px solid #fa0 underline;
+        text-decoration: 1px solid #fa0 underline;
         transition: all 0.4s;
+
+        &:hover {
+            color: #fa0;
+            transition: all 0.4s;
+        }
     }
-    a:hover{
-        color: #fa0;
-        transition: all 0.4s;
-    }
-    
+
     border-radius: 4px;
     background-color: #010;
     color: #fef;
@@ -136,7 +148,7 @@ a:link {
     &__image-ibg {
         position: relative;
         padding-bottom: 56.25%; /* 9/16 */
-        overflow:auto ;
+        overflow: auto;
 
         img {
             position: absolute;
@@ -161,31 +173,30 @@ a:link {
     // .task__item
 
     &__item {
-        
     }
-    &__code{
+    &__code {
         letter-spacing: 1.3px;
         display: block;
         color: #f70;
     }
-    &__code--tab{
+    &__code--tab {
         padding-left: 2rem;
     }
-    &__code--tab-two{
+    &__code--tab-two {
         padding-left: 4rem;
     }
     &__coments {
         color: #270;
     }
-    &__solution{
+    &__solution {
         padding-top: 2rem;
         margin-left: -1.9rem;
-        margin-right:-1.9rem ;
-        &solution__item{
-            
+        margin-right: -1.9rem;
+        &solution__item {
             .task__image-ibg {
                 padding-bottom: 37.5%; /* 6/16 */
-            }}
+            }
+        }
     }
 }
 .ok {
