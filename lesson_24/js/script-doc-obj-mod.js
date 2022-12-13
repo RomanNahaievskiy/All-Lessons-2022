@@ -1,5 +1,5 @@
 'use strict';
-
+console.log(`==== DOM JS ====`);
 
 numTask(1);
 // Завдання 1
@@ -13,8 +13,7 @@ numTask(1);
 // Виконання №1 :
 const sayHi = document.querySelector('[data-say-hi]'); //1.1)
 console.log(sayHi)// 1.2)
-console.log("значення атрибута [data-say-hi] : " + sayHi.dataset.sayHi)// 1.2)
-
+console.log("значення атрибута [data-say-hi] : " + sayHi.dataset.sayHi)//! 1.2) lowerCamelCase
 
 
 
