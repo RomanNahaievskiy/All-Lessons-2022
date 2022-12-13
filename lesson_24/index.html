@@ -11,381 +11,380 @@
 
 <body>
 
-    <body>
-        <header class="header">
-            <div class="header__container">
-                <h1>Вчимо Джава Скрипт <span class="js">JS</span></h1>
-                <h2>Частина 3</h2>
-                <hr>
-            </div>
-        </header>
-        <main class="page">
-            <div class="page__container">
-                <h2>Урок №24 // Осінь 2022 // Фрілансер по життю</h2>
-                <section class="page__section">
-                    <div class="page__video-cnt">
-                        <div class="page__video">
-                            <iframe src="https://www.youtube.com/embed/Azy8fXkmtIQ" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
+
+    <header class="header">
+        <div class="header__container">
+            <h1>Вчимо Джава Скрипт <span class="js">JS</span></h1>
+            <h2>Частина 3</h2>
+            <hr>
+        </div>
+    </header>
+    <main class="page">
+        <div class="page__container">
+            <h2>Урок №24 // Осінь 2022 // Фрілансер по життю</h2>
+            <section class="page__section">
+                <div class="page__video-cnt">
+                    <div class="page__video">
+                        <iframe src="https://www.youtube.com/embed/Azy8fXkmtIQ" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
-                </section class="page__section">
-                <section class="page__praxitce">
-                    <h2>Практика уроку :</h2>
-                    <ul class="list">
-                        <li class="list__item">1</li>
-                        <li class="list__item">2</li>
-                        <li class="list__item">3</li>
-                        <li class="list__item">4</li>
+                </div>
+            </section class="page__section">
+            <section class="page__praxitce">
+                <h2>Практика уроку :</h2>
+                <ul class="list">
+                    <li class="list__item">1</li>
+                    <li class="list__item">2</li>
+                    <li class="list__item">3</li>
+                    <li class="list__item">4</li>
+                </ul>
+            </section>
+
+            <!-- 1 ========================= -->
+            <section class="page__section">
+                <h2>Функції в JavaScript.</h2>
+                <div class="page__video-cnt">
+                    <div class="page__video">
+                        <iframe src="https://www.youtube.com/embed/6cKoB5ijaGA" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <article class="page__exersice-solution task">
+                    <h2>Завдання "Функції" - Вирішення </h2>
+                    <ul class="task__list">
+                        <li class="task__item"><mark>Завдання № 1</mark>
+                            <span class="task__code">function showName() {</span>
+                            <span class="task__code task__code--tab">console.log('Василь Стус');</span>
+                            <span class="task__code">}</span>
+                            <span class="task__code">setTimeout(showName, 0);</span>
+                            <span class="task__code">console.log('Микола Лисенко');</span>
+                            <span class="task__coments">/*<a
+                                    href=" https://learn.javascript.ru/settimeout-setinterval#:~:text=%D0%9E%D1%81%D0%BE%D0%B1%D0%BB%D0%B8%D0%B2%D0%B8%D0%B9%20%D0%B2%D0%B0%D1%80%D1%96%D0%B0%D0%BD%D1%82%20%D0%B2%D0%B8%D0%BA%D0%BE%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BD%D0%BD%D1%8F%3A,%D0%BF%D1%96%D1%81%D0%BB%D1%8F%20%D0%B2%D0%B8%D0%BA%D0%BE%D0%BD%D0%B0%D0%BD%D0%BD%D1%8F%20%D0%BF%D0%BE%D1%82%D0%BE%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%BE%D0%B4%D1%83">Особливий
+                                    варіант використання: setTimeout(func, 0)</a>
+                                або просто setTimeout(func).
+                                Це планує виклик func настільки швидко, наскільки це можливо.
+                                Але планувальник викликатиме функцію лише після завершення
+                                виконання поточного коду. setTimeout(showName, 0) одразу після виконання
+                                поточного коду, тобто після всього коду виконається тіло функції.*/ </span>
+                            <ul class="task__solution solution">
+                                <li class="solution__item">
+                                    <h3 class="ok">Вирішення - Завдання № 1</h3>
+                                    <div class="task__image-ibg"><img src="img/func/t1.jpg" alt=""></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="task__item"><span class="ok">Завдання № 2</span>
+                            <span class="task__code">showMessage();</span>
+                            <span class="task__code">function showMessage() {</span>
+                            <span class="task__code task__code--tab">console.log('Повідомлення');</span>
+                            <span class="task__code">}</span>
+                            <span class="task__coments">/*! ми в строгому режимі,
+                                об'явлену таким чином функцію можна викликати з будь-якого місця в коді.*/</span>
+                            <ul class="task__solution solution">
+                                <li class="solution__item">
+                                    <h3 class="ok">Вирішення - Завдання № 2</h3>
+                                    <div class="task__image-ibg"><img src="img/func/t2.jpg" alt=""></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="task__item"><mark>Завдання № 3</mark>
+                            <span class="task__coments">// Чи правильно викликана функція ?</span>
+                            <span class="task__code">showMessageThree();</span>
+                            <span class="task__code">let showMessageThree = function () { </span>
+                            <span class="task__code task__code--tab">console.log('Повідомлення');</span>
+                            <span class="task__code">}</span>
+                            <span class="task__coments">/* ! Ми в строгому режимі.
+                                При виконанні функціонального виразу; змінній присвоюється функція,
+                                а це значить що до прочитання компілятором/інтерпритатором це все ще змінна,
+                                до якої неможливо звернутися до її оголошення (область видимості).
+                                об'явлену таким чином функцію можна викликати тільки після
+                                оголошення функціонального виразу.*/</span>
+                            <ul class="task__solution solution">
+                                <li class="solution__item">
+                                    <h3 class="ok">Вирішення - Завдання № 3</h3>
+                                    <div class="task__image-ibg"><img src="img/func/t3.jpg" alt=""></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="task__item"><mark>Завдання № 4</mark>
+                            <span class="task__code">if (2 > 1) {</span>
+                            <span class="task__code task__code--tab">function showMessageFour() {</span>
+                            <span class="task__code task__code--tab-two">console.log('Повідомлення вкладеної функції
+                                4 завдання');</span>
+                            <span class="task__code task__code--tab">}</span>
+                            <span class="task__code">}</span>
+                            <span class="task__code">showMessageFour()</span>
+                            <span class="task__coments">/*дана функція (по за зоною досягнення) не в області
+                                видимості,
+                                адже розташована всередині JS блоку , де в строгому режимі: по за межами JS блоку
+                                змінні та функції, що створені всередині цього блоку не існують.*/
+                            </span>
+                            <ul class="task__solution solution">
+                                <li class="solution__item">
+                                    <h3 class="ok">Вирішення - Завдання № 4</h3>
+                                    <div class="task__image-ibg"><img src="img/func/t4.jpg" alt=""></div>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
-                </section>
-
-                <!-- 1 ========================= -->
-                <section class="page__section">
-                    <h2>Функції в JavaScript.</h2>
-                    <div class="page__video-cnt">
-                        <div class="page__video">
-                            <iframe src="https://www.youtube.com/embed/6cKoB5ijaGA" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
+                </article>
+            </section>
+            <!-- 2 ========================= -->
+            <section class="page__section">
+                <h2>Масиви в JavaScript.</h2>
+                <div class="page__video-cnt">
+                    <div class="page__video">
+                        <iframe src="https://www.youtube.com/embed/GULFKAX0nxY?list=PLM6XATa8CAG7DDIBjNVd78Fv5Ueo930IV"
+                            title="Массивы в JAVASCRIPT. Методы массивов.  Редактирование, поиск, сортировка. Уроки JavaScript с нуля"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
-                    <article class="page__exersice-solution task">
-                        <h2>Завдання "Функції" - Вирішення </h2>
-                        <ul class="task__list">
-                            <li class="task__item"><mark>Завдання № 1</mark>
-                                <span class="task__code">function showName() {</span>
-                                <span class="task__code task__code--tab">console.log('Василь Стус');</span>
-                                <span class="task__code">}</span>
-                                <span class="task__code">setTimeout(showName, 0);</span>
-                                <span class="task__code">console.log('Микола Лисенко');</span>
-                                <span class="task__coments">/*<a
-                                        href=" https://learn.javascript.ru/settimeout-setinterval#:~:text=%D0%9E%D1%81%D0%BE%D0%B1%D0%BB%D0%B8%D0%B2%D0%B8%D0%B9%20%D0%B2%D0%B0%D1%80%D1%96%D0%B0%D0%BD%D1%82%20%D0%B2%D0%B8%D0%BA%D0%BE%D1%80%D0%B8%D1%81%D1%82%D0%B0%D0%BD%D0%BD%D1%8F%3A,%D0%BF%D1%96%D1%81%D0%BB%D1%8F%20%D0%B2%D0%B8%D0%BA%D0%BE%D0%BD%D0%B0%D0%BD%D0%BD%D1%8F%20%D0%BF%D0%BE%D1%82%D0%BE%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BA%D0%BE%D0%B4%D1%83">Особливий
-                                        варіант використання: setTimeout(func, 0)</a>
-                                    або просто setTimeout(func).
-                                    Це планує виклик func настільки швидко, наскільки це можливо.
-                                    Але планувальник викликатиме функцію лише після завершення
-                                    виконання поточного коду. setTimeout(showName, 0) одразу після виконання
-                                    поточного коду, тобто після всього коду виконається тіло функції.*/ </span>
-                                <ul class="task__solution solution">
-                                    <li class="solution__item">
-                                        <h3 class="ok">Вирішення - Завдання № 1</h3>
-                                        <div class="task__image-ibg"><img src="img/func/t1.jpg" alt=""></div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="task__item"><span class="ok">Завдання № 2</span>
-                                <span class="task__code">showMessage();</span>
-                                <span class="task__code">function showMessage() {</span>
-                                <span class="task__code task__code--tab">console.log('Повідомлення');</span>
-                                <span class="task__code">}</span>
-                                <span class="task__coments">/*! ми в строгому режимі,
-                                    об'явлену таким чином функцію можна викликати з будь-якого місця в коді.*/</span>
-                                <ul class="task__solution solution">
-                                    <li class="solution__item">
-                                        <h3 class="ok">Вирішення - Завдання № 2</h3>
-                                        <div class="task__image-ibg"><img src="img/func/t2.jpg" alt=""></div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="task__item"><mark>Завдання № 3</mark>
-                                <span class="task__coments">// Чи правильно викликана функція ?</span>
-                                <span class="task__code">showMessageThree();</span>
-                                <span class="task__code">let showMessageThree = function () { </span>
-                                <span class="task__code task__code--tab">console.log('Повідомлення');</span>
-                                <span class="task__code">}</span>
-                                <span class="task__coments">/* ! Ми в строгому режимі.
-                                    При виконанні функціонального виразу; змінній присвоюється функція,
-                                    а це значить що до прочитання компілятором/інтерпритатором це все ще змінна,
-                                    до якої неможливо звернутися до її оголошення (область видимості).
-                                    об'явлену таким чином функцію можна викликати тільки після
-                                    оголошення функціонального виразу.*/</span>
-                                <ul class="task__solution solution">
-                                    <li class="solution__item">
-                                        <h3 class="ok">Вирішення - Завдання № 3</h3>
-                                        <div class="task__image-ibg"><img src="img/func/t3.jpg" alt=""></div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="task__item"><mark>Завдання № 4</mark>
-                                <span class="task__code">if (2 > 1) {</span>
-                                <span class="task__code task__code--tab">function showMessageFour() {</span>
-                                <span class="task__code task__code--tab-two">console.log('Повідомлення вкладеної функції
-                                    4 завдання');</span>
-                                <span class="task__code task__code--tab">}</span>
-                                <span class="task__code">}</span>
-                                <span class="task__code">showMessageFour()</span>
-                                <span class="task__coments">/*дана функція (по за зоною досягнення) не в області
-                                    видимості,
-                                    адже розташована всередині JS блоку , де в строгому режимі: по за межами JS блоку
-                                    змінні та функції, що створені всередині цього блоку не існують.*/
-                                </span>
-                                <ul class="task__solution solution">
-                                    <li class="solution__item">
-                                        <h3 class="ok">Вирішення - Завдання № 4</h3>
-                                        <div class="task__image-ibg"><img src="img/func/t4.jpg" alt=""></div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </article>
-                </section>
-                <!-- 2 ========================= -->
-                <section class="page__section">
-                    <h2>Масиви в JavaScript.</h2>
-                    <div class="page__video-cnt">
-                        <div class="page__video">
-                            <iframe
-                                src="https://www.youtube.com/embed/GULFKAX0nxY?list=PLM6XATa8CAG7DDIBjNVd78Fv5Ueo930IV"
-                                title="Массивы в JAVASCRIPT. Методы массивов.  Редактирование, поиск, сортировка. Уроки JavaScript с нуля"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
+                </div>
+                <article class="page__exersice-solution task">
+                    <h2>Завдання "Масиви" - Вирішення </h2>
+                    <ul class="task__list">
+                        <li class="task__item"><span class="ok">Завдання № 1</span>
+                            <span class="task__code">let arr = ['Іван', 'Микита', 'Оля',];</span>
+                            <span class="task__code">let newArr = arr;</span>
+                            <span class="task__code">newArr.push('Петро');</span>
+                            <span class="task__code">console.log(arr.length);</span>
+                            <span class="task__coments">/* Що буде виведено в консоль ?
+                                */
+                            </span>
+                            <ul class="task__solution solution">
+                                <li class="solution__item">
+                                    <h3 class="ok">вирішення Завданя № 1</h3>
+                                    <div class="task__image-ibg"><img src="img/arr/task1.jpg" alt=""></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="task__item"><span class="ok">Завдання № 2</span>
+                            <span class="task__code"></span>
+                            <span class="task__coments">/*1) Створіть масив users з елементами "Іван" та "Микита" .
+                            </span>
+                            <span class="task__coments">2) Додайте "Оля" в кінець. </span>
+                            <span class="task__coments">3) Замініть значення "Микита" на "Петро".</span>
+                            <span class="task__coments">4) Ваш код для пошуку повинен працювати для масивів із
+                                будь якою довжиною.</span>
+                            <span class="task__coments">5) Видаліть перший елемент масиву та покажіть
+                                його.</span>
+                            <span class="task__coments">6) Вставте "Стефанія" та "Рома" на початок масиву*/</span>
+                            <ul class="task__solution solution">
+                                <li class="solution__item">
+                                    <h3 class="ok">вирішення Завданя № 2 (варіант 1)</h3>
+                                    <div class="task__image-ibg"><img src="img/arr/task2.jpg" alt=""></div>
+                                    <h3 class="ok">вирішення Завданя № 2 (варіант 2)</h3>
+                                    <div class="task__image-ibg"><img src="img/arr/task2-2.jpg" alt=""></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="task__item"><span class="ok">Завдання № 3</span>
+                            <span class="task__code">users = ['Іван', 'Микита', 'Оля'];</span>
+                            <span class="task__coments">/*Видалити елемент "Микита" та вивести його в
+                                змінну*/</span>
+                            <ul class="task__solution solution">
+                                <li class="solution__item">
+                                    <h3 class="ok">вирішення Завданя № 3</h3>
+                                    <div class="task__image-ibg"><img src="img/arr/task3.jpg" alt=""></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="task__item"><span class="ok">Завдання № 4</span>
+                            <span class="task__code">let str = "Ваня,Іштван,Оля";</span>
+                            <span class="task__coments">/* Зробити з рядка Ваня,Іштван,Оля масив */</span>
+                            <ul class="task__solution solution">
+                                <li class="solution__item">
+                                    <h3 class="ok">вирішення Завданя № 4</h3>
+                                    <div class="task__image-ibg"><img src="img/arr/task4.jpg" alt=""></div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+
+            <!-- 3 ========================= -->
+            <section class="page__section">
+                <h2>DOM в JavaScript.</h2>
+
+                <div class="page__video-cnt">
+                    <div class="page__video">
+                        <iframe src="https://www.youtube.com/embed/DuWyc76lYC4" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
-                    <article class="page__exersice-solution task">
-                        <h2>Завдання "Масиви" - Вирішення </h2>
-                        <ul class="task__list">
-                            <li class="task__item"><span class="ok">Завдання № 1</span>
-                                <span class="task__code">let arr = ['Іван', 'Микита', 'Оля',];</span>
-                                <span class="task__code">let newArr = arr;</span>
-                                <span class="task__code">newArr.push('Петро');</span>
-                                <span class="task__code">console.log(arr.length);</span>
-                                <span class="task__coments">/* Що буде виведено в консоль ?
-                                    */
-                                </span>
-                                <ul class="task__solution solution">
-                                    <li class="solution__item">
-                                        <h3 class="ok">вирішення Завданя № 1</h3>
-                                        <div class="task__image-ibg"><img src="img/arr/task1.jpg" alt=""></div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="task__item"><span class="ok">Завдання № 2</span>
-                                <span class="task__code"></span>
-                                <span class="task__coments">/*1) Створіть масив users з елементами "Іван" та "Микита" .
-                                </span>
-                                <span class="task__coments">2) Додайте "Оля" в кінець. </span>
-                                <span class="task__coments">3) Замініть значення "Микита" на "Петро".</span>
-                                <span class="task__coments">4) Ваш код для пошуку повинен працювати для масивів із
-                                    будь якою довжиною.</span>
-                                <span class="task__coments">5) Видаліть перший елемент масиву та покажіть
-                                    його.</span>
-                                <span class="task__coments">6) Вставте "Стефанія" та "Рома" на початок масиву*/</span>
-                                <ul class="task__solution solution">
-                                    <li class="solution__item">
-                                        <h3 class="ok">вирішення Завданя № 2 (варіант 1)</h3>
-                                        <div class="task__image-ibg"><img src="img/arr/task2.jpg" alt=""></div>
-                                        <h3 class="ok">вирішення Завданя № 2 (варіант 2)</h3>
-                                        <div class="task__image-ibg"><img src="img/arr/task2-2.jpg" alt=""></div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="task__item"><span class="ok">Завдання № 3</span>
-                                <span class="task__code">users = ['Іван', 'Микита', 'Оля'];</span>
-                                <span class="task__coments">/*Видалити елемент "Микита" та вивести його в
-                                    змінну*/</span>
-                                <ul class="task__solution solution">
-                                    <li class="solution__item">
-                                        <h3 class="ok">вирішення Завданя № 3</h3>
-                                        <div class="task__image-ibg"><img src="img/arr/task3.jpg" alt=""></div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="task__item"><span class="ok">Завдання № 4</span>
-                                <span class="task__code">let str = "Ваня,Іштван,Оля";</span>
-                                <span class="task__coments">/* Зробити з рядка Ваня,Іштван,Оля масив */</span>
-                                <ul class="task__solution solution">
-                                    <li class="solution__item">
-                                        <h3 class="ok">вирішення Завданя № 4</h3>
-                                        <div class="task__image-ibg"><img src="img/arr/task4.jpg" alt=""></div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </article>
-                </section>
+                </div>
+                <h2>
+                    <a target="_blank" href="doc-obj-mod.html">Відкрити сторінку з структурою DOM Додаток 1</a>
+                </h2>
+                <article class="page__exersice-solution task">
+                    <h2>Завдання "DOM в JavaScript" - Вирішення </h2>
+                    <ul class="task__list">
+                        <li class="task__item"><span class="ok">Завдання № 1</span>
+                            <span class="task__code">&lt;html></span>
+                            <span class="task__code task__code--tab">...</span>
+                            <span class="task__code task__code--tab-two">
+                                &lt;div data-say-hi="yes">Привіт!&lt;/div>
+                            </span>
+                            <span class="task__code task__code--tab">...</span>
+                            <span class="task__code">&lt;/html></span>
+                            <span class="task__coments">/* 1) Отримати в змінну елемент з атрибутом data-say-hi 2)
+                                прочитати значення цього атрибута- вивести в консоль */
+                            </span>
+                            <ul class="task__solution solution">
+                                <li class="solution__item">
+                                    <h3 class="ok">Вирішення завданя № 1</h3>
+                                    <div class="task__image-ibg"><img src="img/dom/task-1.jpg" alt=""></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="task__item"><span class="ok">Завдання № 2</span>
+                            <span class="task__code">&lt;html></span>
+                            <span class="task__code">...</span>
+                            <span class="task__code task__code--tab">&lt;ul></span>
+                            <span class="task__code task__code--tab-two">&lt;li>Корчі&lt;/li></span>
+                            <span class="task__code task__code--tab-two">&lt;li>Йончі&lt;/li></span>
+                            <span class="task__code task__code--tab">&lt;/ul></span>
+                            <span class="task__code">...</span>
+                            <span class="task__code">&lt;/html></span>
+                            <span class="task__coments">/*Отримати в змінну елемент з текстом Йончі*/</span>
+                            <ul class="task__solution solution">
+                                <li class="solution__item">
+                                    <h3 class="ok">Вирішення завданя № 2</h3>
+                                    <div class="task__image-ibg"><img src="img/dom/task-2.jpg" alt=""></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="task__item"><span class="ok">Завдання № 3</span>
+                            <span class="task__code">&lt;html></span>
+                            <span class="task__code">...</span>
+                            <span class="task__code task__code--tab">&lt;div class="like">&lt;/div></span>
+                            <span class="task__code task__code--tab">&lt;div class="subscribe">&lt;/div></span>
+                            <span class="task__code task__code--tab">&lt;div class="like subscribe">&lt;/div></span>
+                            <span class="task__code">...</span>
+                            <span class="task__code">&lt;/html></span>
+                            <span class="task__coments">/*Отримати в змінну колекцію елементів з класом
+                                like*/</span>
+                            <ul class="task__solution solution">
+                                <li class="solution__item">
+                                    <h3 class="ok">Вирішення завданя № 3</h3>
+                                    <div class="task__image-ibg"><img src="img/dom/task-3.jpg" alt=""></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="task__item"><span class="ok">Завдання № 4</span>
+                            <span class="task__code">&lt;html></span>
+                            <span class="task__code">...</span>
+                            <span class="task__code task__code--tab">&lt;ul></span>
+                            <span class="task__code task__code--tab-two">&lt;li>Пункт 1&lt;/li></span>
+                            <span class="task__code task__code--tab-two">&lt;li>Пункт 2&lt;/li></span>
+                            <span class="task__code task__code--tab">&lt;/ul></span>
+                            <span class="task__code">...</span>
+                            <span class="task__code">&lt;/html></span>
+                            <span class="task__coments">&lt;!-- Куди буде додано &lt;li>Текст&lt;/li>?--></span>
+                            <span class="task__code"></span>
+                            <span class="task__code">&lt;script></span>
+                            <span class="task__code">...</span>
+                            <span class="task__code">const list = document.querySelectorAll('ul');</span>
+                            <span class="task__code">list.insertAdjacentHTML(</span>
+                            <span class="task__code task__code--tab">'beforeend',</span>
+                            <span class="task__code task__code--tab">'&lt;li>Текст&lt;/li>'</span>
+                            <span class="task__code">)</span>
+                            <span class="task__code">...</span>
+                            <span class="task__code">&lt;/script></span>
 
-                <!-- 3 ========================= -->
-                <section class="page__section">
-                    <h2>DOM в JavaScript.</h2>
+                            <ul class="task__solution solution">
+                                <li class="solution__item">
+                                    <h3 class="ok">Вирішення завданя № 4</h3>
+                                    <div class="task__image-ibg"><img src="img/dom/task-4.jpg" alt=""></div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+            </section>
 
-                    <div class="page__video-cnt">
-                        <div class="page__video">
-                            <iframe src="https://www.youtube.com/embed/DuWyc76lYC4" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
+
+            <!-- 4 ========================= -->
+            <section class="page__section">
+                <h2>Розміри. Скрол. Координати. в JavaScript.</h2>
+
+                <div class="page__video-cnt">
+                    <div class="page__video">
+                        <iframe src="https://www.youtube.com/embed/TEeKr2ON66A" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
-                    <h2>
-                        <a target="_blank" href="doc-obj-mod.html">Відкрити сторінку з структурою DOM Додаток 1</a>
-                    </h2>
-                    <article class="page__exersice-solution task">
-                        <h2>Завдання "DOM в JavaScript" - Вирішення </h2>
-                        <ul class="task__list">
-                            <li class="task__item"><span class="ok">Завдання № 1</span>
-                                <span class="task__code">&lt;html></span>
-                                <span class="task__code task__code--tab">...</span>
-                                <span class="task__code task__code--tab-two">
-                                    &lt;div data-say-hi="yes">Привіт!&lt;/div>
-                                </span>
-                                <span class="task__code task__code--tab">...</span>
-                                <span class="task__code">&lt;/html></span>
-                                <span class="task__coments">/* 1) Отримати в змінну елемент з атрибутом data-say-hi 2)
-                                    прочитати значення цього атрибута- вивести в консоль */
-                                </span>
-                                <ul class="task__solution solution">
-                                    <li class="solution__item">
-                                        <h3 class="ok">Вирішення завданя № 1</h3>
-                                        <div class="task__image-ibg"><img src="img/dom/task-1.jpg" alt=""></div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="task__item"><span class="ok">Завдання № 2</span>
-                                <span class="task__code">&lt;html></span>
-                                <span class="task__code">...</span>
-                                <span class="task__code task__code--tab">&lt;ul></span>
-                                <span class="task__code task__code--tab-two">&lt;li>Корчі&lt;/li></span>
-                                <span class="task__code task__code--tab-two">&lt;li>Йончі&lt;/li></span>
-                                <span class="task__code task__code--tab">&lt;/ul></span>
-                                <span class="task__code">...</span>
-                                <span class="task__code">&lt;/html></span>
-                                <span class="task__coments">/*Отримати в змінну елемент з текстом Йончі*/</span>
-                                <ul class="task__solution solution">
-                                    <li class="solution__item">
-                                        <h3 class="ok">Вирішення завданя № 2</h3>
-                                        <div class="task__image-ibg"><img src="img/dom/task-2.jpg" alt=""></div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="task__item"><span class="ok">Завдання № 3</span>
-                                <span class="task__code">&lt;html></span>
-                                <span class="task__code">...</span>
-                                <span class="task__code task__code--tab">&lt;div class="like">&lt;/div></span>
-                                <span class="task__code task__code--tab">&lt;div class="subscribe">&lt;/div></span>
-                                <span class="task__code task__code--tab">&lt;div class="like subscribe">&lt;/div></span>
-                                <span class="task__code">...</span>
-                                <span class="task__code">&lt;/html></span>
-                                <span class="task__coments">/*Отримати в змінну колекцію елементів з класом
-                                    like*/</span>
-                                <ul class="task__solution solution">
-                                    <li class="solution__item">
-                                        <h3 class="ok">Вирішення завданя № 3</h3>
-                                        <div class="task__image-ibg"><img src="img/dom/task-3.jpg" alt=""></div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="task__item"><span class="ok">Завдання № 4</span>
-                                <span class="task__code">&lt;html></span>
-                                <span class="task__code">...</span>
-                                <span class="task__code task__code--tab">&lt;ul></span>
-                                <span class="task__code task__code--tab-two">&lt;li>Пункт 1&lt;/li></span>
-                                <span class="task__code task__code--tab-two">&lt;li>Пункт 2&lt;/li></span>
-                                <span class="task__code task__code--tab">&lt;/ul></span>
-                                <span class="task__code">...</span>
-                                <span class="task__code">&lt;/html></span>
-                                <span class="task__coments">&lt;!-- Куди буде додано &lt;li>Текст&lt;/li>?--></span>
-                                <span class="task__code"></span>
-                                <span class="task__code">&lt;script></span>
-                                <span class="task__code">...</span>
-                                <span class="task__code">const list = document.querySelectorAll('ul');</span>
-                                <span class="task__code">list.insertAdjacentHTML(</span>
-                                <span class="task__code task__code--tab">'beforeend',</span>
-                                <span class="task__code task__code--tab">'&lt;li>Текст&lt;/li>'</span>
-                                <span class="task__code">)</span>
-                                <span class="task__code">...</span>
-                                <span class="task__code">&lt;/script></span>
-
-                                <ul class="task__solution solution">
-                                    <li class="solution__item">
-                                        <h3 class="ok">Вирішення завданя № 4</h3>
-                                        <div class="task__image-ibg"><img src="img/dom/task-4.jpg" alt=""></div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </article>
-                </section>
+                </div>
+                <h2>
+                    <a target="_blank" href="size-scroll-cordinats.html">Відкрити сторінку з структурою Додаток
+                        2</a>
+                </h2>
+                <article class="page__exersice-solution task">
+                    <h2>Завдання "Розміри. Скрол. Координати." - Вирішення </h2>
+                    <ul class="task__list">
+                        <li class="task__item">
+                            <span class="ok">Завдання № 1</span>
+                            <span class="task__code"></span>
+                            <span class="task__coments">Дізнатися шиирину полоси прокрутки скролбара</span>
+                            <ul class="task__solution solution">
+                                <li class="solution__item">
+                                    <h3 class="ok">Вирішення завданя № 1</h3>
+                                    <div class="task__image-ibg"><img src="img/sz-scl-cord/task1.jpg" alt=""></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="task__item">
+                            <span class="ok">Завдання № 2</span>
+                            <span class="task__code"></span>
+                            <span class="task__coments">Змусити браузар прокрутитися на 100px зверху через секунду
+                                після відкриття сторінки</span>
+                            <ul class="task__solution solution">
+                                <li class="solution__item">
+                                    <h3 class="ok">Вирішення завданя № 2</h3>
+                                    <div class="task__image-ibg"><img src="img/sz-scl-cord/task2.jpg" alt=""></div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="task__item">
+                            <span class="ok">Завдання № 3</span>
+                            <span class="task__code"></span>
+                            <span class="task__coments">Отримайте координати різних трьох об'єктів</span>
+                            <ul class="task__solution solution">
+                                <li class="solution__item">
+                                    <h3 class="ok">Вирішення завданя № 3</h3>
+                                    <div class="task__image-ibg"><img src="img/sz-scl-cord/task3-1.jpg" alt="">
+                                    </div>
+                                    <div class="task__image-ibg"><img src="img/sz-scl-cord/task3-2.jpg" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <hr>
+            <h4>Нагаєвський Роман Сергійович | Осіннь 2022</h4>
+        </div>
+    </footer>
+    <script src="js/test.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script-doc-obj-mod.js"></script>
+    <script src="js/script-function-task.js"></script>
+    <script src="js/script-array-task.js"></script>
 
 
-                <!-- 4 ========================= -->
-                <section class="page__section">
-                    <h2>Розміри. Скрол. Координати. в JavaScript.</h2>
-
-                    <div class="page__video-cnt">
-                        <div class="page__video">
-                            <iframe src="https://www.youtube.com/embed/TEeKr2ON66A" title="YouTube video player"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-                    <h2>
-                        <a target="_blank" href="size-scroll-cordinats.html">Відкрити сторінку з структурою Додаток
-                            2</a>
-                    </h2>
-                    <article class="page__exersice-solution task">
-                        <h2>Завдання "Розміри. Скрол. Координати." - Вирішення </h2>
-                        <ul class="task__list">
-                            <li class="task__item">
-                                <span class="ok">Завдання № 1</span>
-                                <span class="task__code"></span>
-                                <span class="task__coments">Дізнатися шиирину полоси прокрутки скролбара</span>
-                                <ul class="task__solution solution">
-                                    <li class="solution__item">
-                                        <h3 class="ok">Вирішення завданя № 1</h3>
-                                        <div class="task__image-ibg"><img src="img/sz-scl-cord/task1.jpg" alt=""></div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="task__item">
-                                <span class="ok">Завдання № 2</span>
-                                <span class="task__code"></span>
-                                <span class="task__coments">Змусити браузар прокрутитися на 100px зверху через секунду
-                                    після відкриття сторінки</span>
-                                <ul class="task__solution solution">
-                                    <li class="solution__item">
-                                        <h3 class="ok">Вирішення завданя № 2</h3>
-                                        <div class="task__image-ibg"><img src="img/sz-scl-cord/task2.jpg" alt=""></div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="task__item">
-                                <span class="ok">Завдання № 3</span>
-                                <span class="task__code"></span>
-                                <span class="task__coments">Отримайте координати різних трьох об'єктів</span>
-                                <ul class="task__solution solution">
-                                    <li class="solution__item">
-                                        <h3 class="ok">Вирішення завданя № 3</h3>
-                                        <div class="task__image-ibg"><img src="img/sz-scl-cord/task3-1.jpg" alt="">
-                                        </div>
-                                        <div class="task__image-ibg"><img src="img/sz-scl-cord/task3-2.jpg" alt="">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </article>
-                </section>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="footer__container">
-                <hr>
-                <h4>Нагаєвський Роман Сергійович | Осіннь 2022</h4>
-            </div>
-        </footer>
-        <script src="js/test.js"></script>
-        <script src="js/script.js"></script>
-        <script src="js/script-doc-obj-mod.js"></script>
-        <script src="js/script-function-task.js"></script>
-        <script src="js/script-array-task.js"></script>
-
-    </body>
 
 </body>
 
