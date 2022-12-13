@@ -6,7 +6,7 @@ console.log('==== Розміри , прокрутка , координати ===
 
 
 
-
+numTask(1);
 //? Задача 1
 //todo Дізнатися шиирину полоси прокрутки скролбара
 let sizeScrollbar;
@@ -14,7 +14,7 @@ const pageElement = document.documentElement; // Звертаюся до html
 const pageWidth = pageElement.clientWidth; // Дізнаюся доступну ширину робочої області
 const windowWidht = window.innerWidth; // Дізнаюся ширину в'юпорта
 sizeScrollbar = windowWidht - pageWidth;// Дізнаюся ширину скролбара= ширину в'юпорта - ширину робочої області
-console.log(`Ширина скролбара`)
+console.log(`Ширина скролбара`);
 console.log(sizeScrollbar);
 
 
@@ -24,13 +24,16 @@ console.log(sizeScrollbar);
 //? Задача 2
 //todo Змусити браузар прокрутитися на 100px зверху через секунду після відкриття сторінки
 let startScrollValue = 100; // задане значення
+let timeDelay = 1000; //затримка
 let windowScrollTop;
 function setScrollBy(startScrollValue) {// створюю функцію для подальшого її виклику з часовою затримкою
     window.scrollBy(0, startScrollValue);// Прокручую вікно браузера на задане значення
     windowScrollTop = window.scrollY;// інформація щодо поточного прокуручування 
     console.log(windowScrollTop);
+    numTask(2);
+    console.log(`із затримкою ${timeDelay / 1000} с`);
 }
-setTimeout(setScrollBy, 1000, startScrollValue);// встановлюю затримку виклику функції 1с, але це не достовірна 1 с.
+setTimeout(setScrollBy, timeDelay, startScrollValue);// встановлюю затримку виклику функції 1с, але це не достовірна 1 с.
 
 
 
@@ -38,7 +41,7 @@ setTimeout(setScrollBy, 1000, startScrollValue);// встановлюю затр
 
 
 //========================================================================================================================================================
-
+numTask(3);
 //? Задача 3
 //todo Отримайте координати різних трьох об'єктів
 let objectHtml = document.documentElement;// звертаюся до html
