@@ -1,0 +1,52 @@
+@import "_nullstyle.scss";
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+[class*=_container] {
+    max-width: 75rem;
+    padding-left:1rem ; 
+    padding-right:1rem ; 
+}
+.header {
+    background-color: #f70;
+    padding: 3rem 0rem;
+		// .header__container
+
+		&__container {
+		}
+}
+.block {
+}
+.block-two {
+}
+.page {
+    flex-grow: 1;
+		// .page__section-one
+
+		&__section-one {
+		}
+
+		// .page__container
+
+		&__container {
+		}
+
+		// .page__section-two
+
+		&__section-two {
+		}
+
+		// .page__section-three
+
+		&__section-three {
+		}
+}
+.footer {
+
+		// .footer__container
+
+		&__container {
+		}
+}
