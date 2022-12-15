@@ -244,20 +244,41 @@ link.removeEventListener("click", () => {
 
 
 */
-
-
-link.addEventListener("click", linkAction);
+/*
+// додаткові параметри, які будуть знімати подію автоматично
+const options = {
+    "capture": false,//фаза на якій повинен спрацювати обробник події
+    "once": false,// якщо true , тоді обробник буде автоматично виделений 
+    // після виконання
+    "passive": false //  якщо true , то вказує що обробник ніколи не викликає 
+    // preventDefault() який вимикає дію за замовчуванням тега на який підключається
+}
+link.addEventListener("click", linkAction, options);
 function linkAction(event) {
     console.log('321');
     link.removeEventListener("click", linkAction);
     //! link.removeEventListener("click", linkAction()); - Рекурсія (infinity : until browser die)
 }
-
-// додаткові параметри, які будуть знімати подію автоматично
-const options = {
-    "capture": false,
-    "once": true,
-    "passive": false
+options = {
+    "capture": false,//фаза на якій повинен спрацювати обробник події
+    "once": true,// якщо true , тоді обробник буде автоматично виделений 
+    // після виконання
+    "passive": false //  якщо true , то вказує що обробник ніколи не викликає 
+    // preventDefault() який вимикає дію за замовчуванням тега на який підключається
 }
+*/
+
+
+
+function linkActionTwo(event) {
+    if (link.dataset.google === "false") {
+        console.log('preventDefault');
+        event.preventDefault();// відключаємо дію за замовчування
+    }
+}
+link.addEventListener("click", linkActionTwo);
+
+
+
 
 // відслідковування завантаження сторінки 
