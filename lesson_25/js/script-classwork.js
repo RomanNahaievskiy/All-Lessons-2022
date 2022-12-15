@@ -210,6 +210,54 @@ console.log(elem);
 
 // ПОДІЇ EVENTS
 // Синтаксис події
-const link = document.querySelector('.page__link')
+const link = document.querySelector('.page__link.link');
+
+link.onclick = function () { // додавання однієї - єдиної  події (неможливо додати кілька подій)
+    // code
+    console.log('Виконання коду після настання події onclick');
+}
+link.onclick = null;
+// прослуховувач подій (може додавати кілька подій одночасно)
+// elem/document.addEventListner("Ім'я події", func , options); -
+// elem/document.addEventListner("Ім'я події", ()=>{ code }, options); -
+
+
+//! події навантажуть систему 
+
+
+
+
+/*!
+
+link.addEventListener("click", () => {
+    console.log('123');
+});
+//&
+link.removeEventListener("click", () => {
+    console.log('123');
+});
+//! для видалення події не спрацює ,
+// так як видалення вимагає таку ж функцію, ( а не тотожну ), 
+// а такий запис не може послатися на вище записану функцію,
+// бо вона не збережена в змінну тут відбувається призначення нової функції,
+// що !== одне і те ж!
+
+
+*/
+
+
+link.addEventListener("click", linkAction);
+function linkAction(event) {
+    console.log('321');
+    link.removeEventListener("click", linkAction);
+    //! link.removeEventListener("click", linkAction()); - Рекурсія (infinity : until browser die)
+}
+
+// додаткові параметри, які будуть знімати подію автоматично
+const options = {
+    "capture": false,
+    "once": true,
+    "passive": false
+}
 
 // відслідковування завантаження сторінки 
