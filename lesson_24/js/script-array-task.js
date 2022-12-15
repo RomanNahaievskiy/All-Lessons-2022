@@ -40,7 +40,7 @@ numTask(2);
 5) Видаліть перший елемент масиву та покажіть його.
 6) Вставте "Стефанія" та "Рома" на початок масиву
 */
-let users = ['Іван', 'Микита', 'Микита', 'Микита',];//1)
+let users = ['Іван', 'Микита', 'Микита', 'Микита', 'Микита', 'Іван', 'Микита', 'Микита',];//1)
 users.push('Оля');//2)
 // створення змінних для подальших операцій
 let removeUser = 'Микита'; // значення  елементу , який потрібно замінити
@@ -52,12 +52,11 @@ let startUsersLenght = users.length;// змінна для коректного 
 //!!! не працює належним чином
 console.log(`Знайти ${removeUser}  та замінити на ${newInsteadUser}  в  масиві :  [${users}] варіант 1`);
 if (users.includes(removeUser)) {//3.1)
-    for (let i = 0; i < startUsersLenght; i++) {
-        console.log(users.indexOf(removeUser, i) === 1, i);//! умова фігова або я не втикаю порівнює  2 рядки і каже тру типу: Іван === Микита
-        if (users.indexOf(removeUser, i) === 1) {//3.2 отримати всі співпадіння пошуку за запитом. users.indexOf(removedUser, i)якщо так то  отримаємо 1 інакше -1
-
-            console.log(`видаляю користувача ${users[i]} з індексом ${i} та замінюю на ${newInsteadUser}`);
-            users.splice(i, 1, newInsteadUser);//3.3 замінити елемент
+    for (let i = 0; i < users.length; i++) {
+        let find = users.indexOf(removeUser, i);// знаходжу індекс  шуканого елемента
+        if (find !== -1) {// якщо знахідка не дорівнює -1 то
+            console.log(`видаляю користувача ${users[find]} з індексом ${find} та замінюю на ${newInsteadUser}`);
+            users.splice(find, 1, newInsteadUser);//3.3 замінити елемент
         } else {
             console.log(`Немає збігів за вашим запитом :[${removeUser}] по індексу ${i}`);
         }
