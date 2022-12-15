@@ -278,7 +278,7 @@ function linkActionTwo(event) {
 }
 link.addEventListener("click", linkActionTwo);
 
-
+// Додавання події до кожного елементу колекціїї через перебір масиву for each 2:11
 
 
 // відслідковування завантаження сторінки 
