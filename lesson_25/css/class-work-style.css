@@ -110,3 +110,6 @@ h6 {
 .page {
   flex-grow: 1;
 }
+.page__section-four {
+  color: red;
+}

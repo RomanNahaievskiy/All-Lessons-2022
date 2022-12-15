@@ -62,16 +62,19 @@ if (!sectionThree.classList.contains('page__section-three')) {
 
 //! Керування стилями з JS
 
-sectionOne.style.backgroundColor = "#f73707";
+sectionOne.style.backgroundColor = "#B8860B";
 sectionOne.style.paddingTop = "2rem";
 sectionOne.style.paddingBottom = "2rem";
-sectionTwo.style.backgroundColor = "#37f707";
+sectionTwo.style.backgroundColor = "#DAA520";
 sectionTwo.style.paddingTop = "2rem";
 sectionTwo.style.paddingBottom = "2rem";
 // sectionThree.style.backgroundColor = "#0737f7";
 // sectionThree.style.paddingTop = "2rem";
 // sectionThree.style.paddingBottom = "2rem";
-
+const sectionFour = document.querySelector('.page__section-four')
+sectionFour.style.paddingTop = "2rem";
+sectionFour.style.paddingBottom = "2rem";
+sectionFour.style.backgroundColor = "#BDB76B";
 // універсальні лапки дозволяють інтегрувати інші дані.
 function rem(value) {
     return value * 16;
@@ -83,7 +86,7 @@ sectionTwo.style.fontSize = `${fontSize}px`;
 
 // Перезапис стилів
 sectionThree.style.cssText = `
-    background-color: #232323;
+    background-color: #EEE8AA;
     padding: 2rem 0rem;
     color: #fff;
 `;// не варто злоупотребляти
@@ -124,4 +127,89 @@ log(sectionThree.hasAttribute('data-some-attr'));// перевіримо наш 
 //! object.hidden = true;
 //! object.hidden = false;
 
+// sectionTwo.hidden = true; - прибирає з верстки
 
+
+
+//========================================================================================================================================================
+// РОЗМІРИ І КООРДИНАТИ 2 ЧАСТИНА
+// розміри вікна браузера із полосами прокрутки
+// об'єкт window
+const windowWidth = window.innerWidth;
+const windowHeight = window.innerHeight;
+console.log(windowWidth);
+console.log(windowHeight);
+
+// розміри робочої області в браузері
+// об'єкт body
+// 
+const mainElement = document.documentElement;
+const windowClientWidth = mainElement.clientWidth;
+const windowClientHeight = mainElement.clientHeight;
+console.log(windowClientWidth);
+console.log(windowClientHeight);
+
+// кілкість прокручених пікселів
+// об'єкт window
+const windowScrollTop = window.scrollY;
+const windowScrollLeft = window.scrollX;
+console.log(windowScrollTop);
+console.log(windowScrollLeft);
+
+// керування прокруткою
+// scrollBy - прокрутка відносно поточного положення.
+window.scrollBy(0, 50);
+console.log(window.scrollY);
+
+// scrollTo -прокрутка відносо початку документа
+window.scrollTo({
+    top: 50,//прокрутити від початку документа на 500 пікселів
+    left: 0,// прокрутити відносно лівого краю на 0 пікскелів
+    behavior: "smooth"//тип поведінки під час прокруттки 
+});
+
+// elem.scrollIntoView() - прокрутка до об'єкта - працює при певній події 
+const testBlock = document.querySelector('.test-block');
+
+// todo створитиподію в html
+function scrollToTestBlock() {
+    testBlock.scrollIntoView({
+        //"start","center", "end" або "nearest" за замовчуванням "center"
+        block: "center",
+        inline: "center",
+        behavior: "smooth"//тип поведінки під час прокруттки 
+    });
+}
+
+// Позиція об'єкта відносно кого він позиціонований
+// offsetParent - батьківський об'єкт (у якого position відмінни від static)
+console.log(testBlock.offsetParent)
+// offsetLeft & offsetTop
+
+console.log(testBlock.offsetTop);
+console.log(testBlock.offsetLeft);
+
+// Розміри - загальні розміри
+// offsetWidth & offsetHeight
+console.log(testBlock.offsetWidth);
+console.log(testBlock.offsetHeight);
+
+// Координати об'єкта
+// getBoundingClientRect() - відносна вікна браузера
+console.log(testBlock.getBoundingClientRect());
+console.log(testBlock.getBoundingClientRect().top);
+console.log(testBlock.getBoundingClientRect().left);
+
+// Отримання jб'кта по координатах  document.elementFromPoint(x, y);
+
+const elem = document.elementFromPoint(100, 100);
+console.log(elem);
+// intersection Observer
+// https://developer.mozilla.org/ru/docs/Web/API/Intersection_Observer_API
+
+
+// ПОДІЇ EVENTS
+// Синтаксис події
+const link = document.querySelector('.page__link')
+
+// відслідковування завантаження сторінки 
