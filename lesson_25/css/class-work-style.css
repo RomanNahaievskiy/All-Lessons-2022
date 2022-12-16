@@ -91,6 +91,15 @@ h6 {
 }
 
 /*--------------------*/
+body {
+  opacity: 0;
+}
+
+.loaded body {
+  opacity: 1;
+  transition: all 2s;
+}
+
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -112,4 +121,20 @@ h6 {
 }
 .page__section-four {
   color: red;
+}
+.mouse {
+  background-color: #f70;
+  outline: 4px solid green;
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.mouse__ball {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #d3d3d3;
 }
