@@ -321,5 +321,119 @@ function action(event) {
 
 // Тип події
 
+const links = document.querySelectorAll('.page__link');// отримую колекцію елементів з класом page__link
+// перебираю отриману колекцію методом for Each
+links.forEach(link => {
+    link.addEventListener("click", func)//навішую на кожен елемент масиву подію
+    console.log('addEventListner');
+});// даний метод також не дуже актуальний так як надто багато подій , які навантажують систему
 
-// відслідковування завантаження сторінки 
+function func() {
+    console.log(` коли ЗП ?`);
+}
+
+// Делегування подій
+//1)вішаю прослушку на увесь документ.
+document.addEventListener("click", active,);
+//2) створюю функцію, яка розпізнає (тип. клас. атрибут) елемента , щоб виконати з ним дію
+
+function active(event) {
+    const targetItem = event.target; // створюю константу , якій присвоюється об'єкт на який клацає користувач.
+    // далі можна написати багато розгалужень перевірок за типом/ класом . атрибутом
+    if (targetItem.closest('.link')) { // якщо натиснутий користувачем об'єкт має клас link ,
+        // або цей клас у найближчого його батьківського елемента
+        // ...code
+    }
+
+    if (targetItem.closest('.classname')) { // якщо натиснутий користувачем об'єкт має клас classname ,
+        // або цей клас у найближчого його батьківського елемента
+        // ...code
+    }
+}
+// тип події 
+// console.log(event.type);
+// об'єкт на якому стоворив обробник 
+// console.log(event.target);
+// Об'єкт до якого призначений обробник
+// console.log(eventCurrenttarget);
+// положення курсора по вісі х горизонтальна відносно вікна браузера
+// console.log(event.clientX);
+// положення курсора по вісі Y вертикальна відносно вікна браузера
+// console.log(event.clientY); 
+// положення курсора по вісі X горизонтальна відносно документа
+// console.log(event.pageX); 
+// положення курсора по вісі Y вертикальна відносно документа
+// console.log(event.pageY); 
+//  Усі деталі події
+//  console.log(event);
+
+
+//  ОНОВНІ ПОДІЇ
+/*
+Основні події миші (не всі)- click, mouseenter- наведення миші  типу hover, mouseleave- забирання миші типу відсутність hover..., mousemoove
+
+ 
+*/
+const mouseBlock = document.querySelector('.mouse'); // отримали у змінну об'єкт
+const ball = document.querySelector('.mouse__ball');// отримати м'яч
+
+
+mouseBlock.addEventListener('mouseenter', mouseAction);  // додали прослуховування події за типом введення миші
+mouseBlock.addEventListener('mouseleave', mouseAction);  // додали прослуховування події за типом введення миші
+mouseBlock.addEventListener('mousemove', mouseAction);  // додали прослуховування події за типом введення миші
+
+function mouseAction(event) {
+    if (event.type === "mouseenter") {
+        // code in hover код при наведенні
+
+    }
+    if (event.type === "mouseleave") {
+        // code ...   код при переведені 
+
+    }
+    if (event.type === "mousemove") {// постійно відпрацьовує
+        // code ...   код при переведені 
+        ball.style.cssText = `
+        top : ${event.pageY - 14}px;
+        left : ${event.pageX - 14}px;
+        `;
+        console.log(`its work`)
+    }
+}
+
+//Scroll
+// працює на window
+
+window.addEventListener('scroll', wScroll); // призначаю вікну 
+// браузера обробник подій типу скрол з функцією wScroll
+
+function wScroll(e) { // опис функції wScroll
+    console.log(scrollY);
+    console.log(sectionThree.getBoundingClientRect().top);
+}
+
+
+//! відслідковування завантаження сторінки 
+window.addEventListener("DOMContentLoaded", domLoaded); // призначаю вікну
+// браузера обробник подій типу DOMContentLoaded 
+// з функцією domLoadet 
+
+// Такий підхід дозволить коректно працювати із dom-структурою
+function domLoaded(e) {// декларування та опис функції domLoadet
+    console.log('Ура html сторінка завантажена але зовнішні ресурси (підключаємі img / style )ще можуть бути не завантаженими');
+}
+
+window.addEventListener("load", pageLoaded); // призначаю вікну браузера 
+// обробник подій типу load із функцією pageLoadet
+
+function pageLoaded(e) { // декларування та опис функції pageLoadet
+    console.log('Ура вся сторінка завантажена разом із зображеннями та файлами стилів')
+
+}
+
+//  Приклад з анімацією ? коли сторінка повністю завантажена
+
+window.addEventListener("load", successLoadedPage);
+function successLoadedPage(e) {
+    document.documentElement.classList.add("loaded");// додаю клас до body
+}
