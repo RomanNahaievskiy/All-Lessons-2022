@@ -239,6 +239,10 @@ a:link {
             font-size: 1.3rem;
             font-weight: 700;
             box-shadow: 0rem 2rem 1rem #430;
+            @media (max-width:767px) {
+                flex-direction: column;
+
+            }
 		}
 
 		// .search__input
@@ -256,6 +260,12 @@ a:link {
                 color: #c2c2c2;
 
             }
+            @media (max-width:767px) {
+                text-align: left;
+                &::placeholder {
+                    text-align: center;
+                }
+            }
 		}
 
 		// .search__symb-counter
@@ -265,6 +275,11 @@ a:link {
             font-size: inherit;
             font-weight: inherit;
             background: #4b4b4b;
+            line-height: 3rem;
+            @media (max-width:767px) {
+                width: 100%;
+                
+            }
 		}
 
 		// .search__button
@@ -282,6 +297,12 @@ a:link {
             
             &:hover {
                 background-color: #f70;
+            }
+            @media (max-width:767px) {
+                width: 100%;
+                text-align: center;
+                line-height: 3rem;
+                
             }
 		}
 }
