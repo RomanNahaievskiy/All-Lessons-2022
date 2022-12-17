@@ -1,0 +1,59 @@
+@import "_nullstyle.scss";
+
+
+.page {
+    background-color: #df8f0f;
+
+    h1 {
+    line-height: 4rem;
+    font-size: 4rem;
+    }
+    [class*=_container] {
+    max-width: 70rem;
+    margin: 0 auto;
+    }
+    .button {
+        display: block;
+        width: 20rem;
+        height: 20rem;
+        border-radius: 4px;
+        padding: 9rem 2rem;
+        text-align: center;
+        background-color: #f70;
+        font-size: 2rem;
+        line-height: 2rem;
+        &:hover {
+            background-color: #f81;
+        }
+        span {
+            line-height: inherit;
+            font-size: inherit;
+        }
+    }
+
+    .block {
+        width: 30rem;
+        padding: 1.5rem;
+        margin: 1.5rem;
+        background: #f47;
+
+		// .block__inner
+
+		&__inner {
+            width: 24rem;
+            padding: 1.5rem;
+            margin: 1.5rem;
+            background: #f70;
+		}
+
+		// .block__inner-enner
+
+		&__inner-inner {
+            width: 18rem;
+            padding: 1.5rem;
+            margin: 1.5rem;
+            background: #070;
+		}
+    }
+
+}

@@ -1,0 +1,140 @@
+/*null style*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+}
+
+/*--------------------*/
+.page {
+  background-color: #df8f0f;
+}
+.page h1 {
+  line-height: 4rem;
+  font-size: 4rem;
+}
+.page [class*=_container] {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+.page .button {
+  display: block;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 4px;
+  padding: 9rem 2rem;
+  text-align: center;
+  background-color: #f70;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.page .button:hover {
+  background-color: #f81;
+}
+.page .button span {
+  line-height: inherit;
+  font-size: inherit;
+}
+.page .block {
+  width: 30rem;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  background: #f47;
+}
+.page .block__inner {
+  width: 24rem;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  background: #f70;
+}
+.page .block__inner-inner {
+  width: 18rem;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  background: #070;
+}

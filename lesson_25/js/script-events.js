@@ -15,19 +15,24 @@
 
 const button = document.querySelector('.button'); // отримуємо в змінну об'єкт, 
 // з яким будемо взаємодіяти.
+
+/*
 button.onclick = function () { // для об'єкта призначаємо обробник подій , який відслідковує клік
     console.log('click !'); // та виконує цю функцію
 }
-
+*/
 // інший спосіб :
-
+/*
 button.onclick = nameFunction; // для об'єкта призначаємо обробник подій із функцією (пишемо без дужок ()),
 //  який відслідковує клік та виконує призначену функцію
+*/
 
+/*
 // декларування/оголошення та опис фнкції
 function nameFunction() {
     console.log('implementation some code in this function');
 }
+*/
 //! такі способи призначення обробника подій не дають можливості одночасниго призначення кількохх обробників
 /*
 button.onclick = function () {
@@ -77,7 +82,53 @@ const options = {
     "passive": false // true - обробник ніколи не викличе preventDefault()
 }
 /*
-button.addEventListener("click", consoleClack,options); 
+button.addEventListener("click", consoleClack,options);
 або
-button.addEventListener("click", consoleClack, { "capture": false, "once": false, "passive": false}); 
+button.addEventListener("click", consoleClack, { "capture": false, "once": false, "passive": false});
 */
+
+// об'єкт події
+/*
+для того , щоб добре та якісно опрацювати подію, 
+можуть знадобитися деталі конкретної події , що відбулася.
+Не просто якийсь "Клік" чи "Натискання клавіші", а й інші ,
+наприклад координати вказівника миші , яка саме клавіша натиснута , і так далі..
+Коли відбувається подія , браузер створює об'єкт події:  event , 
+записує в нього всі деталі і передає його в якості аргумента (event) функції обробника
+*/
+function showConsPrOfObj(event) {
+    console.log(event.type); // тип події , яка відбулася
+    console.log(event.target); // об'єкт html на якому відбулася дана подія
+    console.log(event.currentTarget); // об'єкт html на якому (безпосередньо) відбулася дана подія
+    console.log(event.clientX); // позиція курсора по вісі x
+    console.log(event.clientY); // позиція курсора по вісі y
+    // всі деталі події
+    console.log(event)
+}
+button.addEventListener("click", showConsPrOfObj);
+button.addEventListener("mousemove", showConsPrOfObj);
+button.addEventListener("mousemove", showConsPrOfObj);
+
+
+// Виринання подій
+// коли на html елементі відбувається подія, обробники подій спершу спрацьовують на цьому ж елементі
+// потім на його батьківському елемнті, потім вище , і так далі по  DOM структурі ))
+
+// event.stopPropagation(); - зупиняє виринання на поточному елементі (до поточного включно)
+// event.target -  повертає html об'єкт до якого застосовано обробник подій 
+const block = document.querySelector('.block');
+const blockInner = document.querySelector('.block__inner');
+const blockInnerInner = document.querySelector('.block__inner-inner');
+
+block.addEventListener("click", function (event) {
+    console.log("Клік на блок!");
+
+});
+blockInner.addEventListener("click", function (event) {
+    console.log("Клік на блок другого рівня");
+    event.stopPropagation();
+});
+blockInnerInner.addEventListener("click", function (event) {
+    console.log("Клік на блок третього рівня");
+    console.log(event.target);
+});
