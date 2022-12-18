@@ -96,6 +96,10 @@ body {
   background-color: #fa0;
 }
 
+section {
+  margin-bottom: 2rem;
+}
+
 .js {
   text-shadow: 2px 2px 12px;
   font-size: 6rem;
