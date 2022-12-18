@@ -63,6 +63,7 @@ element.addEventListner(event, handler[, options]);
 // або інший варіант запису , де буде використана вже оголошена , чи пізніше оголошена функція
 /*
 function consoleClick() {
+    
     console.log('click ?');
 }
 
@@ -126,6 +127,7 @@ button.addEventListener("mousemove", showConsPrOfObj);
 // потім на його батьківському елемнті, потім вище , і так далі по  DOM структурі ))
 
 // event.stopPropagation(); - зупиняє виринання на поточному елементі (до поточного включно) Використовувати варто дуже обережно
+// event.default() 
 // event.target -  повертає html об'єкт до якого застосовано обробник подій 
 const block = document.querySelector('.block');
 const blockInner = document.querySelector('.block__inner');
@@ -170,7 +172,7 @@ blockInnerInner.addEventListener("click", function (event) {
 // Делолегування подій
 
 
-const buttons = document.querySelectorAll('.button');
+// const buttons = document.querySelectorAll('.button');
 /*
 buttons.forEach(buttonsItem => {
     buttonsItem.addEventListener("click", showConsole);// не сприяє продуктивності
@@ -192,6 +194,88 @@ eventsDelegation.addEventListener("click", function (event) { // додаю об
 });
 */
 // MENU
+/*
+const menuBody = document.querySelector('.menu');
+console.log(menuBody)
+document.addEventListener("click", menu);
+
+function menu(event) {
+    if (event.target.closest('.menu__button')) {
+        menuBody.classList.toggle('_active');
+    }
+    if (!event.target.closest('.menu')) {
+        menuBody.classList.remove('_active');
+    }
+} 
+*/
+// ОСНОВІ ПОДІЇ МИШІ / КЛАВІАТУРИ
+//========================================================================================================================================================
+// 1) прості
+// 2) комплексні
+
+// 1)
+//  Прості події найчастіше використовуються
+// mousedown / mouseup - кнопка нажата / відпущена (нед елементом)
+// mouseover /mouseout - курсор миші "заходить" / "виходить" з території елемента
+//      (relatedTarget)-відносна ціль (для mouseover - звідки курсор прийшов/ для mouseout - куди курсор пішов)
+//      Суперсила: делегування подій всередині елемента !))
+// mouseenter / mouseleave - все як у попередньому варіанті але без relatedTarget (тобто без Виринання подій всередині елементу, до якого застосовується подія)
+// mousemove - кожен рух курсора генерує цю подію
+// contextmenu - виклик контекстного меню з ПКМ або клавіатури
+
+//2)
+// click - подія викликається при (mousedown, а після mouseup)
+// dbclick - подвійний клік 2х(mousedown, а після mouseup)
+
+// КЛАВІАТУРА
+// keydown - при натисканні клавіші
+// keyup - при відпусканні клавіші
+
+// деталі події event.key / event.code
+
+/* приклад
+document.addEventListener("keydown", function (event) {
+    console.log(`натиснуто ${event.code} (${event.key})`);
+});
+document.addEventListener("keyup", function (event) {
+    console.log(`віджато ${event.code} (${event.key})`);
+});
+*/
+// відслідковування наотиснутої клавіші(event.code). введеного символу(event.key)
+// (event.repeat[true або false]- відслідковуємо чи не зажата кнопка)- автоповтор 
+/* приклад
+document.addEventListener("keydown", function (event) {
+    if (event.code == 'KeyZ' && (event.ctrlKey || event.metaKey)) {
+        console.log(`натиснуто ${event.code} (${event.key})`);
+        console.log(`Охрана,  отмена!`);
+    }
+});
+*/
+
+// поле вводу
+const txtItem = document.querySelector('.textarea__item');// отримуємо елемент
+const txtItemLimit = txtItem.getAttribute('maxlength');// отримуємо ліміт вводу із атрибуту maxlength
+const txtCounter = document.querySelector('.textarea__counter span'); // отримуємо елемент , в який внесемо показники залишку символів
+txtCounter.innerHTML = txtItemLimit; // виводимо в html в спан  макс кількість символів
+
+txtItem.addEventListener("keyup", txtSetCounter);
+// фікс для зажатих клавіш
+txtItem.addEventListener("keydown", function (event) {
+    if (event.repeat) {
+        txtSetCounter();
+    }
+});
+//
+function txtSetCounter() {
+    const txtCounerResult = txtItemLimit - txtItem.value.length;
+    txtCounter.innerHTML = txtCounerResult;
+}
+
+
+
+
+
+// MENU
 
 const menuBody = document.querySelector('.menu');
 console.log(menuBody)
@@ -206,8 +290,11 @@ function menu(event) {
     }
 }
 
+//  додаємо функцію закривання меню по клавіші (esc)
 document.addEventListener("keyup", function (event) {
-    if (event.code == "Escape") {
-        menuBody.classList.remove('_active');
-    }
-});
+    if (event.code === 'Escape');
+    menuBody.classList.remove('_active');
+})
+
+// ПОДІЇ ПРИ СКРОЛІ
+//========================================================================================================================================================

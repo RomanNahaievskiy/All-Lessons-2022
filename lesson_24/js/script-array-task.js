@@ -49,6 +49,7 @@ let startUsersLenght = users.length;// змінна для коректного 
 
 // todo : створити перебір всього масиву ? якщо потрібно видалити та замінити вcіх Микит, скільки б їх не було у масиві.
 // 3)&&4) Варіант 1.
+/*
 //!!! не працює належним чином
 console.log(`Знайти ${removeUser}  та замінити на ${newInsteadUser}  в  масиві :  [${users}] варіант 1`);
 if (users.includes(removeUser)) {//3.1)
@@ -65,10 +66,11 @@ if (users.includes(removeUser)) {//3.1)
     console.log(`Немає збігів за вашим запитом :[${removeUser}]`);
 }
 test(users);
-
+*/
 
 // 3)&&4) Варіант 2 
-/*
+//? можна робити через map з створенням копії масиву
+
 console.log(`Знайти ${removeUser}  та замінити на ${newInsteadUser}  в  масиві :  [${users}] - варіант 2`);
 if (users.includes(removeUser)) {
     for (let index = 0; index < startUsersLenght; index++) {
@@ -97,7 +99,7 @@ if (users.includes(removeUser)) {
     // test(users);
 } else {
     console.log(`Немає збігів за вашим запитом :[${removedUser}]`);
-}*/
+}
 // 5)
 console.log(users.shift());
 // 6)
