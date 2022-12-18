@@ -33,7 +33,7 @@ function searchActive(event) {
         serchIcon.classList.toggle('_active');
         searchForm.classList.toggle('_active');
     }
-    if (!event.target.closest('.search__icon') && (!event.target.closest('.search__form'))) {
+    if (!event.target.closest('.search__icon')) {
         serchIcon.classList.remove('_active');
         searchForm.classList.remove('_active');
     }
