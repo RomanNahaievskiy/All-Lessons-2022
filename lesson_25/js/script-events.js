@@ -205,3 +205,9 @@ function menu(event) {
         menuBody.classList.remove('_active');
     }
 }
+
+document.addEventListener("keyup", function (event) {
+    if (event.code == "Escape") {
+        menuBody.classList.remove('_active');
+    }
+});

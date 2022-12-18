@@ -38,9 +38,15 @@
 
     }
     
-    .menu ._active {
-        
+    .menu._active .menu__button span:first-child {
+        display: none;
     }
+    .menu._active .menu__button span:last-child {
+        display: block;
+    }
+
+    
+    
     h1 {
     line-height: 4rem;
     font-size: 4rem;
