@@ -306,4 +306,73 @@ window.addEventListener("scroll", function (event) {
     // scrollX або застарілий (pageXOffset)
 
     console.log(`${scrollY}px`);
+});
+
+// відміна прокрутки
+/*
+    неможливо відмінити прокрутку використовуючи event.preventDefault();
+    в обробнику "scroll", так як він спрацьовує після того як прокрутка
+    відбулася.
+
+    Але можна відмінити прокрутку використовуючи event.preventDefault();
+    на події , яка викликає прокрутку, наприклад на події "keydown" для
+    клавіш PageUp та PageDown.
+
+    Способів ініціювати прокрутку багато, а щоб відмінити найбільш
+    надійним буде - використовувати CSS , overflow:hidden;.
+*/
+
+// ПОДІЇ ЗАВАНТАЖЕННЯ СТОРІНКИ
+//========================================================================================================================================================
+/*
+    1) DOMContntLoadet - браузер повністю завантажив HTML,
+        було побудоване DOM-дерево , але зовнішні ресурси , ще можливо не завантажилися
+        (<img> файли css стилі )
+    2) load - браузер повністю завантажив HTML та зовнішні ресурси (<img> файли css стилі ).
+    3) beforeunload / unload - користувач покидає сторінку.
+*/
+
+/*
+    document.redyState - стан завантаження
+
+    є три можливих значення:
+    "loading" - документ завантажується
+    "interactive" - документ був повнісю прочитаний
+    "complete" - документ повністю прочитаний і всі елементи , такі як
+    картинки та стилі  були також завантажені.
+
+*/
+// Подія DOMContntLoadet спрацюовує на об'єкті document - тобто на HTML
+// document.addEventListener("DOMContentLoaded", redyDom);
+
+// Подія load спрацюовує на об'єкті window - тобто на в'юпорті користувача
+// window.addEventListener("load", redyLoad);
+// function redyDom() {
+//     const image = document.querySelector('.image');
+//     console.log(document.readyState);
+//     console.log('DOM завантажено');
+//     console.log(image.offsetWidth);
+// }
+// function redyLoad() {
+//     console.log(document.readyState);
+//     const image = document.querySelector('.image');
+//     console.log('сторінку завантажено');
+//     console.log(image.offsetWidth);
+// }
+
+// beforeunload спрацбовує на об'єкті window
+window.addEventListener("beforeunload", beforeUnLoad);
+
+function beforeUnLoad(event) {
+    // відмінюємо подію по замовчуванню
+    event.preventDefault();
+    // Crome вимвгає ланих для повернення із функції
+    event.returnValue = '';
+}
+
+// unload спрацбовує на об'єкті window
+window.addEventListener("unload", function (event) {
+    // відправка статистики 
+    // navigator.sendBeacon(url, data);
+    // https://u3c.github.io.beacon/
 })
