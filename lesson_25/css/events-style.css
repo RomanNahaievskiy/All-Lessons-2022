@@ -97,8 +97,18 @@ h6 {
 .page .menu {
   display: inline-block;
 }
+.page .menu._active .menu__button span:first-child {
+  display: none;
+}
+.page .menu._active .menu__button span:last-child {
+  display: block;
+}
+.page .menu._active .menu__list {
+  display: block;
+}
 .page .menu__button {
   padding: 1rem;
+  border-radius: 0.4rem;
 }
 .page .menu__button span:first-child {
   display: block;
@@ -113,14 +123,10 @@ h6 {
 .page .menu__list li:not(:last-child) {
   margin: 0 0 1rem 0;
 }
-.page .menu._active__button span:first-child {
-  display: none;
-}
-.page .menu._active__button span:last-child {
-  display: block;
-}
-.page .menu._active__list {
-  display: block;
+.page .textarea {
+  width: 300px;
+  height: 200px;
+  font-size: 1.6rem;
 }
 .page h1 {
   line-height: 4rem;

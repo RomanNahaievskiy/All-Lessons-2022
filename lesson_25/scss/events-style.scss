@@ -8,8 +8,25 @@
         display: inline-block;
 		// .menu__button
 
+        &._active {
+            .menu__button {
+                span{
+                    &:first-child {
+                        display: none;
+                    }
+                    &:last-child {
+                        display: block;
+                    }
+                }
+            }
+            .menu__list {
+                display: block;
+            }
+        }
+        
 		&__button {
             padding: 1rem;
+            border-radius: 0.4rem;
             span{
                 &:first-child{
                     display: block;
@@ -38,9 +55,37 @@
 
     }
     
-    .menu ._active {
-        
+    .menu {
+    
+    // &&_active {
+    //     .menu__button {
+    //         span{
+    //             &:first-child {
+    //                 display: none;
+    //             }
+    //             &:last-child {
+    //                 display: block;
+    //             }
+    //         }
+    //     }
+    //     .menu__list {
+    //         display: block;
+    //     }
+    // }
+}
+
+    // Поле вводу тексту з лічильником
+    .textarea {
+        width: 300px;
+        height: 200px;
+        font-size: 1.6rem;
+		// .textarea__counter
+
+		&__counter {
+		}
     }
+
+
     h1 {
     line-height: 4rem;
     font-size: 4rem;
