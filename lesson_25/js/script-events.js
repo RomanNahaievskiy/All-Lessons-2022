@@ -61,6 +61,7 @@ element.addEventListner(event, handler[, options]);
 
 
 // або інший варіант запису , де буде використана вже оголошена , чи пізніше оголошена функція
+/*
 function consoleClick() {
     console.log('click ?');
 }
@@ -81,6 +82,7 @@ const options = {
     "once": false, // true  - обробник буде видалений після першого виконання
     "passive": false // true - обробник ніколи не викличе preventDefault()
 }
+*/
 /*
 button.addEventListener("click", consoleClack,options);
 або
@@ -98,6 +100,7 @@ button.addEventListener("click", consoleClack, { "capture": false, "once": false
 Коли відбувається подія , браузер створює об'єкт події:  event , 
 записує в нього всі деталі і передає його в якості аргумента (event) функції обробника
 */
+/*
 function showConsPrOfObj(event) {
     console.log(event.type); // тип події , яка відбулася
     console.log(event.target); // об'єкт html на якому відбулася дана подія
@@ -110,9 +113,13 @@ function showConsPrOfObj(event) {
 button.addEventListener("click", showConsPrOfObj);
 button.addEventListener("mousemove", showConsPrOfObj);
 button.addEventListener("mousemove", showConsPrOfObj);
-
+*/
 
 // Виринання подій (пріоритетність вкладеності)
+// принцип наче зрозумілий  з середини на зовні , від того й "виринання"
+//? (але не дуже зрозуміло стосовно "виринання" чого із чого. подія виринає з події? чи це подія виринає із елемента структури -DOM)
+//? чи краще: подія, що застосована до дочірнього елемента буде виринати раніше аніж подія, яка застосована до батьківського елемента ,
+//? і це не стосується всієї структури-DOM
 //========================================================================================================================================================
 
 // коли на html елементі відбувається подія, обробники подій спершу спрацьовують на цьому ж елементі
@@ -124,23 +131,77 @@ const block = document.querySelector('.block');
 const blockInner = document.querySelector('.block__inner');
 const blockInnerInner = document.querySelector('.block__inner-inner');
 
-block.addEventListener("click", function (event) {
-    console.log("Клік на блок!");
+// block.addEventListener("click", function (event) {
+//     console.log("Клік на блок!");
 
-});
-blockInner.addEventListener("click", function (event) {
-    console.log("Клік на блок другого рівня");
-    event.stopPropagation();
-});
-blockInnerInner.addEventListener("click", function (event) {
-    console.log("Клік на блок третього рівня");
-});
+// });
+// blockInner.addEventListener("click", function (event) {
+//     console.log("Клік на блок другого рівня");
+//     event.stopPropagation();
+// });
+// blockInnerInner.addEventListener("click", function (event) {
+//     console.log("Клік на блок третього рівня");
+// });
 
 // Занурення подій
 //========================================================================================================================================================
+//?що таке занурення
+//?занурення типу події в іншу подію
+//
 
 /*
 виринання подій відбудеться лише після занурення
 керувати зануренням можемо парпметром опцій обробника подій
 "capture"
 */
+/*
+block.addEventListener("click", function (event) {
+    console.log("Клік на блок!");
+
+});
+blockInner.addEventListener("click", function (event) {
+    console.log("Клік на блок другого рівня");
+    // event.stopPropagation();
+}, { "capture": true });
+blockInnerInner.addEventListener("click", function (event) {
+    console.log("Клік на блок третього рівня");
+});
+*/
+// Делолегування подій
+
+
+const buttons = document.querySelectorAll('.button');
+/*
+buttons.forEach(buttonsItem => {
+    buttonsItem.addEventListener("click", showConsole);// не сприяє продуктивності
+});
+*/
+/*
+function showConsole() {
+    console.log(('Слава Україні'));
+}
+
+const eventsDelegation = document.querySelector('.events-delegation') //Отримую батьківський елемент 
+
+
+
+eventsDelegation.addEventListener("click", function (event) { // додаю обробник подій для батьківського елемента
+    if (event.target.closest('.button')) { //перевіряю де саме спрацювала подія (на об'єкті button або на батьківському елементі)
+        showConsole();
+    }
+});
+*/
+// MENU
+
+const menuBody = document.querySelector('.menu');
+console.log(menuBody)
+document.addEventListener("click", menu);
+
+function menu(event) {
+    if (event.target.closest('.menu__button')) {
+        menuBody.classList.toggle('_active');
+    }
+    if (!event.target.closest('.menu')) {
+        menuBody.classList.remove('_active');
+    }
+}

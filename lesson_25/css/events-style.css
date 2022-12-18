@@ -94,6 +94,34 @@ h6 {
 .page {
   background-color: #df8f0f;
 }
+.page .menu {
+  display: inline-block;
+}
+.page .menu__button {
+  padding: 1rem;
+}
+.page .menu__button span:first-child {
+  display: block;
+}
+.page .menu__button span:last-child {
+  display: none;
+}
+.page .menu__list {
+  background-color: #fff;
+  padding: 1rem;
+}
+.page .menu__list li:not(:last-child) {
+  margin: 0 0 1rem 0;
+}
+.page .menu._active__button span:first-child {
+  display: none;
+}
+.page .menu._active__button span:last-child {
+  display: block;
+}
+.page .menu._active__list {
+  display: block;
+}
 .page h1 {
   line-height: 4rem;
   font-size: 4rem;

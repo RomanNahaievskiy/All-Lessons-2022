@@ -4,6 +4,43 @@
 .page {
     background-color: #df8f0f;
 
+    .menu {
+        display: inline-block;
+		// .menu__button
+
+		&__button {
+            padding: 1rem;
+            span{
+                &:first-child{
+                    display: block;
+                }
+                &:last-child{
+                    display: none;
+                }
+            }
+		}
+
+		// .menu__list
+
+		&__list {
+            background-color: #fff;
+            padding: 1rem;
+
+            li:not(:last-child) {
+                margin: 0 0 1rem 0 ;
+            }
+		}
+
+		// .menu__link
+
+		&__link {
+		}
+
+    }
+    
+    .menu ._active {
+        
+    }
     h1 {
     line-height: 4rem;
     font-size: 4rem;
