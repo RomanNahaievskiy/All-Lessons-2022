@@ -24,9 +24,11 @@ const searchForm = document.querySelector('.search__form')
 document.addEventListener("click", searchActive);
 
 document.addEventListener("keyup", function (event) {
-    if (event.code === 'Escape');
-    serchIcon.classList.remove('_active');
-    searchForm.classList.remove('_active');
+    if (event.code === 'Escape') {
+        serchIcon.classList.remove('_active');
+        searchForm.classList.remove('_active');
+    }
+
 })
 function searchActive(event) {
     if (event.target.closest('.search__icon')) {
